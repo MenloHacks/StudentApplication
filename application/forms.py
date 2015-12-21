@@ -3,6 +3,8 @@ from django.forms import ModelForm
 from application.models import Application, Profile
 
 class ApplicationForm(ModelForm):
+    required_css_class = 'label-required'
+    
     class Meta:
         model = Application
         fields = ['num_hackathons', 'cool_project', 'last_summer', 'anything_else']
@@ -14,6 +16,8 @@ class ApplicationForm(ModelForm):
         }
         
 class ProfileForm(ModelForm):
+    required_css_class = 'label-required'
+    
     class Meta:
         model = Profile
         fields = [

@@ -16,9 +16,9 @@ class Application(models.Model):
     num_hackathons = models.CharField(max_length=2, choices=NUM_HACKATHONS_CHOICES, default="0")
     cool_project = models.TextField()
     last_summer = models.TextField()
-    anything_else = models.TextField()
+    anything_else = models.TextField(blank=True)
     
-    submitted = models.BooleanField()
+    submitted = models.BooleanField(default=False)
     
 class Profile(models.Model):
     DIETARY_RESTRICTIONS = (
@@ -42,9 +42,9 @@ class Profile(models.Model):
     school = models.CharField(max_length=150)
     zip_code = models.IntegerField()
     
-    github_profile = models.URLField()
-    linkedin_profile = models.URLField()
-    devpost_profile = models.URLField()
-    personal_website = models.URLField()
+    github_profile = models.URLField(blank=True)
+    linkedin_profile = models.URLField(blank=True)
+    devpost_profile = models.URLField(blank=True)
+    personal_website = models.URLField(blank=True)
     dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
