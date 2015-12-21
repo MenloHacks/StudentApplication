@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 
-from application.models import Application
+from application.models import Application, Profile
 
 class ApplicationForm(ModelForm):
     class Meta:
@@ -12,3 +12,12 @@ class ApplicationForm(ModelForm):
             "last_summer": "What did you do last summer?",
             "anything_else": "Do you have anything else to tell us?"
         }
+        
+class ProfileForm(ModelForm):
+    class Meta:
+        model = Profile
+        fields = [
+            'name', 'school', 'zip_code',
+            'github_profile', 'linkedin_profile', 'devpost_profile',
+            'personal_website', 'dietary_restrictions', 't_shirt_size'
+        ]

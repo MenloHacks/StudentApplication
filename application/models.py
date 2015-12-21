@@ -13,7 +13,7 @@ class Application(models.Model):
     )
     
     user = models.OneToOneField(User, related_name="application")
-    num_hackathons = models.CharField(max_length=2, choices=NUM_HACKATHONS_CHOICES)
+    num_hackathons = models.CharField(max_length=2, choices=NUM_HACKATHONS_CHOICES, default="0")
     cool_project = models.TextField()
     last_summer = models.TextField()
     anything_else = models.TextField()
@@ -46,5 +46,5 @@ class Profile(models.Model):
     linkedin_profile = models.URLField()
     devpost_profile = models.URLField()
     personal_website = models.URLField()
-    dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS)
-    t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES)
+    dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS, default="None")
+    t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
