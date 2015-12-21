@@ -36,7 +36,7 @@ class Profile(models.Model):
     
     user = models.OneToOneField(User, related_name="profile")
     
-    name = models.CharField(max_lenth=100)
+    name = models.CharField(max_length=100)
     school = models.CharField(max_length=150)
     zip_code = models.IntegerField()
     
