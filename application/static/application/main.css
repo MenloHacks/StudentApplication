@@ -1,3 +1,7 @@
-header {
-    text-align: center;
+body > .container {
+    padding-top: 50px;
+}
+
+.navbar-right {
+    margin-right: 10px;
 }

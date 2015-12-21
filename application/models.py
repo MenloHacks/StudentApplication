@@ -12,11 +12,13 @@ class Application(models.Model):
         ("4+", "4+"),
     )
     
-    profile = models.OneToOneField('Profile', related_name="application")
+    user = models.OneToOneField(User, related_name="application")
     num_hackathons = models.CharField(max_length=2, choices=NUM_HACKATHONS_CHOICES)
     cool_project = models.TextField()
     last_summer = models.TextField()
     anything_else = models.TextField()
+    
+    submitted = models.BooleanField()
     
 class Profile(models.Model):
     DIETARY_RESTRICTIONS = (
