@@ -12,7 +12,7 @@ class Application(models.Model):
         ("4+", "4+"),
     )
     
-    profile = models.OneToOneField(Profile, related_name="application")
+    profile = models.OneToOneField('Profile', related_name="application")
     num_hackathons = models.CharField(max_length=2, choices=NUM_HACKATHONS_CHOICES)
     cool_project = models.TextField()
     last_summer = models.TextField()
