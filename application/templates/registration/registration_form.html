@@ -1,13 +1,20 @@
 {% extends "base.html" %}
 
-{% load i18n %}
 {% load bootstrap %}
 
 {% block content %}
+<h2>Create a MenloHacks account</h2>
 <form role="form" method='post' action='.'>
   {% csrf_token %}
   {{ form|bootstrap }}
 
   <input class="btn btn-success" type="submit" value="Submit" />
 </form>
+<script>
+$("#id_username").parent().siblings().html("Email Address");
+$("#id_email").parent().parent().hide();
+$("#id_username").keyup(function(e) {
+    $("#id_email").val($("#id_username").val());
+});
+</script>
 {% endblock %}

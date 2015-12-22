@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+
 {% load bootstrap %}
 
 {% block content %}
@@ -14,4 +14,7 @@
 
 <p class="help-block">Forgot password? <a href="{% url 'password_reset' %}">Reset it</a>!</p>
 <p class="help-block">Not a member? <a href="{% url 'registration_register' %}">Register</a>!</p>
+<script>
+$("#id_username").parent().siblings().html("Email Address");
+</script>
 {% endblock %}

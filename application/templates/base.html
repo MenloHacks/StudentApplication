@@ -25,6 +25,9 @@
                     <p class="navbar-text">Welcome, {{ user.username }}!</p>
                 </li>
                 <li>
+                    <a href="{% url 'auth_password_change' %}">Change Password</a>
+                </li>
+                <li>
                     <a href="{% url 'auth_logout' %}" id="right-button">Logout</a>
                 </li>
             {% else %}
