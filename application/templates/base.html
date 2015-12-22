@@ -25,11 +25,11 @@
                     <p class="navbar-text">Welcome, {{ user.username }}!</p>
                 </li>
                 <li>
-                    <a href="#" id="right-button">Logout</a>
+                    <a href="{% url 'auth_logout' %}" id="right-button">Logout</a>
                 </li>
             {% else %}
                 <li>
-                    <a href="#" id="right-button">Login</a>
+                    <a href="{% url 'auth_login' %}" id="right-button">Login</a>
                 </li>
             {% endif %}
         </ul>

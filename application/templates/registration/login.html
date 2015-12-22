@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap %}
+
+{% block content %}
+<h2>Login to MenloHacks</h2>
+<form role="form" method='post' action='.'>
+  {% csrf_token %} 
+  {{ form|bootstrap }}
+
+  <input class="btn btn-primary" type="submit" value="{% trans 'Log in' %}" />
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>
+
+<p class="help-block">Forgot password? <a href="{% url 'password_reset' %}">Reset it</a>!</p>
+<p class="help-block">Not a member? <a href="{% url 'registration_register' %}">Register</a>!</p>
+{% endblock %}
