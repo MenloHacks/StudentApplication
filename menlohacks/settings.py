@@ -98,6 +98,15 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp-relay.gmail.com'
+EMAIL_PORT = 465
+DEFAULT_FROM_EMAIL = 'john@menlohacks.com'
+
+
 # Heroku settings below
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
