@@ -11,6 +11,14 @@ body > .container {
     color: red;
 }
 
+#submit-button {
+    margin-left: 25px;
+}
+
+.btn-app {
+    width: 80px;
+}
+
 /* For footer */
 html {
   position: relative;
