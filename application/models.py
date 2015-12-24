@@ -35,6 +35,7 @@ class Profile(models.Model):
         ("Vegetarian", "Vegetarian"),
         ("Vegan", "Vegan"),
         ("Gluten Free", "Gluten Free"),
+        ("Other", "Other"),
     )
     
     T_SHIRT_SIZES = (
