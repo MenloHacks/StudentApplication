@@ -101,9 +101,9 @@ USE_TZ = True
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_USE_SSL = True
-EMAIL_HOST = 'smtp-relay.gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = 'john@menlohacks.com'
 
 
