@@ -13,14 +13,34 @@
             {{ prof_form|bootstrap }}<br/>
             <h3 class="text-center">Hackathon Application</h3>
             {{ app_form|bootstrap }}
+            <input type="hidden" id="id_submit" name="submit" value="false">
             <div class="row text-center">
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Save</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group row">
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-6 row">
+                        <div class="col-xs-6">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <button id="submit-button" type="submit" class="btn btn-warning">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-3"></div>
                 </div>
+                <p class="help-block">
+                    All saved applications will automatically be submitted at 10:00pm on February 28.
+                </p>
             </div>
         </form>
     </div>
     <div class="col-sm-2 col-lg-3"></div>
 </div>
+
+<script>
+$("#submit-button").click(function(e) {
+    var willSubmit = confirm("Are you sure you want to submit your MenloHacks application?");
+    $("#id_submit").val(willSubmit);
+    return willSubmit;
+});
+</script>
 {% endblock %}

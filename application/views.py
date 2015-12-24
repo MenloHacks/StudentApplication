@@ -16,22 +16,31 @@ class LoginRequiredMixin(object):
 # Create your views here.
 class Index(LoginRequiredMixin, View):
     def get(self, request, prof_form=None, app_form=None):
+        is_submitted = False
+        try:
+            is_submitted = request.user.application.submitted
+        except Exception:
+            pass
+        
         if not prof_form:
             try:
                 prof_form = ProfileForm(instance=request.user.profile)
             except Exception:
                 prof_form = ProfileForm()
-        if not app_form:
-            try:
-                app_form = ApplicationForm(instance=request.user.application)
-            except Exception:
-                app_form = ApplicationForm()
-            
-        return render(
-            request,
-            "application/index.html",
-            {'prof_form':prof_form, 'app_form':app_form}
-        )
+        
+        if not is_submitted:
+            if not app_form:
+                try:
+                    app_form = ApplicationForm(instance=request.user.application)
+                except Exception:
+                    app_form = ApplicationForm()
+            return render(
+                request,
+                "application/index.html",
+                {'prof_form':prof_form, 'app_form':app_form}
+            )
+        else:
+            return render(request, "application/applied.html", {'prof_form':prof_form})
     
     def post(self, request):
         prof_form = ProfileForm(request.POST)
@@ -46,11 +55,15 @@ class Index(LoginRequiredMixin, View):
             new_prof.save()
             
             try:
+                if request.user.application.submitted == True:
+                    return redirect('application:index')
                 request.user.application.delete()
             except Exception:
                 pass
             new_app = app_form.save(commit=False)
             new_app.user = request.user
+            if request.POST.get("submit") == "true":
+                new_app.submitted = True
             new_app.save()
             return redirect('application:index')
         else:

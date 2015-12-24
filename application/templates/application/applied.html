@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% load bootstrap %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-2 col-lg-3"></div>
+    <div class="col-sm-8 col-lg-6">
+        <h1 class="text-center">Thanks for Applying to MenloHacks!</h1><br/>
+        <p class="lead text-center">You can still edit your profile until the February 28 deadline.</p>
+        <form role="form" method='post' action='.'>
+            {% csrf_token %}
+            <h3 class="text-center">Profile Information</h3>
+            {{ prof_form|bootstrap }}<br/>
+            <input type="hidden" id="id_submit" name="submit" value="false">
+            <div class="row text-center">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-2 col-lg-3"></div>
+</div>
+{% endblock %}
