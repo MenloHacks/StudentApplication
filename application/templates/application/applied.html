@@ -19,6 +19,17 @@
                 </div>
             </div>
         </form>
+        <h3 class="text-center">Hackathon Application</h3>
+        <div class="help-block">
+            <strong>Hackathons attended</strong>
+            <p>{{ user.application.num_hackathons }}</p>
+            <strong>Cool project you made</strong>
+            <p>{{ user.application.cool_project }}</p>
+            <strong>Activity last summer</strong>
+            <p>{{ user.application.last_summer }}</p>
+            <strong>Additional comments</strong>
+            <p>{{ user.application.anything_else }}</p>
+        </div>
     </div>
     <div class="col-sm-2 col-lg-3"></div>
 </div>
