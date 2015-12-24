@@ -25,3 +25,5 @@ class ProfileForm(ModelForm):
             'github_profile', 'linkedin_profile', 'devpost_profile',
             'personal_website', 'dietary_restrictions', 't_shirt_size'
         ]
+        
+        labels = {"zip_code":"School ZIP code"}

@@ -51,10 +51,10 @@ class Profile(models.Model):
     school = models.CharField(max_length=150)
     zip_code = models.IntegerField()
     
-    github_profile = models.URLField(blank=True)
-    linkedin_profile = models.URLField(blank=True)
-    devpost_profile = models.URLField(blank=True)
-    personal_website = models.URLField(blank=True)
+    github_profile = models.URLField(blank=True, default="https://github.com/")
+    linkedin_profile = models.URLField(blank=True, default="https://www.linkedin.com/in/")
+    devpost_profile = models.URLField(blank=True, default="http://devpost.com/")
+    personal_website = models.URLField(blank=True, default="http://")
     dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
     
