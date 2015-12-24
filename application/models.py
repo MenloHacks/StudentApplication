@@ -13,7 +13,10 @@ class Application(models.Model):
     )
     
     user = models.OneToOneField(User, related_name="application")
-    num_hackathons = models.CharField(max_length=2, choices=NUM_HACKATHONS_CHOICES, default="0")
+    num_hackathons = models.CharField(
+        max_length=2,
+        choices=NUM_HACKATHONS_CHOICES, default="0"
+    )
     cool_project = models.TextField()
     last_summer = models.TextField()
     anything_else = models.TextField(blank=True)
@@ -21,7 +24,10 @@ class Application(models.Model):
     submitted = models.BooleanField(default=False)
     
     def __str__(self):
-        return "App for %s" % self.user.username
+        return "App for %s (%s)" % (
+            self.user.username, 
+            ["done" if self.submitted else "in-progress"]
+        )
     
 class Profile(models.Model):
     DIETARY_RESTRICTIONS = (
