@@ -54,7 +54,7 @@ class Profile(models.Model):
     github_profile = models.URLField(blank=True, default="https://github.com/")
     linkedin_profile = models.URLField(blank=True, default="https://www.linkedin.com/in/")
     devpost_profile = models.URLField(blank=True, default="http://devpost.com/")
-    personal_website = models.URLField(blank=True, default="http://")
+    personal_website = models.CharField(max_length=200, blank=True, default="http://")
     dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
     
