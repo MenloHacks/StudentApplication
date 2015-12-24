@@ -26,7 +26,7 @@ class Application(models.Model):
     def __str__(self):
         return "App for %s (%s)" % (
             self.user.username, 
-            ["done" if self.submitted else "in-progress"]
+            "done" if self.submitted else "in-progress"
         )
     
 class Profile(models.Model):
