@@ -51,7 +51,7 @@ class Profile(models.Model):
         ("Male", "Male"),
         ("Female", "Female"),
         ("Other", "Other"),
-        ("Prefer not to say", "No answer"),
+        ("No answer", "Prefer not to say"),
     )
     
     user = models.OneToOneField(User, related_name="profile")
