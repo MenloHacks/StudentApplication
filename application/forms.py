@@ -21,9 +21,9 @@ class ProfileForm(ModelForm):
     class Meta:
         model = Profile
         fields = [
-            'name', 'school', 'zip_code', 'phone_number',
-            'github_profile', 'linkedin_profile', 'devpost_profile',
-            'personal_website', 'dietary_restrictions', 't_shirt_size'
+            'name', 'school', 'zip_code', 'phone_number', 'gender',
+            'dietary_restrictions', 't_shirt_size', 'github_profile',
+            'linkedin_profile', 'devpost_profile', 'personal_website',
         ]
         
         labels = {"zip_code":"School ZIP code"}
