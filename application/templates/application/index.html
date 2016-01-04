@@ -15,12 +15,24 @@
             {{ app_form|bootstrap }}
             <input type="hidden" id="id_submit" name="submit" value="false">
             <div class="row text-center">
+                <label>
+                    <input type="checkbox" id="agree">
+                    I agree to the MLH
+                    <a target="_blank" href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">
+                        Code of Conduct
+                    </a><br/><br/>
+                </label>
+            </div>
+            <div class="row text-center">
                 <div class="form-group row">
                     <button type="submit" class="btn btn-primary btn-app">Save</button>
                     <button id="submit-button" type="submit" class="btn btn-warning btn-app">Submit</button>
                 </div>
                 <p class="help-block">
                     All saved applications will be automatically submitted at 10:00pm on February 28.
+                </p>
+                <p class="help-block">
+                    We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.
                 </p>
             </div>
         </form>
@@ -30,6 +42,10 @@
 
 <script>
 $("#submit-button").click(function(e) {
+    if(!$("#agree").is(":checked")) {
+        alert("You must agree to the MLH Code of Conduct");
+        return false;
+    }
     var willSubmit = confirm("Are you sure you want to submit your MenloHacks application?");
     $("#id_submit").val(willSubmit);
     return willSubmit;

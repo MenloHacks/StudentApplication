@@ -21,7 +21,7 @@ class ProfileForm(ModelForm):
     class Meta:
         model = Profile
         fields = [
-            'name', 'school', 'zip_code',
+            'name', 'school', 'zip_code', 'phone_number',
             'github_profile', 'linkedin_profile', 'devpost_profile',
             'personal_website', 'dietary_restrictions', 't_shirt_size'
         ]
