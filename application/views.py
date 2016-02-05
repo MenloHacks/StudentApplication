@@ -11,6 +11,7 @@ from .models import Application
 import json
 import csv
 import io
+import os
 
 
 class LoginRequiredMixin(object):
@@ -80,24 +81,27 @@ def profile_redirect(request):
     return redirect('application:index')
 
 def csv_export(request):
-    data_string = serializers.serialize("json", Application.objects.all())
-    data = json.loads(data_string)
-    
-    for i in range(0, len(data)):
-        entry = data[i]
-        profile = Application.objects.get(pk=entry["pk"]).user.profile
-        profile_data_string = serializers.serialize("json", [profile])
-        profile_data = json.loads(profile_data_string)
-        
-        data[i] = dict(entry["fields"].items() + profile_data[0]["fields"].items())
-        
-    response = HttpResponse(content_type='text/csv')
-    response['Content-Disposition'] = 'attachment; filename="menlohacks-export.csv"'
-    writer = csv.writer(response)
-    writer.writerow(data[0].keys())
-    for entry in data:
-        try:
-            writer.writerow(entry.values())
-        except UnicodeEncodeError:
-            pass
-    return response
+    if request.get("p") == os.environ.get("CSV_PASSWORD"):
+        data_string = serializers.serialize("json", Application.objects.all())
+        data = json.loads(data_string)
+
+        for i in range(0, len(data)):
+            entry = data[i]
+            profile = Application.objects.get(pk=entry["pk"]).user.profile
+            profile_data_string = serializers.serialize("json", [profile])
+            profile_data = json.loads(profile_data_string)
+
+            data[i] = dict(entry["fields"].items() + profile_data[0]["fields"].items())
+
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="menlohacks-export.csv"'
+        writer = csv.writer(response)
+        writer.writerow(data[0].keys())
+        for entry in data:
+            try:
+                writer.writerow(entry.values())
+            except UnicodeEncodeError:
+                pass
+        return response
+    else:
+        return HttpResponse("no")
