@@ -100,4 +100,4 @@ def csv_export(request):
             writer.writerow(entry.values())
         except UnicodeEncodeError:
             pass
-    return HttpResponse(response)
+    return response
