@@ -95,5 +95,8 @@ def csv_export(request):
     writer = csv.writer(output)
     writer.writerow(data[0].keys())
     for entry in data:
-        writer.writerow(entry.values())
+        try:
+            writer.writerow(entry.values())
+        except UnicodeEncodeError:
+            pass
     return HttpResponse(output.getvalue())
