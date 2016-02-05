@@ -1,10 +1,16 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views.generic import View
+from django.core import serializers
 
 from django.contrib.auth.decorators import login_required
 
 from .forms import ApplicationForm, ProfileForm
+from .models import Profile
+
+import json
+import csv
+import io
 
 
 class LoginRequiredMixin(object):
@@ -72,3 +78,22 @@ class Index(LoginRequiredMixin, View):
         
 def profile_redirect(request):
     return redirect('application:index')
+
+def csv_export(request):
+    data_string = serializers.serialize("json", Profile.objects.all())
+    data = json.loads(data_string)
+    
+    for i in range(0, len(data)):
+        entry = data[i]
+        app = Profile.objects.get(pk=entry["pk"]).user.application
+        app_data_string = serializers.serialize("json", [app])
+        app_data = json.loads(app_data_string)
+        
+        data[i] = dict(entry["fields"].items() + app_data[0]["fields"].items())
+        
+    output = io.BytesIO()
+    writer = csv.writer(output)
+    writer.writerow(data[0].keys())
+    for entry in data:
+        writer.writerow(entry.values())
+    return HttpResponse(output.getvalue())
