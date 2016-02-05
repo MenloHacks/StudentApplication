@@ -81,7 +81,7 @@ def profile_redirect(request):
     return redirect('application:index')
 
 def csv_export(request):
-    if request.get("p") == os.environ.get("CSV_PASSWORD"):
+    if request.GET.get("p") == os.environ.get("CSV_PASSWORD"):
         data_string = serializers.serialize("json", Application.objects.all())
         data = json.loads(data_string)
 
