@@ -91,12 +91,13 @@ def csv_export(request):
         
         data[i] = dict(entry["fields"].items() + profile_data[0]["fields"].items())
         
-    output = io.BytesIO()
-    writer = csv.writer(output)
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="menlohacks-export.csv"'
+    writer = csv.writer(response)
     writer.writerow(data[0].keys())
     for entry in data:
         try:
             writer.writerow(entry.values())
         except UnicodeEncodeError:
             pass
-    return HttpResponse(output.getvalue())
+    return HttpResponse(response)
