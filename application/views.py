@@ -6,7 +6,7 @@ from django.core import serializers
 from django.contrib.auth.decorators import login_required
 
 from .forms import ApplicationForm, ProfileForm
-from .models import Profile
+from .models import Application
 
 import json
 import csv
@@ -80,16 +80,16 @@ def profile_redirect(request):
     return redirect('application:index')
 
 def csv_export(request):
-    data_string = serializers.serialize("json", Profile.objects.all())
+    data_string = serializers.serialize("json", Application.objects.all())
     data = json.loads(data_string)
     
     for i in range(0, len(data)):
         entry = data[i]
-        app = Profile.objects.get(pk=entry["pk"]).user.application
-        app_data_string = serializers.serialize("json", [app])
-        app_data = json.loads(app_data_string)
+        profile = Application.objects.get(pk=entry["pk"]).user.profile
+        profile_data_string = serializers.serialize("json", [profile])
+        profile_data = json.loads(profile_data_string)
         
-        data[i] = dict(entry["fields"].items() + app_data[0]["fields"].items())
+        data[i] = dict(entry["fields"].items() + profile_data[0]["fields"].items())
         
     output = io.BytesIO()
     writer = csv.writer(output)
