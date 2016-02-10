@@ -80,6 +80,37 @@ class Index(LoginRequiredMixin, View):
 def profile_redirect(request):
     return redirect('application:index')
 
+
+import csv, codecs, cStringIO
+class UnicodeWriter:
+    """
+    A CSV writer which will write rows to CSV file "f",
+    which is encoded in the given encoding.
+    """
+
+    def __init__(self, f, dialect=csv.excel, encoding="utf-8", **kwds):
+        # Redirect output to a queue
+        self.queue = cStringIO.StringIO()
+        self.writer = csv.writer(self.queue, dialect=dialect, **kwds)
+        self.stream = f
+        self.encoder = codecs.getincrementalencoder(encoding)()
+
+    def writerow(self, row):
+        self.writer.writerow([str(s).encode("utf-8") for s in row])
+        # Fetch UTF-8 output from the queue ...
+        data = self.queue.getvalue()
+        data = data.decode("utf-8")
+        # ... and reencode it into the target encoding
+        data = self.encoder.encode(data)
+        # write to the target stream
+        self.stream.write(data)
+        # empty queue
+        self.queue.truncate(0)
+
+    def writerows(self, rows):
+        for row in rows:
+            self.writerow(row)
+
 def csv_export(request):
     if request.GET.get("p") == os.environ.get("CSV_PASSWORD"):
         data_string = serializers.serialize("json", Application.objects.all())
@@ -95,13 +126,13 @@ def csv_export(request):
 
         response = HttpResponse(content_type='text/csv')
         response['Content-Disposition'] = 'attachment; filename="menlohacks-export.csv"'
-        writer = csv.writer(response)
+        writer = UnicodeWriter(response)#csv.writer(response)
         writer.writerow(data[0].keys())
         for entry in data:
             try:
                 writer.writerow(entry.values())
-            except UnicodeEncodeError:
-                pass
+            except UnicodeEncodeError as e:
+                print str(e)
         return response
     else:
         return HttpResponse("no")
