@@ -12,11 +12,19 @@ class ApplicationResource(resources.ModelResource):
     class Meta:
         model = Application
         
+class ProfileResource(resources.ModelResource):
+    class Meta:
+        model = Profile
+        
         
 class ApplicationAdmin(ImportExportModelAdmin):
     resource_class = ApplicationResource
     pass
 
+class ProfileAdmin(ImportExportModelAdmin):
+    resource_class = ProfileResource
+    pass
+
 
 admin.site.register(Application, ApplicationAdmin)
-admin.site.register(Profile)
+admin.site.register(Profile, ProfileAdmin)
