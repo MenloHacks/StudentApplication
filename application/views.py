@@ -19,6 +19,10 @@ class LoginRequiredMixin(object):
     def as_view(cls, **initkwargs):
         view = super(LoginRequiredMixin, cls).as_view(**initkwargs)
         return login_required(view)
+    
+@login_required
+def index_waiting(request):
+    return render(request, "application/waiting.html", {})
 
 # Create your views here.
 class Index(LoginRequiredMixin, View):
