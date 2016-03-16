@@ -24,6 +24,48 @@ class LoginRequiredMixin(object):
 def index_waiting(request):
     return render(request, "application/waiting.html", {})
 
+@login_required
+def index_result(request):
+    app = request.user.application
+    if app.admitted == True:
+        if app.sanitized_school != "Other":
+            others = Application.objects.filter(sanitized_school=app.sanitized_school, admitted=True)
+        else:
+            others = None
+        print others
+        return render(request, "application/result_yes.html", {"others":others, "url_len":len(app.form_url)})
+    else:
+        return render(request, "application/waiting.html", {})
+    """elif app.waitlisted == True:
+        return render(request, "application/result_wait.html", {})
+    else:
+        return render(request, "application/result_no.html", {})"""
+    
+@login_required
+def coming(request):
+    app = request.user.application
+    if request.GET.get("yes") == "1":
+        app.can_come = True
+        app.cannot_come = False
+        app.save()
+    elif request.GET.get("yes") == "0":
+        app.cannot_come = True
+        app.can_come = False
+        app.save()
+    elif request.GET.get("reset") == "1":
+        app.cannot_come = False
+        app.can_come = False
+        app.save()
+    return redirect("application:index")
+
+@login_required
+def upload(request):
+    app = request.user.application
+    if request.GET.get("url") != None:
+        app.form_url = request.GET["url"]
+        app.save()
+    return redirect("application:index")
+
 # Create your views here.
 class Index(LoginRequiredMixin, View):
     def get(self, request, prof_form=None, app_form=None):

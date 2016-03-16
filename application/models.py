@@ -24,6 +24,15 @@ class Application(models.Model):
     
     submitted = models.BooleanField(default=False)
     
+    admitted = models.BooleanField(default=False)
+    waitlisted = models.BooleanField(default=False)
+    
+    sanitized_school = models.CharField(max_length=100, default="Other")
+    form_url = models.CharField(max_length=200, blank=True, default="")
+    
+    can_come = models.BooleanField(default=False)
+    cannot_come = models.BooleanField(default=False)
+    
     def __str__(self):
         return "App for %s (%s)" % (
             self.user.username, 
