@@ -30,7 +30,7 @@ def index_result(request):
         app = request.user.application
     except Exception as e:
         if str(e) == "User has no application.":
-            return HttpResponse("We could not find an application attached to your account. Please contact hello@menlohacks.com for help.")
+            return render(request, "application/error_no_app.html", {})
         else:
             raise Exception(str(e))
     if app.admitted == True:
