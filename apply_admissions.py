@@ -19,4 +19,5 @@ for school, students in data.items():
         student = User.objects.get(pk=student_id)
         print student.email
         student.application.admitted = True
+        student.application.sanitized_school = school
         student.application.save()
