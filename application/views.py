@@ -26,7 +26,13 @@ def index_waiting(request):
 
 @login_required
 def index_result(request):
-    app = request.user.application
+    try:
+        app = request.user.application
+    except Exception as e:
+        if str(e) == "User has no application.":
+            return HttpResponse("We could not find an application attached to your account. Please contact hello@menlohacks.com for help.")
+        else:
+            raise Exception(str(e))
     if app.admitted == True:
         if app.sanitized_school != "Other":
             others = Application.objects.filter(sanitized_school=app.sanitized_school, admitted=True)
