@@ -40,12 +40,10 @@ def index_result(request):
             others = None
         print others
         return render(request, "application/result_yes.html", {"others":others, "url_len":len(app.form_url)})
-    else:
-        return render(request, "application/waiting.html", {})
-    """elif app.waitlisted == True:
+    elif app.waitlisted == True:
         return render(request, "application/result_wait.html", {})
     else:
-        return render(request, "application/result_no.html", {})"""
+        return render(request, "application/result_no.html", {})
     
 @login_required
 def coming(request):
