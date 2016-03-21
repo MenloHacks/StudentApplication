@@ -35,7 +35,7 @@ def index_result(request):
             raise Exception(str(e))
     if app.admitted == True:
         if app.sanitized_school != "Other":
-            others = Application.objects.filter(sanitized_school=app.sanitized_school, admitted=True)
+            others = Application.objects.filter(sanitized_school=app.sanitized_school, admitted=True, cannot_come=False)
         else:
             others = None
         print others
