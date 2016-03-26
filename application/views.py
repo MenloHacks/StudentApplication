@@ -70,6 +70,12 @@ def upload(request):
         app.save()
     return redirect("application:index")
 
+@login_required
+def bring_chaperone(request):
+    request.user.application.can_bring_chaperone = True
+    request.user.application.save()
+    return redirect("application:index")
+
 # Create your views here.
 class Index(LoginRequiredMixin, View):
     def get(self, request, prof_form=None, app_form=None):

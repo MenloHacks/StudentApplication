@@ -59,11 +59,30 @@
     <p class="help-block">
         For liability reasons, Menlo School is requiring one chaperone from each school.<br>If you find this impossible, please contact us at <a href="mailto:hello@menlohacks.com">hello@menlohacks.com</a> and we will do our best to help you.
     </p>
-    <ul style="list-style-type:none;">
-        {% for app in others %}
-        <li><a href="mailto:{{ app.user.email }}">{{ app.user.profile.name }}</a></li>
-        {% endfor %}
-    </ul>
+    {% if not user.application.can_bring_chaperone %}
+    <form action="{% url 'application:bring_chaperone' %}" method="get" onsubmit="return confirm('Are you sure you can bring a chaperone?')">
+        <button type="submit" class="btn btn-success">I can bring a chaperone!</button>
+    </form><br>
+    {% endif %}
+    <h3>Classmates</h3>
+    <div class="row text-left">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <ol>
+                {% for app in others %}
+                <li>
+                    <a href="mailto:{{ app.user.email }}">{{ app.user.profile.name }}</a> 
+                    {% if app.can_bring_chaperone %}
+                    <span class="text-success"><strong>CAN BRING</strong></span>
+                    {% else %}
+                    <span class="text-danger">(cannot bring)</span>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
     {% endif %}
 {% endif %}
 </div>

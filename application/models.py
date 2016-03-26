@@ -33,6 +33,8 @@ class Application(models.Model):
     can_come = models.BooleanField(default=False)
     cannot_come = models.BooleanField(default=False)
     
+    can_bring_chaperone = models.BooleanField(default=False)
+    
     def __str__(self):
         return "App for %s (%s)" % (
             self.user.username, 
