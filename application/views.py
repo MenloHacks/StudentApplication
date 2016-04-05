@@ -72,9 +72,13 @@ def upload(request):
 
 @login_required
 def bring_chaperone(request):
-    request.user.application.can_bring_chaperone = True
+    if request.GET.get("bring") == "yes":
+        request.user.application.can_bring_chaperone = True
+    elif request.GET.get("bring") == "no":
+        request.user.application.can_bring_chaperone = False
     request.user.application.save()
-    return redirect("application:index")
+    return HttpResponse(request.GET.get("bring"))
+    #return redirect("application:index")
 
 # Create your views here.
 class Index(LoginRequiredMixin, View):
