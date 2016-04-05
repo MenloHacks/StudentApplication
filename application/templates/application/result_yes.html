@@ -76,7 +76,7 @@
             <ol>
                 {% for app in others %}
                 <li>
-                    <a href="mailto:{{ app.user.email }}">{{ app.user.profile.name }}</a> 
+                    <a href="mailto:{{ app.user.username }}">{{ app.user.profile.name }}</a> 
                     {% if app.can_bring_chaperone == True %}
                     <span class="text-success"><strong>CAN BRING</strong></span>
                     {% elif app.can_bring_chaperone == False %}
