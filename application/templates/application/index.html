@@ -11,8 +11,11 @@
             {% csrf_token %}
             <h3 class="text-center">Profile Information</h3>
             {{ prof_form|bootstrap }}<br/>
-            <h3 class="text-center">Hackathon Application</h3>
-            {{ app_form|bootstrap }}
+            <div id="application">
+                <h3 class="text-center">Hackathon Application (non-Menlo
+                    students only)</h3>
+                {{ app_form|bootstrap }}
+            </div>
             <input type="hidden" id="id_submit" name="submit" value="false">
             <div class="row text-center">
                 <label>
@@ -50,5 +53,25 @@ $("#submit-button").click(function(e) {
     $("#id_submit").val(willSubmit);
     return willSubmit;
 });
+var menlo = false;
+var application = $("#application");
+var school = $("#id_school");
+var selection = $("#application select, #application textarea");
+if (school.val() == "Menlo School") {
+    application.hide();
+    menlo = true;
+    selection.removeAttr("required");
+}
+school.change(function() {
+    if (school.val() == "Menlo School") {
+        application.hide();
+        selection.removeAttr("required");
+        menlo = true;
+    } else if (menlo) {
+        application.show();
+        selection.attr("required");
+        menlo = false;
+    }
+})
 </script>
 {% endblock %}

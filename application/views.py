@@ -81,20 +81,19 @@ def bring_chaperone(request):
 
 # Create your views here.
 class Index(LoginRequiredMixin, View):
+    guaranteed_admittance = ["Menlo School"]
     def get(self, request, prof_form=None, app_form=None):
         is_submitted = False
         try:
             is_submitted = request.user.application.submitted
         except Exception:
             pass
-        
         if not prof_form:
             try:
                 prof_form = ProfileForm(instance=request.user.profile)
             except Exception:
                 prof_form = ProfileForm()
-        
-        if not is_submitted:
+        if not is_submitted and request.user.profile.school not in Index.guaranteed_admittance:
             if not app_form:
                 try:
                     app_form = ApplicationForm(instance=request.user.application)
@@ -111,7 +110,7 @@ class Index(LoginRequiredMixin, View):
     def post(self, request):
         prof_form = ProfileForm(request.POST)
         app_form = ApplicationForm(request.POST)
-        if prof_form.is_valid() and app_form.is_valid():
+        if prof_form.is_valid():
             try:
                 request.user.profile.delete()
             except Exception:
@@ -119,19 +118,25 @@ class Index(LoginRequiredMixin, View):
             new_prof = prof_form.save(commit=False)
             new_prof.user = request.user
             new_prof.save()
-            
-            try:
-                if request.user.application.submitted == True:
+            if new_prof.school in Index.guaranteed_admittance:
+                return redirect('application:index')
+            else:
+                if app_form.is_valid():
+                    try:
+                        if request.user.application.submitted == True:
+                            return redirect('application:index')
+                        request.user.application.delete()
+                    except Exception:
+                        pass
+                    new_app = app_form.save(commit=False)
+                    new_app.user = request.user
+                    if request.POST.get("submit") == "true":
+                        new_app.submitted = True
+                    new_app.save()
                     return redirect('application:index')
-                request.user.application.delete()
-            except Exception:
-                pass
-            new_app = app_form.save(commit=False)
-            new_app.user = request.user
-            if request.POST.get("submit") == "true":
-                new_app.submitted = True
-            new_app.save()
-            return redirect('application:index')
+                else:
+                    return self.get(request, prof_form=prof_form,
+                                    app_form=app_form)
         else:
             return self.get(request, prof_form=prof_form, app_form=app_form)
         
