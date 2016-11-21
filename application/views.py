@@ -2,11 +2,13 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from django.core import serializers
+from django.conf import settings
 
 from django.contrib.auth.decorators import login_required
 
 from .forms import ApplicationForm, ProfileForm
 from .models import Application
+from django.core.mail import EmailMultiAlternatives
 
 import json
 import os
@@ -93,7 +95,11 @@ class Index(LoginRequiredMixin, View):
                 prof_form = ProfileForm(instance=request.user.profile)
             except Exception:
                 prof_form = ProfileForm()
-        if not is_submitted and request.user.profile.school not in Index.guaranteed_admittance:
+        try:
+            school = request.user.profile.school
+        except:
+            school = None
+        if not is_submitted and school not in Index.guaranteed_admittance:
             if not app_form:
                 try:
                     app_form = ApplicationForm(instance=request.user.application)
@@ -119,6 +125,7 @@ class Index(LoginRequiredMixin, View):
             new_prof.user = request.user
             new_prof.save()
             if new_prof.school in Index.guaranteed_admittance:
+                Index.send_email(request.user, True)
                 return redirect('application:index')
             else:
                 if app_form.is_valid():
@@ -133,12 +140,29 @@ class Index(LoginRequiredMixin, View):
                     if request.POST.get("submit") == "true":
                         new_app.submitted = True
                     new_app.save()
+                    Index.send_email(request.user, False)
                     return redirect('application:index')
                 else:
                     return self.get(request, prof_form=prof_form,
                                     app_form=app_form)
         else:
             return self.get(request, prof_form=prof_form, app_form=app_form)
+
+    @staticmethod
+    def send_email(user, is_guaranteed):
+        if is_guaranteed:
+            subject = "Thanks for signing up for MenloHacks!"
+            text = "Thanks for signing up for MenloHacks. We'll send you " \
+                   "more information in February. See you there!"
+        else:
+            subject = "Thanks for applying to MenloHacks!"
+            text = "Thanks for applying to MenloHacks. You will receive our " \
+                   "admission decision by February. Hope to see you there!"
+        msg = EmailMultiAlternatives(subject, text,
+                                     settings.DEFAULT_FROM_EMAIL,
+                                     [user.email])
+        msg.send()
+
         
         
 def profile_redirect(request):

@@ -107,9 +107,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'noreply@menlohacks.com'
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-EMAIL_HOST_PASSWORD = "9KgnjdDzyajw5F4Anddq"
-print("password: " + EMAIL_HOST_PASSWORD)
+EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
+# print(EMAIL_HOST_PASSWORD)
+# print("password: " + EMAIL_HOST_PASSWORD)
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = 'noreply@menlohacks.com'
