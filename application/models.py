@@ -1,9 +1,10 @@
 from django.db import models
 from django.core.validators import RegexValidator
-
 from django.contrib.auth.models import User
 
 # Create your models here.
+
+
 class Application(models.Model):
     NUM_HACKATHONS_CHOICES = (
         ("0", "0"),
@@ -64,6 +65,17 @@ class Profile(models.Model):
         ("Other", "Other"),
         ("No answer", "Prefer not to say"),
     )
+
+    SCHOOLS = (
+        (),
+        (),
+        (),
+        (),
+        (),
+        (),
+
+    )
+
     
     user = models.OneToOneField(User, related_name="profile")
     
@@ -75,6 +87,7 @@ class Profile(models.Model):
     phone_number = models.CharField(max_length=15, validators=[phone_regex])
     
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default="Male")
+
     
     github_profile = models.URLField(blank=True, default="https://github.com/")
     linkedin_profile = models.URLField(blank=True, default="https://www.linkedin.com/in/")

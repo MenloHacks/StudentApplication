@@ -23,12 +23,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ogfj3**8a#u-#z8izl%7&tku90s8a8s^h&)m)&0xgdfu4@8n$n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
+
+REGISTRATION_OPEN = True
+ACCOUNT_ACTIVATION_DAYS = 7
 
 INSTALLED_APPS = (
     'application',
@@ -103,18 +106,19 @@ USE_TZ = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'john@menlohacks.com'
+EMAIL_HOST_USER = 'noreply@menlohacks.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+print("password: " + EMAIL_HOST_PASSWORD)
 EMAIL_PORT = 465
 EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = 'john@menlohacks.com'
+DEFAULT_FROM_EMAIL = 'noreply@menlohacks.com'
 
 
 # Heroku settings below
 # Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES = {}
-DATABASES['default'] =  dj_database_url.config()
+# import dj_database_url
+# DATABASES = {}
+# DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

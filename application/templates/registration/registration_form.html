@@ -15,7 +15,6 @@ $("#id_username").parent().siblings().html("Email Address");
 $("#id_username").attr("type", "email");
 $("#id_email").parent().parent().hide();
 $("#id_username").keyup(function(e) {
-    $("#id_email").val($("#id_username").val());
-});
+    $("#id_email").val($("#id_username").val());});
 </script>
 {% endblock %}

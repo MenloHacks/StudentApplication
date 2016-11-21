@@ -9,8 +9,6 @@ from .forms import ApplicationForm, ProfileForm
 from .models import Application
 
 import json
-import csv
-import io
 import os
 
 
@@ -19,6 +17,7 @@ class LoginRequiredMixin(object):
     def as_view(cls, **initkwargs):
         view = super(LoginRequiredMixin, cls).as_view(**initkwargs)
         return login_required(view)
+
     
 @login_required
 def index_waiting(request):
