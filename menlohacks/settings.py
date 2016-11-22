@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'bootstrapform',
     'import_export',
+    'django_select2'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -115,6 +116,10 @@ EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = 'noreply@menlohacks.com'
 
 
+
+
+
+
 # Heroku settings below
 # Parse database configuration from $DATABASE_URL
 # import dj_database_url
@@ -139,3 +144,5 @@ try:
     from local_settings import *
 except ImportError:
     pass
+
+

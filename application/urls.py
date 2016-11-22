@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^bring_chaperone/$', views.bring_chaperone, name="bring_chaperone"),
     url(r'^accounts/profile/$', views.profile_redirect, name="profile_redirect"),
     url(r'^csv/$', views.csv_export, name="csv_export"),
+    url(r'^select2/', include('django_select2.urls')),
 ]

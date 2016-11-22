@@ -67,12 +67,12 @@ class Profile(models.Model):
     )
 
     SCHOOLS = (
-        (),
-        (),
-        (),
-        (),
-        (),
-        (),
+        ("Menlo School", "Menlo School"),
+        ("Testing", "Testing"),
+        ("Sacred Heart", "Sacred Heart"),
+        ("Harker", "Harker"),
+        ("Crystal", "Crystal"),
+        ("Priory", "Priory"),
 
     )
 
@@ -80,7 +80,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, related_name="profile")
     
     name = models.CharField(max_length=100)
-    school = models.CharField(max_length=150)
+    school = models.CharField(choices=SCHOOLS, max_length=150)
     zip_code = models.IntegerField()
     
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
