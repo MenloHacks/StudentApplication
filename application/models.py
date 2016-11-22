@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import RegexValidator
 from django.contrib.auth.models import User
+import pickle
 
 # Create your models here.
 
@@ -66,15 +67,7 @@ class Profile(models.Model):
         ("No answer", "Prefer not to say"),
     )
 
-    SCHOOLS = (
-        ("Menlo School", "Menlo School"),
-        ("Testing", "Testing"),
-        ("Sacred Heart", "Sacred Heart"),
-        ("Harker", "Harker"),
-        ("Crystal", "Crystal"),
-        ("Priory", "Priory"),
-
-    )
+    SCHOOLS = pickle.load(open("static/school_list.pkl", "rb"))
 
     
     user = models.OneToOneField(User, related_name="profile")

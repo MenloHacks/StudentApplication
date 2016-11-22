@@ -17,8 +17,8 @@ class ApplicationForm(ModelForm):
         }
 
 """
-Overwritten classes that doesn't cut off at spaces and only
-allows one input.
+Overwritten classes that don't cut off at spaces and only
+allow one input.
 """
 class Select2TagMixin(object):
     """Mixin to add select2 tag functionality."""
@@ -40,7 +40,6 @@ class Select2TagWidget(Select2TagMixin, Select2Mixin, Select):
             def value_from_datadict(self, data, files, name):
                 values = super(MyWidget, self).value_from_datadict(data, files, name):
                 return ",".join(values)
-
     """
 
     pass
