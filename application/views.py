@@ -8,8 +8,10 @@ from django.contrib.auth.decorators import login_required
 
 from .forms import ApplicationForm, ProfileForm
 from .models import Application
+from registration.backends.hmac.views import RegistrationView
 from django.core.mail import EmailMultiAlternatives
-
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
 import json
 import os
 
@@ -19,6 +21,46 @@ class LoginRequiredMixin(object):
     def as_view(cls, **initkwargs):
         view = super(LoginRequiredMixin, cls).as_view(**initkwargs)
         return login_required(view)
+
+
+
+class CustomRegistrationView(RegistrationView):
+    """
+    Register a new (inactive) user account, generate an activation key
+    and email it to the user.
+
+    This is different from the model-based activation workflow in that
+    the activation key is simply the username, signed using Django's
+    TimestampSigner, with HMAC verification on activation.
+
+    """
+    email_body_template_html = 'registration/activation_email.html'
+    email_subject_template = 'registration/activation_email_subject.txt'
+
+    def send_activation_email(self, user):
+        """
+        Send the activation email. The activation key is simply the
+        username, signed using TimestampSigner.
+
+        """
+        activation_key = self.get_activation_key(user)
+        context = self.get_email_context(activation_key)
+        context.update({
+            'user': user
+        })
+        subject = render_to_string(self.email_subject_template,
+                                   context)
+        # Force subject to a single line to avoid header-injection
+        # issues.
+        html_content = render_to_string(CustomRegistrationView.email_body_template_html,
+                                        context)
+        text_content = strip_tags(html_content)
+
+        # create the email, and attach the HTML version as well.
+        msg = EmailMultiAlternatives(subject, text_content,
+                                     settings.DEFAULT_FROM_EMAIL, [user.email])
+        msg.attach_alternative(html_content, "text/html")
+        msg.send()
 
     
 @login_required
@@ -115,7 +157,7 @@ class Index(LoginRequiredMixin, View):
     
     def post(self, request):
         prof_form = ProfileForm(request.POST)
-        app_form = ApplicationForm(request.POST)
+        app_form = ApplicationForm(request.POST, request.FILES)
         if prof_form.is_valid():
             try:
                 request.user.profile.delete()
@@ -138,9 +180,9 @@ class Index(LoginRequiredMixin, View):
                     new_app = app_form.save(commit=False)
                     new_app.user = request.user
                     if request.POST.get("submit") == "true":
+                        Index.send_email(request.user, False)
                         new_app.submitted = True
                     new_app.save()
-                    Index.send_email(request.user, False)
                     return redirect('application:index')
                 else:
                     return self.get(request, prof_form=prof_form,

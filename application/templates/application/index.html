@@ -9,12 +9,18 @@
         <h1 class="text-center">Apply to MenloHacks</h1><br/>
         <form role="form" method='post' action='.'>
             {% csrf_token %}
-            <h3 class="text-center">Profile Information</h3>
-            {{ prof_form|bootstrap }}<br/>
-            <div id="application">
-                <h3 class="text-center">Hackathon Application (non-Menlo
-                    students only)</h3>
+            <div id="profile">
+                <h3 class="text-center">Profile Information</h3>
+                {{ prof_form|bootstrap }}
+                <br/>
+            </div>
+            <div id="application" style="display: none">
+                <h3 class="text-center">Hackathon Application</h3>
                 {{ app_form|bootstrap }}
+                <div id="fileupload">
+                    <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+                    <input type="filepicker" data-fp-apikey="AvPwlqLN8QAKnPNO8tg38z" onchange="completed(event.fpfile.url)">
+                </div>
             </div>
             <input type="hidden" id="id_submit" name="submit" value="false">
             <div class="row text-center">
@@ -47,6 +53,8 @@
 $(".select2").select2({
         tags: true
     });
+$("#id_form_url").hide();
+$("#fileupload").appendTo($("#profile > div:nth-last-child(2)"));
 $("#submit-button").click(function(e) {
     if(!$("#agree").is(":checked")) {
         alert("You must agree to the MLH Code of Conduct");
@@ -56,25 +64,29 @@ $("#submit-button").click(function(e) {
     $("#id_submit").val(willSubmit);
     return willSubmit;
 });
-var menlo = false;
+var menlo = true;
 var application = $("#application");
 var school = $("#id_school");
 var selection = $("#application select, #application textarea");
-if (school.val() == "Menlo School") {
-    application.hide();
-    menlo = true;
-    selection.removeAttr("required");
+selection.removeAttr("required");
+if (school.val() != "Menlo School") {
+    application.show();
+    menlo = false;
+    selection.attr("required");
 }
 school.change(function() {
-    if (school.val() == "Menlo School") {
-        application.hide();
-        selection.removeAttr("required");
-        menlo = true;
-    } else if (menlo) {
+    if (school.val() != "Menlo School") {
         application.show();
         selection.attr("required");
         menlo = false;
+    } else if (!menlo) {
+        application.hide();
+        selection.removeAttr("required");
+        menlo = false;
     }
-})
+});
+function completed(url) {
+    $("#id_form_url").val(url);
+}
 </script>
 {% endblock %}

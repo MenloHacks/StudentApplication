@@ -23,14 +23,13 @@ class Application(models.Model):
     cool_project = models.TextField()
     last_summer = models.TextField()
     anything_else = models.TextField(blank=True)
-    
+
     submitted = models.BooleanField(default=False)
     
     admitted = models.BooleanField(default=False)
     waitlisted = models.BooleanField(default=False)
     
     sanitized_school = models.CharField(max_length=100, default="Other")
-    form_url = models.CharField(max_length=200, blank=True, default="")
     
     can_come = models.BooleanField(default=False)
     cannot_come = models.BooleanField(default=False)
@@ -73,7 +72,8 @@ class Profile(models.Model):
     user = models.OneToOneField(User, related_name="profile")
     
     name = models.CharField(max_length=100)
-    school = models.CharField(choices=SCHOOLS, max_length=150)
+    school = models.CharField(choices=SCHOOLS, max_length=150,
+                              default="Menlo School")
     zip_code = models.IntegerField()
     
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',
@@ -89,6 +89,7 @@ class Profile(models.Model):
     personal_website = models.CharField(max_length=200, blank=True, default="http://")
     dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
+    form_url = models.CharField(max_length=200)
     
     def __str__(self):
         return "%s (%s)" % (self.name, self.user.username)

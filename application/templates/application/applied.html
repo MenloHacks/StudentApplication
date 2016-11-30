@@ -10,8 +10,10 @@
         <p class="lead text-center">You can still edit your profile until the February 28 deadline.</p>
         <form role="form" method='post' action='.'>
             {% csrf_token %}
-            <h3 class="text-center">Profile Information</h3>
-            {{ prof_form|bootstrap }}<br/>
+            <div id="profile">
+                <h3 class="text-center">Profile Information</h3>
+                {{ prof_form|bootstrap }}<br/>
+            </div>
             <input type="hidden" id="id_submit" name="submit" value="false">
             <div class="row text-center">
                 <div class="form-group">
@@ -19,7 +21,7 @@
                 </div>
             </div>
         </form>
-        {% if user.application.numhackathons %}
+        {% if user.application.cool_project %}
         <h3 class="text-center">Hackathon Application</h3>
         <div class="help-block">
             <strong>Hackathons attended</strong>
@@ -40,5 +42,6 @@
     $(".select2").select2({
         tags: true
     });
+    $("#profile > div:nth-last-child(2)").hide();
     </script>
 {% endblock %}
