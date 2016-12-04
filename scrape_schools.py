@@ -28,4 +28,8 @@ for item in items:
         name = school_name.split(",")[0]
         school_names.append((name, name))
 
+school_names = [school_names.pop(school_names.index(("Menlo School",
+                                                    "Menlo School")))] + \
+               school_names
+print(school_names)
 pickle.dump(tuple(school_names), open("static/school_list.pkl", "wb"))

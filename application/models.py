@@ -48,7 +48,6 @@ class Profile(models.Model):
         ("Vegetarian", "Vegetarian"),
         ("Vegan", "Vegan"),
         ("Gluten Free", "Gluten Free"),
-        ("Other", "Other"),
     )
     
     T_SHIRT_SIZES = (
@@ -72,8 +71,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, related_name="profile")
     
     name = models.CharField(max_length=100)
-    school = models.CharField(choices=SCHOOLS, max_length=150,
-                              default="Menlo School")
+    school = models.CharField(choices=SCHOOLS, max_length=150)
     zip_code = models.IntegerField()
     
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',

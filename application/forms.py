@@ -59,7 +59,8 @@ class ProfileForm(ModelForm):
             'form_url'
         ]
         widgets = {
-            "school": Select2TagWidget
+            "school": Select2TagWidget,
+            "dietary_restrictions": Select2TagWidget
         }
         
         labels = {"zip_code":"School ZIP code", "form_url": "form"}

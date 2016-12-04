@@ -14,32 +14,25 @@
                 {{ prof_form|bootstrap }}
                 <br/>
             </div>
-            <div id="application" style="display: none">
-                <h3 class="text-center">Hackathon Application</h3>
-                {{ app_form|bootstrap }}
-                <div id="fileupload">
+            <div id="fileupload">
                     <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
                     <input type="filepicker" data-fp-apikey="AvPwlqLN8QAKnPNO8tg38z" onchange="completed(event.fpfile.url)">
-                </div>
             </div>
             <input type="hidden" id="id_submit" name="submit" value="false">
             <div class="row text-center">
-                <label>
+                <label class="label-required">
                     <input type="checkbox" id="agree">
                     I agree to the MLH
                     <a target="_blank" href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">
                         Code of Conduct
-                    </a><br/><br/>
+                    </a>
                 </label>
+                <br/><br/>
             </div>
             <div class="row text-center">
                 <div class="form-group row">
                     <button type="submit" class="btn btn-primary btn-app">Save</button>
-                    <button id="submit-button" type="submit" class="btn btn-warning btn-app">Submit</button>
                 </div>
-                <p class="help-block">
-                    All saved applications will be automatically submitted at midnight on March 7.
-                </p>
                 <p class="help-block">
                     We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.
                 </p>
@@ -50,6 +43,7 @@
 {{ prof_form.media }}
 </div>
 <script>
+var form = false;
 $(".select2").select2({
         tags: true
     });
@@ -60,33 +54,17 @@ $("#submit-button").click(function(e) {
         alert("You must agree to the MLH Code of Conduct");
         return false;
     }
+    if (!form) {
+        alert("You must upload the required forms.");
+        return false;
+    }
     var willSubmit = confirm("Are you sure you want to submit your MenloHacks application?");
     $("#id_submit").val(willSubmit);
     return willSubmit;
 });
-var menlo = true;
-var application = $("#application");
-var school = $("#id_school");
-var selection = $("#application select, #application textarea");
-selection.removeAttr("required");
-if (school.val() != "Menlo School") {
-    application.show();
-    menlo = false;
-    selection.attr("required");
-}
-school.change(function() {
-    if (school.val() != "Menlo School") {
-        application.show();
-        selection.attr("required");
-        menlo = false;
-    } else if (!menlo) {
-        application.hide();
-        selection.removeAttr("required");
-        menlo = false;
-    }
-});
 function completed(url) {
     $("#id_form_url").val(url);
+    form = true;
 }
 </script>
 {% endblock %}

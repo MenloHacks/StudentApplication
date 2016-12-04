@@ -123,9 +123,10 @@ def bring_chaperone(request):
     return HttpResponse(request.GET.get("bring"))
     #return redirect("application:index")
 
-# Create your views here.
+# Create your views here.u
 class Index(LoginRequiredMixin, View):
     guaranteed_admittance = ["Menlo School"]
+
     def get(self, request, prof_form=None, app_form=None):
         is_submitted = False
         try:
@@ -137,6 +138,11 @@ class Index(LoginRequiredMixin, View):
                 prof_form = ProfileForm(instance=request.user.profile)
             except Exception:
                 prof_form = ProfileForm()
+                return render(
+                    request,
+                    "application/profile.html",
+                    {'prof_form': prof_form}
+                )
         try:
             school = request.user.profile.school
         except:
@@ -149,20 +155,29 @@ class Index(LoginRequiredMixin, View):
                     app_form = ApplicationForm()
             return render(
                 request,
-                "application/index.html",
+                "application/application.html",
                 {'prof_form':prof_form, 'app_form':app_form}
             )
         else:
-            return render(request, "application/applied.html", {'prof_form':prof_form})
+            return render(request, "application/applied.html",
+                          {'prof_form':prof_form})
     
     def post(self, request):
         prof_form = ProfileForm(request.POST)
         app_form = ApplicationForm(request.POST, request.FILES)
+        print(app_form)
         if prof_form.is_valid():
             try:
                 request.user.profile.delete()
             except Exception:
                 pass
+
+            valid = True
+            try:
+                if prof_form.has_tried:
+                    valid = False
+            except:
+                prof_form.has_tried = True
             new_prof = prof_form.save(commit=False)
             new_prof.user = request.user
             new_prof.save()
@@ -185,8 +200,11 @@ class Index(LoginRequiredMixin, View):
                     new_app.save()
                     return redirect('application:index')
                 else:
-                    return self.get(request, prof_form=prof_form,
-                                    app_form=app_form)
+                    if valid:
+                        return redirect('application:index')
+                    else:
+                        return self.get(request, prof_form=prof_form,
+                                        app_form=app_form)
         else:
             return self.get(request, prof_form=prof_form, app_form=app_form)
 

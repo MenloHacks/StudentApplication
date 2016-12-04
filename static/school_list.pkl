@@ -1,1676 +1,1676 @@
-((VAlameda Community Learning Center
+((VMenlo School
 p0
 g0
 tp1
-(VAlameda High School
+(VAlameda Community Learning Center
 p2
 g2
 tp3
-(VAlameda Science and Technology Institute
+(VAlameda High School
 p4
 g4
 tp5
-(VEncinal High School
+(VAlameda Science and Technology Institute
 p6
 g6
 tp7
-(VIsland High School (continuation school)
+(VEncinal High School
 p8
 g8
 tp9
-(VAlbany Unified School District
+(VIsland High School (continuation school)
 p10
 g10
 tp11
-(VAlbany High School
+(VAlbany Unified School District
 p12
 g12
 tp13
-(VMacGregor High School (continuation)
+(VAlbany High School
 p14
 g14
 tp15
-(VBerkeley Unified School District
+(VMacGregor High School (continuation)
 p16
 g16
 tp17
-(VBerkeley High School
+(VBerkeley Unified School District
 p18
 g18
 tp19
-(VCastro Valley Unified School District
+(VBerkeley High School
 p20
 g20
 tp21
-(VCastro Valley High School
+(VCastro Valley Unified School District
 p22
 g22
 tp23
-(VRedwood Alternative High School
+(VCastro Valley High School
 p24
 g24
 tp25
-(VDublin Unified School District
+(VRedwood Alternative High School
 p26
 g26
 tp27
-(VDublin High School
+(VDublin Unified School District
 p28
 g28
 tp29
-(VEmery Unified School District
+(VDublin High School
 p30
 g30
 tp31
-(VEmery Secondary School (grades 7\u201312)
+(VEmery Unified School District
 p32
 g32
 tp33
-(VFremont Unified School District
+(VEmery Secondary School (grades 7\u201312)
 p34
 g34
 tp35
-(VAmerican High School
+(VFremont Unified School District
 p36
 g36
 tp37
-(VIrvington High School
+(VAmerican High School
 p38
 g38
 tp39
-(VJohn F. Kennedy High School
+(VIrvington High School
 p40
 g40
 tp41
-(VMission San Jose High School
+(VJohn F. Kennedy High School
 p42
 g42
 tp43
-(VWashington High School
+(VMission San Jose High School
 p44
 g44
 tp45
-(VHayward Unified School District
+(VWashington High School
 p46
 g46
 tp47
-(VHayward High School
+(VHayward Unified School District
 p48
 g48
 tp49
-(VMount Eden High School
+(VHayward High School
 p50
 g50
 tp51
-(VSunset High School (closed)
+(VMount Eden High School
 p52
 g52
 tp53
-(VTennyson High School
+(VSunset High School (closed)
 p54
 g54
 tp55
-(VLivermore Valley Joint Unified School District
+(VTennyson High School
 p56
 g56
 tp57
-(VGranada High School
+(VLivermore Valley Joint Unified School District
 p58
 g58
 tp59
-(VLivermore High School
+(VGranada High School
 p60
 g60
 tp61
-(VNew Haven Unified School District (Union City and south Hayward)\u000a\u000aConley-Caraballo High School
+(VLivermore High School
 p62
+g62
+tp63
+(VNew Haven Unified School District (Union City and south Hayward)\u000a\u000aConley-Caraballo High School
+p64
 VNew Haven Unified School District (Union City and south Hayward)\u000a\u000aConley-Caraballo High School
-p63
-tp64
-(VConley-Caraballo High School
 p65
-g65
 tp66
-(VJames Logan High School
+(VConley-Caraballo High School
 p67
 g67
 tp68
-(VNewark Unified School District
+(VJames Logan High School
 p69
 g69
 tp70
-(VNewark Memorial High School
+(VNewark Unified School District
 p71
 g71
 tp72
-(VOakland Unified School District
+(VNewark Memorial High School
 p73
 g73
 tp74
-(VBay Area Technology School (charter school)
+(VOakland Unified School District
 p75
 g75
 tp76
-(VCastlemont Community of Small Schools (previously Castlemont Senior High School)
+(VBay Area Technology School (charter school)
 p77
 g77
 tp78
-(VFremont Federation of High Schools (previously Fremont Senior High School)
+(VCastlemont Community of Small Schools (previously Castlemont Senior High School)
 p79
 g79
 tp80
-(VMcClymonds Educational Complex (previously McClymonds High School)
+(VFremont Federation of High Schools (previously Fremont Senior High School)
 p81
 g81
 tp82
-(VOakland High School
+(VMcClymonds Educational Complex (previously McClymonds High School)
 p83
 g83
 tp84
-(VOakland International High School
+(VOakland High School
 p85
 g85
 tp86
-(VOakland Military Institute (charter school)
+(VOakland International High School
 p87
 g87
 tp88
-(VOakland School for the Arts
+(VOakland Military Institute (charter school)
 p89
 g89
 tp90
-(VOakland Technical High School
+(VOakland School for the Arts
 p91
 g91
 tp92
-(VSkyline High School
+(VOakland Technical High School
 p93
 g93
 tp94
-(VUniversity Preparatory Charter Academy
+(VSkyline High School
 p95
 g95
 tp96
-(VPiedmont Unified School District
+(VUniversity Preparatory Charter Academy
 p97
 g97
 tp98
-(VMillennium High School
+(VPiedmont Unified School District
 p99
 g99
 tp100
-(VPiedmont High School
+(VMillennium High School
 p101
 g101
 tp102
-(VPleasanton Unified School District
+(VPiedmont High School
 p103
 g103
 tp104
-(VAmador Valley High School
+(VPleasanton Unified School District
 p105
 g105
 tp106
-(VFoothill High School
+(VAmador Valley High School
 p107
 g107
 tp108
-(VHorizon High School
+(VFoothill High School
 p109
 g109
 tp110
-(VVillage High School
+(VHorizon High School
 p111
 g111
 tp112
-(VSan Leandro Unified School District
+(VVillage High School
 p113
 g113
 tp114
-(VLincoln High School (continuation)
+(VSan Leandro Unified School District
 p115
 g115
 tp116
-(VSan Leandro High School
+(VLincoln High School (continuation)
 p117
 g117
 tp118
-(VSan Lorenzo Unified School District
+(VSan Leandro High School
 p119
 g119
 tp120
-(VArroyo High School
+(VSan Lorenzo Unified School District
 p121
 g121
 tp122
-(VSan Lorenzo High School
+(VArroyo High School
 p123
 g123
 tp124
-(VRoman Catholic Diocese of Oakland
+(VSan Lorenzo High School
 p125
 g125
 tp126
-(VBishop O'Dowd High School
+(VRoman Catholic Diocese of Oakland
 p127
 g127
 tp128
-(VHoly Names High School
+(VBishop O'Dowd High School
 p129
 g129
 tp130
-(VMoreau Catholic High School
+(VHoly Names High School
 p131
 g131
 tp132
-(VSt. Elizabeth High School
+(VMoreau Catholic High School
 p133
 g133
 tp134
-(VSt. Joseph Notre Dame High School
+(VSt. Elizabeth High School
 p135
 g135
 tp136
-(VSt. Mary's College High School
+(VSt. Joseph Notre Dame High School
 p137
 g137
 tp138
-(VAlameda Community Learning Center
+(VSt. Mary's College High School
 p139
 g139
 tp140
-(VAverroes High School
+(VAlameda Community Learning Center
 p141
 g141
 tp142
-(VChinese Christian Schools
+(VAverroes High School
 p143
 g143
 tp144
-(VThe College Preparatory School
+(VChinese Christian Schools
 p145
 g145
 tp146
-(VEmery High School
+(VThe College Preparatory School
 p147
 g147
 tp148
-(VHead-Royce School
+(VEmery High School
 p149
 g149
 tp150
-(VMaybeck High School
+(VHead-Royce School
 p151
 g151
 tp152
-(VBear Valley High School
+(VMaybeck High School
 p153
 g153
 tp154
-(VWoodfords High School
+(VBear Valley High School
 p155
 g155
 tp156
-(VAmador High School
+(VWoodfords High School
 p157
 g157
 tp158
-(VArgonaut High School
+(VAmador High School
 p159
 g159
 tp160
-(VBiggs High School
+(VArgonaut High School
 p161
 g161
 tp162
-(VChico High School
+(VBiggs High School
 p163
 g163
 tp164
-(VCouture High School
+(VChico High School
 p165
 g165
 tp166
-(VDurham High School
+(VCouture High School
 p167
 g167
 tp168
-(VGridley High School
+(VDurham High School
 p169
 g169
 tp170
-(VLas Plumas High School
+(VGridley High School
 p171
 g171
 tp172
-(VOroville High School
+(VLas Plumas High School
 p173
 g173
 tp174
-(VParadise High School
+(VOroville High School
 p175
 g175
 tp176
-(VPleasant Valley High School
+(VParadise High School
 p177
 g177
 tp178
-(VArnold High School
+(VPleasant Valley High School
 p179
 g179
 tp180
-(VBret Harte Union High School
+(VArnold High School
 p181
 g181
 tp182
-(VCalaveras High School
+(VBret Harte Union High School
 p183
 g183
 tp184
-(VColusa High School
+(VCalaveras High School
 p185
 g185
 tp186
-(VMaxwell High School
+(VColusa High School
 p187
 g187
 tp188
-(VPierce High School
+(VMaxwell High School
 p189
 g189
 tp190
-(VAcalanes Union High School District\u000a\u000aAcalanes High School
+(VPierce High School
 p191
+g191
+tp192
+(VAcalanes Union High School District\u000a\u000aAcalanes High School
+p193
 VAcalanes Union High School District\u000a\u000aAcalanes High School
-p192
-tp193
-(VAcalanes High School
 p194
-g194
 tp195
-(VCampolindo High School
+(VAcalanes High School
 p196
 g196
 tp197
-(VLas Lomas High School
+(VCampolindo High School
 p198
 g198
 tp199
-(VMiramonte High School
+(VLas Lomas High School
 p200
 g200
 tp201
-(VAntioch Unified School District\u000a\u000aAntioch High School
+(VMiramonte High School
 p202
+g202
+tp203
+(VAntioch Unified School District\u000a\u000aAntioch High School
+p204
 VAntioch Unified School District\u000a\u000aAntioch High School
-p203
-tp204
-(VAntioch High School
 p205
-g205
 tp206
-(VDeer Valley High School
+(VAntioch High School
 p207
 g207
 tp208
-(VDozier-Libbey Medical High School
+(VDeer Valley High School
 p209
 g209
 tp210
-(VJohn Swett Unified School District\u000a\u000aJohn Swett High School
+(VDozier-Libbey Medical High School
 p211
+g211
+tp212
+(VJohn Swett Unified School District\u000a\u000aJohn Swett High School
+p213
 VJohn Swett Unified School District\u000a\u000aJohn Swett High School
-p212
-tp213
-(VJohn Swett High School
 p214
-g214
 tp215
-(VWillow High School
+(VJohn Swett High School
 p216
 g216
 tp217
-(VMount Diablo Unified School District\u000a\u000aClayton Valley High School
+(VWillow High School
 p218
+g218
+tp219
+(VMount Diablo Unified School District\u000a\u000aClayton Valley High School
+p220
 VMount Diablo Unified School District\u000a\u000aClayton Valley High School
-p219
-tp220
-(VClayton Valley High School
 p221
-g221
 tp222
-(VCollege Park High School
+(VClayton Valley High School
 p223
 g223
 tp224
-(VConcord High School
+(VCollege Park High School
 p225
 g225
 tp226
-(VMount Diablo High School
+(VConcord High School
 p227
 g227
 tp228
-(VNorthgate High School
+(VMount Diablo High School
 p229
 g229
 tp230
-(VYgnacio Valley High School
+(VNorthgate High School
 p231
 g231
 tp232
-(VWest Contra Costa Unified School District\u000a\u000aDe Anza High School
+(VYgnacio Valley High School
 p233
+g233
+tp234
+(VWest Contra Costa Unified School District\u000a\u000aDe Anza High School
+p235
 VWest Contra Costa Unified School District\u000a\u000aDe Anza High School
-p234
-tp235
-(VDe Anza High School
 p236
-g236
 tp237
-(VEl Cerrito High School
+(VDe Anza High School
 p238
 g238
 tp239
-(VKennedy High School
+(VEl Cerrito High School
 p240
 g240
 tp241
-(VMiddle College High School (San Pablo)
+(VKennedy High School
 p242
 g242
 tp243
-(VPinole Valley High School
+(VMiddle College High School (San Pablo)
 p244
 g244
 tp245
-(VRichmond High School
+(VPinole Valley High School
 p246
 g246
 tp247
-(VAlhambra High School
+(VRichmond High School
 p248
 g248
 tp249
-(VThe Athenian School
+(VAlhambra High School
 p250
 g250
 tp251
-(VBentley School
+(VThe Athenian School
 p252
 g252
 tp253
-(VBerean Christian High School
+(VBentley School
 p254
 g254
 tp255
-(VCalifornia High School
+(VBerean Christian High School
 p256
 g256
 tp257
-(VCarondelet High School
+(VCalifornia High School
 p258
 g258
 tp259
-(VChrist the King Catholic School
+(VCarondelet High School
 p260
 g260
 tp261
-(VDe La Salle High School
+(VChrist the King Catholic School
 p262
 g262
 tp263
-(VDelta Christian Junior/Senior High School
+(VDe La Salle High School
 p264
 g264
 tp265
-(VDougherty Valley High School
+(VDelta Christian Junior/Senior High School
 p266
 g266
 tp267
-(VEl Sobrante Christian School
+(VDougherty Valley High School
 p268
 g268
 tp269
-(VFreedom High School
+(VEl Sobrante Christian School
 p270
 g270
 tp271
-(VHeritage High School
+(VFreedom High School
 p272
 g272
 tp273
-(VHolden High School
+(VHeritage High School
 p274
 g274
 tp275
-(VIndependence High School
+(VHolden High School
 p276
 g276
 tp277
-(VLiberty High School
+(VIndependence High School
 p278
 g278
 tp279
-(VMonte Vista High School
+(VLiberty High School
 p280
 g280
 tp281
-(VOrinda Academy
+(VMonte Vista High School
 p282
 g282
 tp283
-(VPittsburg High School
+(VOrinda Academy
 p284
 g284
 tp285
-(VPleasant Hill Adventist Academy
+(VPittsburg High School
 p286
 g286
 tp287
-(VSalesian High School
+(VPleasant Hill Adventist Academy
 p288
 g288
 tp289
-(VSan Ramon Valley High School
+(VSalesian High School
 p290
 g290
 tp291
-(VDel Norte High School
+(VSan Ramon Valley High School
 p292
 g292
 tp293
-(VEl Dorado Adventist School
+(VDel Norte High School
 p294
 g294
 tp295
-(VEl Dorado High School
+(VEl Dorado Adventist School
 p296
 g296
 tp297
-(VGolden Sierra High School
+(VEl Dorado High School
 p298
 g298
 tp299
-(VMuir Charter School
+(VGolden Sierra High School
 p300
 g300
 tp301
-(VOak Ridge High School
+(VMuir Charter School
 p302
 g302
 tp303
-(VPonderosa High School
+(VOak Ridge High School
 p304
 g304
 tp305
-(VShenandoah High School
+(VPonderosa High School
 p306
 g306
 tp307
-(VSouth Tahoe High School
+(VShenandoah High School
 p308
 g308
 tp309
-(VUnion Mine High School
+(VSouth Tahoe High School
 p310
 g310
 tp311
-(VVista High School
+(VUnion Mine High School
 p312
 g312
 tp313
-(VClovis Unified School District\u000a\u000aBuchanan High School
+(VVista High School
 p314
+g314
+tp315
+(VClovis Unified School District\u000a\u000aBuchanan High School
+p316
 VClovis Unified School District\u000a\u000aBuchanan High School
-p315
-tp316
-(VBuchanan High School
 p317
-g317
 tp318
-(VClovis East High School
+(VBuchanan High School
 p319
 g319
 tp320
-(VClovis High School
+(VClovis East High School
 p321
 g321
 tp322
-(VClovis North High School
+(VClovis High School
 p323
 g323
 tp324
-(VClovis West High School
+(VClovis North High School
 p325
 g325
 tp326
-(VFresno Unified School District\u000a\u000aBullard High School
+(VClovis West High School
 p327
+g327
+tp328
+(VFresno Unified School District\u000a\u000aBullard High School
+p329
 VFresno Unified School District\u000a\u000aBullard High School
-p328
-tp329
-(VBullard High School
 p330
-g330
 tp331
-(VThe Center for Advanced Research and Technology
+(VBullard High School
 p332
 g332
 tp333
-(VErma Duncan Polytechnical High School
+(VThe Center for Advanced Research and Technology
 p334
 g334
 tp335
-(VEdison High School
+(VErma Duncan Polytechnical High School
 p336
 g336
 tp337
-(VFresno High School
+(VEdison High School
 p338
 g338
 tp339
-(VHerbert Hoover High School
+(VFresno High School
 p340
 g340
 tp341
-(VMcLane High School
+(VHerbert Hoover High School
 p342
 g342
 tp343
-(VRoosevelt High School
+(VMcLane High School
 p344
 g344
 tp345
-(VSunnyside High School
+(VRoosevelt High School
 p346
 g346
 tp347
-(VCaruthers High School
+(VSunnyside High School
 p348
 g348
 tp349
-(VCentral High School
+(VCaruthers High School
 p350
 g350
 tp351
-(VDewolf West High School
+(VCentral High School
 p352
 g352
 tp353
-(VFirebaugh High School
+(VDewolf West High School
 p354
 g354
 tp355
-(VFowler High School
+(VFirebaugh High School
 p356
 g356
 tp357
-(VFresno Prep Academy
+(VFowler High School
 p358
 g358
 tp359
-(VImmanuel High School
+(VFresno Prep Academy
 p360
 g360
 tp361
-(VKerman High School
+(VImmanuel High School
 p362
 g362
 tp363
-(VKingsburg High School
+(VKerman High School
 p364
 g364
 tp365
-(VLaton High School
+(VKingsburg High School
 p366
 g366
 tp367
-(VMendota High School
+(VLaton High School
 p368
 g368
 tp369
-(VNew Millennium Charter School
+(VMendota High School
 p370
 g370
 tp371
-(VReedley High School
+(VNew Millennium Charter School
 p372
 g372
 tp373
-(VRiverdale High School
+(VReedley High School
 p374
 g374
 tp375
-(VSan Joaquin Memorial High School
+(VRiverdale High School
 p376
 g376
 tp377
-(VSanger High School
+(VSan Joaquin Memorial High School
 p378
 g378
 tp379
-(VSelma High School
+(VSanger High School
 p380
 g380
 tp381
-(VSierra High School
+(VSelma High School
 p382
 g382
 tp383
-(VUniversity High School
+(VSierra High School
 p384
 g384
 tp385
-(VWashington Union High School
+(VUniversity High School
 p386
 g386
 tp387
-(VElk Creek Junior-Senior High School
+(VWashington Union High School
 p388
 g388
 tp389
-(VHamilton Union High School
+(VElk Creek Junior-Senior High School
 p390
 g390
 tp391
-(VOrland High School
+(VHamilton Union High School
 p392
 g392
 tp393
-(VPrinceton Junior-Senior High School
+(VOrland High School
 p394
 g394
 tp395
-(VWillows High School
+(VPrinceton Junior-Senior High School
 p396
 g396
 tp397
-(VAcademy of the Redwoods Early college high school
+(VWillows High School
 p398
 g398
 tp399
-(VArcata High School
+(VAcademy of the Redwoods Early college high school
 p400
 g400
 tp401
-(VEureka High School
+(VArcata High School
 p402
 g402
 tp403
-(VFerndale High School
+(VEureka High School
 p404
 g404
 tp405
-(VFortuna Union High School
+(VFerndale High School
 p406
 g406
 tp407
-(VHoopa Valley High School
+(VFortuna Union High School
 p408
 g408
 tp409
-(VHumboldt Bay High School
+(VHoopa Valley High School
 p410
 g410
 tp411
-(VMcKinleyville High School
+(VHumboldt Bay High School
 p412
 g412
 tp413
-(VSt. Bernard's High School
+(VMcKinleyville High School
 p414
 g414
 tp415
-(VSouth Fork High School
+(VSt. Bernard's High School
 p416
 g416
 tp417
-(VBrawley (renamed) North County High School
+(VSouth Fork High School
 p418
 g418
 tp419
-(VBrawley Union High School
+(VBrawley (renamed) North County High School
 p420
 g420
 tp421
-(VCalexico High School
+(VBrawley Union High School
 p422
 g422
 tp423
-(VCentral Union High School
+(VCalexico High School
 p424
 g424
 tp425
-(VDe Anza High School (continuation)
+(VCentral Union High School
 p426
 g426
 tp427
-(VHoltville High School
+(VDe Anza High School (continuation)
 p428
 g428
 tp429
-(VImperial High School
+(VHoltville High School
 p430
 g430
 tp431
-(VSan Pasqual Valley High School
+(VImperial High School
 p432
 g432
 tp433
-(VSouthwest High School
+(VSan Pasqual Valley High School
 p434
 g434
 tp435
-(VWest Shores High School
+(VSouthwest High School
 p436
 g436
 tp437
-(VBig Pine High School
+(VWest Shores High School
 p438
 g438
 tp439
-(VBishop High School
+(VBig Pine High School
 p440
 g440
 tp441
-(VDeath Valley Academy
+(VBishop High School
 p442
 g442
 tp443
-(VLone Pine High School
+(VDeath Valley Academy
 p444
 g444
 tp445
-(VOwens Valley High School
+(VLone Pine High School
 p446
 g446
 tp447
-(VArvin High School
+(VOwens Valley High School
 p448
 g448
 tp449
-(VBakersfield Christian High School
+(VArvin High School
 p450
 g450
 tp451
-(VBakersfield High School
+(VBakersfield Christian High School
 p452
 g452
 tp453
-(VBoron Junior-Senior High School
+(VBakersfield High School
 p454
 g454
 tp455
-(VBurroughs High School
+(VBoron Junior-Senior High School
 p456
 g456
 tp457
-(VCentennial High School
+(VBurroughs High School
 p458
 g458
 tp459
-(VCentral Valley High School
+(VCentennial High School
 p460
 g460
 tp461
-(VCesar E. Chavez High School
+(VCentral Valley High School
 p462
 g462
 tp463
-(VDelano High School
+(VCesar E. Chavez High School
 p464
 g464
 tp465
-(VDesert Junior/Senior High School
+(VDelano High School
 p466
 g466
 tp467
-(VEast Bakersfield High School
+(VDesert Junior/Senior High School
 p468
 g468
 tp469
-(VFoothill High School
+(VEast Bakersfield High School
 p470
 g470
 tp471
-(VFrazier Mountain High School
+(VFoothill High School
 p472
 g472
 tp473
-(VFrontier High School
+(VFrazier Mountain High School
 p474
 g474
 tp475
-(VGarces Memorial High School
+(VFrontier High School
 p476
 g476
 tp477
-(VGolden Valley High School
+(VGarces Memorial High School
 p478
 g478
 tp479
-(VHighland High School
+(VGolden Valley High School
 p480
 g480
 tp481
-(VIndependence High School
+(VHighland High School
 p482
 g482
 tp483
-(VKern Valley High School
+(VIndependence High School
 p484
 g484
 tp485
-(VLiberty High School
+(VKern Valley High School
 p486
 g486
 tp487
-(VMaricopa High School
+(VLiberty High School
 p488
 g488
 tp489
-(VMcFarland High School
+(VMaricopa High School
 p490
 g490
 tp491
-(VMira Monte High School
+(VMcFarland High School
 p492
 g492
 tp493
-(VMojave High School 1954
+(VMira Monte High School
 p494
 g494
 tp495
-(VNorth High School
+(VMojave High School 1954
 p496
 g496
 tp497
-(VRidgeview High School
+(VNorth High School
 p498
 g498
 tp499
-(VRobert F. Kennedy High School
+(VRidgeview High School
 p500
 g500
 tp501
-(VRosamond High School
+(VRobert F. Kennedy High School
 p502
 g502
 tp503
-(VShafter High School
+(VRosamond High School
 p504
 g504
 tp505
-(VSouth High School
+(VShafter High School
 p506
 g506
 tp507
-(VStockdale High School
+(VSouth High School
 p508
 g508
 tp509
-(VTaft Union High School
+(VStockdale High School
 p510
 g510
 tp511
-(VTehachapi High School
+(VTaft Union High School
 p512
 g512
 tp513
-(VWasco High School
+(VTehachapi High School
 p514
 g514
 tp515
-(VWest High School
+(VWasco High School
 p516
 g516
 tp517
-(VAvenal High School
+(VWest High School
 p518
 g518
 tp519
-(VCorcoran High School
+(VAvenal High School
 p520
 g520
 tp521
-(VHanford High School
+(VCorcoran High School
 p522
 g522
 tp523
-(VHanford West High School
+(VHanford High School
 p524
 g524
 tp525
-(VEarl F. Johnson Continuation School
+(VHanford West High School
 p526
 g526
 tp527
-(VKings Community School
+(VEarl F. Johnson Continuation School
 p528
 g528
 tp529
-(VLemoore High School
+(VKings Community School
 p530
 g530
 tp531
-(VSierra Pacific High School
+(VLemoore High School
 p532
 g532
 tp533
-(VClear Lake High School
+(VSierra Pacific High School
 p534
 g534
 tp535
-(VIntermountain High School
+(VClear Lake High School
 p536
 g536
 tp537
-(VKelseyville High School
+(VIntermountain High School
 p538
 g538
 tp539
-(VLower Lake High School
+(VKelseyville High School
 p540
 g540
 tp541
-(VMiddletown High School
+(VLower Lake High School
 p542
 g542
 tp543
-(VUpper Lake High School
+(VMiddletown High School
 p544
 g544
 tp545
-(VBig Valley High School
+(VUpper Lake High School
 p546
 g546
 tp547
-(VHerlong High School
+(VBig Valley High School
 p548
 g548
 tp549
-(VLassen High School
+(VHerlong High School
 p550
 g550
 tp551
-(VWestwood High School
+(VLassen High School
 p552
 g552
 tp553
-(VBishop Alemany High School[1]
+(VWestwood High School
 p554
 g554
 tp555
-(VBishop Conaty-Our Lady of Loretto High School[2] (Girls)
+(VBishop Alemany High School[1]
 p556
 g556
 tp557
-(VBishop Mora Salesian High School[3] (Boys)
+(VBishop Conaty-Our Lady of Loretto High School[2] (Girls)
 p558
 g558
 tp559
-(VCathedral High School[4] (Boys)
+(VBishop Mora Salesian High School[3] (Boys)
 p560
 g560
 tp561
-(VChaminade College Preparatory School[5]
+(VCathedral High School[4] (Boys)
 p562
 g562
 tp563
-(VCrespi Carmelite High School[6] (Boys)
+(VChaminade College Preparatory School[5]
 p564
 g564
 tp565
-(VLouisville High School[7] (Girls)
+(VCrespi Carmelite High School[6] (Boys)
 p566
 g566
 tp567
-(VLoyola High School[8] (Boys)
+(VLouisville High School[7] (Girls)
 p568
 g568
 tp569
-(VImmaculate Heart High School[9] (Girls)
+(VLoyola High School[8] (Boys)
 p570
 g570
 tp571
-(VMary Star of the Sea High School[10]
+(VImmaculate Heart High School[9] (Girls)
 p572
 g572
 tp573
-(VMarymount High School[11] (Girls)
+(VMary Star of the Sea High School[10]
 p574
 g574
 tp575
-(VNotre Dame Academy[12] (Girls)
+(VMarymount High School[11] (Girls)
 p576
 g576
 tp577
-(VNotre Dame High School[13]
+(VNotre Dame Academy[12] (Girls)
 p578
 g578
 tp579
-(VSacred Heart High School[14] (Girls)
+(VNotre Dame High School[13]
 p580
 g580
 tp581
-(VSt. Bernard High School[15]
+(VSacred Heart High School[14] (Girls)
 p582
 g582
 tp583
-(VSt. Genevieve High School[16]
+(VSt. Bernard High School[15]
 p584
 g584
 tp585
-(VVerbum Dei High School[17] (Boys)
+(VSt. Genevieve High School[16]
 p586
 g586
 tp587
-(VAssurance Learning Academy (charter)
+(VVerbum Dei High School[17] (Boys)
 p588
 g588
 tp589
-(VRamona Convent Secondary School[18] (Girls)
+(VAssurance Learning Academy (charter)
 p590
 g590
 tp591
-(VSt. John Bosco High School[19] (Boys)
+(VRamona Convent Secondary School[18] (Girls)
 p592
 g592
 tp593
-(VBellarmine-Jefferson High School[20]
+(VSt. John Bosco High School[19] (Boys)
 p594
 g594
 tp595
-(VProvidence High School[21]
+(VBellarmine-Jefferson High School[20]
 p596
 g596
 tp597
-(VSt. Pius X St. Matthias Academy[22] (Coed)
+(VProvidence High School[21]
 p598
 g598
 tp599
-(VJunípero Serra High School[23]
+(VSt. Pius X St. Matthias Academy[22] (Coed)
 p600
 g600
 tp601
-(VHoly Family High School[24] (Girls)
+(VJunípero Serra High School[23]
 p602
 g602
 tp603
-(VSt. Lucy's Priory High School[25] (Girls)
+(VHoly Family High School[24] (Girls)
 p604
 g604
 tp605
-(VSt. Mary's Academy[26] (Girls)
+(VSt. Lucy's Priory High School[25] (Girls)
 p606
 g606
 tp607
-(VFlintridge Sacred Heart Academy[27] (Girls)
+(VSt. Mary's Academy[26] (Girls)
 p608
 g608
 tp609
-(VSt. Francis High School[28] (Boys)
+(VFlintridge Sacred Heart Academy[27] (Girls)
 p610
 g610
 tp611
-(VBishop Amat Memorial High School[29]
+(VSt. Francis High School[28] (Boys)
 p612
 g612
 tp613
-(VSt. Joseph High School[31] (Girls)
+(VBishop Amat Memorial High School[29]
 p614
 g614
 tp615
-(VParaclete High School[32]
+(VSt. Joseph High School[31] (Girls)
 p616
 g616
 tp617
-(VSt. Anthony High School[33]
+(VParaclete High School[32]
 p618
 g618
 tp619
-(VCantwell-Sacred Heart of Mary High School[34]
+(VSt. Anthony High School[33]
 p620
 g620
 tp621
-(VLa Salle High School[35]
+(VCantwell-Sacred Heart of Mary High School[34]
 p622
 g622
 tp623
-(VMayfield Senior School of the Holy Child Jesus[36] (Girls)
+(VLa Salle High School[35]
 p624
 g624
 tp625
-(VSt. Monica Academy[37]
+(VMayfield Senior School of the Holy Child Jesus[36] (Girls)
 p626
 g626
 tp627
-(VPomona Catholic High School[38] (Girls)
+(VSt. Monica Academy[37]
 p628
 g628
 tp629
-(VDon Bosco Technical Institute[39] (Boys)
+(VPomona Catholic High School[38] (Girls)
 p630
 g630
 tp631
-(VSan Gabriel Mission High School[40] (Girls)
+(VDon Bosco Technical Institute[39] (Boys)
 p632
 g632
 tp633
-(VSt. Paul High School[41]
+(VSan Gabriel Mission High School[40] (Girls)
 p634
 g634
 tp635
-(VSt. Monica High School[42]
+(VSt. Paul High School[41]
 p636
 g636
 tp637
-(VAlverno High School[43] (Girls)
+(VSt. Monica High School[42]
 p638
 g638
 tp639
-(VBishop Montgomery High School[44]
+(VAlverno High School[43] (Girls)
 p640
 g640
 tp641
-(VBethel Christian High School
+(VBishop Montgomery High School[44]
 p642
 g642
 tp643
-(VCampbell Hall School
+(VBethel Christian High School
 p644
 g644
 tp645
-(VDesert Christian High School
+(VCampbell Hall School
 p646
 g646
 tp647
-(VFirst Lutheran High School
+(VDesert Christian High School
 p648
 g648
 tp649
-(VFirst Presbyterian School
+(VFirst Lutheran High School
 p650
 g650
 tp651
-(VGlendale Adventist Academy
+(VFirst Presbyterian School
 p652
 g652
 tp653
-(VHillcrest Christian School
+(VGlendale Adventist Academy
 p654
 g654
 tp655
-(VJudson International School
+(VHillcrest Christian School
 p656
 g656
 tp657
-(VLighthouse Christian Academy
+(VJudson International School
 p658
 g658
 tp659
-(VLos Angeles Adventist Academy
+(VLighthouse Christian Academy
 p660
 g660
 tp661
-(VLos Angeles Baptist High School
+(VLos Angeles Adventist Academy
 p662
 g662
 tp663
-(VLos Angeles Lutheran High School
+(VLos Angeles Baptist High School
 p664
 g664
 tp665
-(VLutheran High School
+(VLos Angeles Lutheran High School
 p666
 g666
 tp667
-(VMaranatha High School
+(VLutheran High School
 p668
 g668
 tp669
-(VOaks Christian High School
+(VMaranatha High School
 p670
 g670
 tp671
-(VPacific Christian on the Hill
+(VOaks Christian High School
 p672
 g672
 tp673
-(VPilgrim School
+(VPacific Christian on the Hill
 p674
 g674
 tp675
-(VPacific Lutheran High School
+(VPilgrim School
 p676
 g676
 tp677
-(VPacifica Christian High School
+(VPacific Lutheran High School
 p678
 g678
 tp679
-(VSan Gabriel Adventist Academy
+(VPacifica Christian High School
 p680
 g680
 tp681
-(VSanta Clarita Christian School
+(VSan Gabriel Adventist Academy
 p682
 g682
 tp683
-(VSouth Bay Lutheran High School
+(VSanta Clarita Christian School
 p684
 g684
 tp685
-(VTrinity Lutheran Junior/Senior School
+(VSouth Bay Lutheran High School
 p686
 g686
 tp687
-(VValley Christian High School
+(VTrinity Lutheran Junior/Senior School
 p688
 g688
 tp689
-(VVillage Christian Schools
+(VValley Christian High School
 p690
 g690
 tp691
-(VWest Los Angeles Baptist High School
+(VVillage Christian Schools
 p692
 g692
 tp693
-(VBais Chana High School (girls)
+(VWest Los Angeles Baptist High School
 p694
 g694
 tp695
-(VBais Yaakov of Los Angeles (girls)
+(VBais Chana High School (girls)
 p696
 g696
 tp697
-(VBnos Devorah High School (girls)
+(VBais Yaakov of Los Angeles (girls)
 p698
 g698
 tp699
-(VMesivta of Greater Los Angeles (boys)
+(VBnos Devorah High School (girls)
 p700
 g700
 tp701
-(VMesivta Birkas Yitzchok (boys)
+(VMesivta of Greater Los Angeles (boys)
 p702
 g702
 tp703
-(VMilken Community High School (mixed)
+(VMesivta Birkas Yitzchok (boys)
 p704
 g704
 tp705
-(VNetan Eli High School (boys)
+(VMilken Community High School (mixed)
 p706
 g706
 tp707
-(VNew Community Jewish High School (mixed)
+(VNetan Eli High School (boys)
 p708
 g708
 tp709
-(VOhr HaEmet Institute (girls)
+(VNew Community Jewish High School (mixed)
 p710
 g710
 tp711
-(VShalhevet High School (mixed)
+(VOhr HaEmet Institute (girls)
 p712
 g712
 tp713
-(VValley Torah High School (boys)
+(VShalhevet High School (mixed)
 p714
 g714
 tp715
-(VValley Torah Lintz High School (girls)
+(VValley Torah High School (boys)
 p716
 g716
 tp717
-(VYeshiva Gedolah School of Los Angeles/Michael Diller High School (boys)
+(VValley Torah Lintz High School (girls)
 p718
 g718
 tp719
-(VYeshiva University High School of Los Angeles (boys)
+(VYeshiva Gedolah School of Los Angeles/Michael Diller High School (boys)
 p720
 g720
 tp721
-(VYeshiva University High School of Los Angeles (girls)
+(VYeshiva University High School of Los Angeles (boys)
 p722
 g722
 tp723
-(VYeshiva Ohr Elchonon Chabad High School (boys)
+(VYeshiva University High School of Los Angeles (girls)
 p724
 g724
 tp725
-(VYeshiva High Tech
+(VYeshiva Ohr Elchonon Chabad High School (boys)
 p726
 g726
 tp727
-(VAdvanced Education Academy
+(VYeshiva High Tech
 p728
 g728
 tp729
-(VAGBU High School
+(VAdvanced Education Academy
 p730
 g730
 tp731
-(VAGBU Manoogian-Demirdjian School
+(VAGBU High School
 p732
 g732
 tp733
-(VAmerican University Preparatory School
+(VAGBU Manoogian-Demirdjian School
 p734
 g734
 tp735
-(VArcher School for Girls
+(VAmerican University Preparatory School
 p736
 g736
 tp737
-(VArmenian Mesrobian School
+(VArcher School for Girls
 p738
 g738
 tp739
-(VBeverly Hills Preparatory School
+(VArmenian Mesrobian School
 p740
 g740
 tp741
-(VBrentwood School
+(VBeverly Hills Preparatory School
 p742
 g742
 tp743
-(VBridges Academy
+(VBrentwood School
 p744
 g744
 tp745
-(VBuckley School
+(VBridges Academy
 p746
 g746
 tp747
-(VCrest View Academy
+(VBuckley School
 p748
 g748
 tp749
-(VCrossroads School
+(VCrest View Academy
 p750
 g750
 tp751
-(VDelphi Academy of Los Angeles
+(VCrossroads School
 p752
 g752
 tp753
-(VExcelsior School
+(VDelphi Academy of Los Angeles
 p754
 g754
 tp755
-(VFerrahian Armenian School
+(VExcelsior School
 p756
 g756
 tp757
-(VHarvard-Westlake School
+(VFerrahian Armenian School
 p758
 g758
 tp759
-(VLycée Français de Los Angeles
+(VHarvard-Westlake School
 p760
 g760
 tp761
-(VMarlborough School
+(VLycée Français de Los Angeles
 p762
 g762
 tp763
-(VOakwood School
+(VMarlborough School
 p764
 g764
 tp765
-(VOxford School
+(VOakwood School
 p766
 g766
 tp767
-(VPolytechnic School
+(VOxford School
 p768
 g768
 tp769
-(VRibet Academy
+(VPolytechnic School
 p770
 g770
 tp771
-(VRio Hondo Preparatory School
+(VRibet Academy
 p772
 g772
 tp773
-(VRose and Alex Pilibos Armenian School
+(VRio Hondo Preparatory School
 p774
 g774
 tp775
-(VRolling Hills Preparatory
+(VRose and Alex Pilibos Armenian School
 p776
 g776
 tp777
-(VSierra Canyon School
+(VRolling Hills Preparatory
 p778
 g778
 tp779
-(VSTEM3 Academy
+(VSierra Canyon School
 p780
 g780
 tp781
-(VTCA Arshag Dickranian Armenian School
+(VSTEM3 Academy
 p782
 g782
 tp783
-(VViewpoint School
+(VTCA Arshag Dickranian Armenian School
 p784
 g784
 tp785
-(VVillage Glen High School
+(VViewpoint School
 p786
 g786
 tp787
-(VVistamar School
+(VVillage Glen High School
 p788
 g788
 tp789
-(VThe Waverly School
+(VVistamar School
 p790
 g790
 tp791
-(VThe Webb Schools
+(VThe Waverly School
 p792
 g792
 tp793
-(VWestridge School for Girls
+(VThe Webb Schools
 p794
 g794
 tp795
-(VWildwood School
+(VWestridge School for Girls
 p796
 g796
 tp797
-(VWild Wood High School
+(VWildwood School
 p798
 g798
 tp799
-(VWindward School
+(VWild Wood High School
 p800
 g800
 tp801
-(VArtesia High School
+(VWindward School
 p802
 g802
 tp803
-(VCerritos High School
+(VArtesia High School
 p804
 g804
 tp805
-(VRichard Gahr High School
+(VCerritos High School
 p806
 g806
 tp807
-(VTracy High School
+(VRichard Gahr High School
 p808
 g808
 tp809
-(VGretchen Whitney High School
+(VTracy High School
 p810
 g810
 tp811
-(VAssurance Learning Academy (charter)
+(VGretchen Whitney High School
 p812
 g812
 tp813
-(VVasquez High School
+(VAssurance Learning Academy (charter)
 p814
 g814
 tp815
-(VAlhambra High School
+(VVasquez High School
 p816
 g816
 tp817
-(VMark Keppel High School
+(VAlhambra High School
 p818
 g818
 tp819
-(VSan Gabriel High School
+(VMark Keppel High School
 p820
 g820
 tp821
-(VAlliance Alice M. Baxter College-Ready High School
+(VSan Gabriel High School
 p822
 g822
 tp823
-(VCollege-Ready Academy High School#4
+(VAlliance Alice M. Baxter College-Ready High School
 p824
 g824
 tp825
-(VCollege-Ready Academy High School#6
+(VCollege-Ready Academy High School#4
 p826
 g826
 tp827
-(VCollege-Ready Math-Science School
+(VCollege-Ready Academy High School#6
 p828
 g828
 tp829
-(VGertz-Ressler Academy High School
+(VCollege-Ready Math-Science School
 p830
 g830
 tp831
-(VHeritage College-Ready Academy High School
+(VGertz-Ressler Academy High School
 p832
 g832
 tp833
-(VHuntington Park College-Ready High School
+(VHeritage College-Ready Academy High School
 p834
 g834
 tp835
-(VRichard Merkin Middle Academy
+(VHuntington Park College-Ready High School
 p836
 g836
 tp837
-(VAssurance Learning Academy (charter)
+(VRichard Merkin Middle Academy
 p838
 g838
 tp839
-(VAV Academy High School (charter)
+(VAssurance Learning Academy (charter)
 p840
 g840
 tp841
@@ -1678,548 +1678,548 @@ tp841
 p842
 g842
 tp843
-(VAV Learning Academy (charter)
+(VAV Academy High School (charter)
 p844
 g844
 tp845
-(VAntelope Valley High School
+(VAV Learning Academy (charter)
 p846
 g846
 tp847
-(VDesert Winds Continuation High School
+(VAntelope Valley High School
 p848
 g848
 tp849
-(VDesert Sands Charter High School
+(VDesert Winds Continuation High School
 p850
 g850
 tp851
-(VEastside High School
+(VDesert Sands Charter High School
 p852
 g852
 tp853
-(VHighland High School
+(VEastside High School
 p854
 g854
 tp855
-(VLancaster High School
+(VHighland High School
 p856
 g856
 tp857
-(VLittlerock High School
+(VLancaster High School
 p858
 g858
 tp859
-(VPalmdale High School
+(VLittlerock High School
 p860
 g860
 tp861
-(VPete Knight High School
+(VPalmdale High School
 p862
 g862
 tp863
-(VQuartz Hill High School
+(VPete Knight High School
 p864
 g864
 tp865
-(VR. Rex Parris Continuation High School
+(VQuartz Hill High School
 p866
 g866
 tp867
-(VArcadia High School
+(VR. Rex Parris Continuation High School
 p868
 g868
 tp869
-(VAzusa High School
+(VArcadia High School
 p870
 g870
 tp871
-(VGladstone High School
+(VAzusa High School
 p872
 g872
 tp873
-(VAgvania High
+(VGladstone High School
 p874
 g874
 tp875
-(VNorth Park Continuation School
+(VAgvania High
 p876
 g876
 tp877
-(VSierra Vista High School
+(VNorth Park Continuation School
 p878
 g878
 tp879
-(VBaldwin Park High School
+(VSierra Vista High School
 p880
 g880
 tp881
-(VBassett High School
+(VBaldwin Park High School
 p882
 g882
 tp883
-(VBellflower High School
+(VBassett High School
 p884
 g884
 tp885
-(VMayfair High School
+(VBellflower High School
 p886
 g886
 tp887
-(VSomerset High School
+(VMayfair High School
 p888
 g888
 tp889
-(VBeverly Hills High School
+(VSomerset High School
 p890
 g890
 tp891
-(VBonita High School
+(VBeverly Hills High School
 p892
 g892
 tp893
-(VSan Dimas High School
+(VBonita High School
 p894
 g894
 tp895
-(VJohn Burroughs High School
+(VSan Dimas High School
 p896
 g896
 tp897
-(VBurbank High School
+(VJohn Burroughs High School
 p898
 g898
 tp899
-(VHawthorne High School
+(VBurbank High School
 p900
 g900
 tp901
-(VLawndale High School
+(VHawthorne High School
 p902
 g902
 tp903
-(VLeuzinger High School
+(VLawndale High School
 p904
 g904
 tp905
-(VCharter Oak High School
+(VLeuzinger High School
 p906
 g906
 tp907
-(VClaremont High School
+(VCharter Oak High School
 p908
 g908
 tp909
-(VCentennial High School
+(VClaremont High School
 p910
 g910
 tp911
-(VCompton High School
+(VCentennial High School
 p912
 g912
 tp913
-(VDominguez High School
+(VCompton High School
 p914
 g914
 tp915
-(VCovina High School
+(VDominguez High School
 p916
 g916
 tp917
-(VNorthview High School
+(VCovina High School
 p918
 g918
 tp919
-(VSouth Hills High School
+(VNorthview High School
 p920
 g920
 tp921
-(VCulver City High School
+(VSouth Hills High School
 p922
 g922
 tp923
-(VColumbus High School
+(VCulver City High School
 p924
 g924
 tp925
-(VDowney High School
+(VColumbus High School
 p926
 g926
 tp927
-(VWarren High School
+(VDowney High School
 p928
 g928
 tp929
-(VDuarte High School
+(VWarren High School
 p930
 g930
 tp931
-(VArroyo High School
+(VDuarte High School
 p932
 g932
 tp933
-(VEl Monte High School
+(VArroyo High School
 p934
 g934
 tp935
-(VMountain View High School
+(VEl Monte High School
 p936
 g936
 tp937
-(VRosemead High School
+(VMountain View High School
 p938
 g938
 tp939
-(VSouth El Monte High School
+(VRosemead High School
 p940
 g940
 tp941
-(VEl Rancho High School
+(VSouth El Monte High School
 p942
 g942
 tp943
-(VEl Segundo High School
+(VEl Rancho High School
 p944
 g944
 tp945
-(VClark Magnet High School
+(VEl Segundo High School
 p946
 g946
 tp947
-(VCrescenta Valley High School
+(VClark Magnet High School
 p948
 g948
 tp949
-(VDaily High School
+(VCrescenta Valley High School
 p950
 g950
 tp951
-(VGlendale High School
+(VDaily High School
 p952
 g952
 tp953
-(VHerbert Hoover High School
+(VGlendale High School
 p954
 g954
 tp955
-(VGlendora High School
+(VHerbert Hoover High School
 p956
 g956
 tp957
-(VGlen A. Wilson High School
+(VGlendora High School
 p958
 g958
 tp959
-(VLa Puente High School
+(VGlen A. Wilson High School
 p960
 g960
 tp961
-(VLos Altos High School
+(VLa Puente High School
 p962
 g962
 tp963
-(VPuente Hills High School
+(VLos Altos High School
 p964
 g964
 tp965
-(VValley Alternative High School
+(VPuente Hills High School
 p966
 g966
 tp967
-(VWilliam Workman High School
+(VValley Alternative High School
 p968
 g968
 tp969
-(VCity Honors High School
+(VWilliam Workman High School
 p970
 g970
 tp971
-(VInglewood High School
+(VCity Honors High School
 p972
 g972
 tp973
-(VMorningside High School
+(VInglewood High School
 p974
 g974
 tp975
-(VAgoura High School
+(VMorningside High School
 p976
 g976
 tp977
-(VCalabasas High School
+(VAgoura High School
 p978
 g978
 tp979
-(VCabrillo High School
+(VCalabasas High School
 p980
 g980
 tp981
-(VCalifornia Academy of Math and Science (CAMS)\u000a[on the CSU Dominguez Hills campus]
+(VCabrillo High School
 p982
+g982
+tp983
+(VCalifornia Academy of Math and Science (CAMS)\u000a[on the CSU Dominguez Hills campus]
+p984
 VCalifornia Academy of Math and Science (CAMS)\u000a[on the CSU Dominguez Hills campus]
-p983
-tp984
-(VJordan High School
 p985
-g985
 tp986
-(VLakewood High School
+(VJordan High School
 p987
 g987
 tp988
-(VLong Beach Polytechnic High School
+(VLakewood High School
 p989
 g989
 tp990
-(VMillikan High School
+(VLong Beach Polytechnic High School
 p991
 g991
 tp992
-(VRenaissance High School for the Arts
+(VMillikan High School
 p993
 g993
 tp994
-(VWilson Classical High School
+(VRenaissance High School for the Arts
 p995
 g995
 tp996
-(VFirebaugh High School
+(VWilson Classical High School
 p997
 g997
 tp998
-(VLynwood High School
+(VFirebaugh High School
 p999
 g999
 tp1000
-(VMira Costa High School
+(VLynwood High School
 p1001
 g1001
 tp1002
-(VBell Gardens High School
+(VMira Costa High School
 p1003
 g1003
 tp1004
-(VMontebello High School
+(VBell Gardens High School
 p1005
 g1005
 tp1006
-(VSchurr High School
+(VMontebello High School
 p1007
 g1007
 tp1008
-(VApplied Technology Center
+(VSchurr High School
 p1009
 g1009
 tp1010
-(VMonrovia High School
+(VApplied Technology Center
 p1011
 g1011
 tp1012
-(VEl Camino High School
+(VMonrovia High School
 p1013
 g1013
 tp1014
-(VJohn Glenn High School
+(VEl Camino High School
 p1015
 g1015
 tp1016
-(VLa Mirada High School
+(VJohn Glenn High School
 p1017
 g1017
 tp1018
-(VNorwalk High School
+(VLa Mirada High School
 p1019
 g1019
 tp1020
-(VSoutheast Academy Military and Law Enforcement High School Norwalk
+(VNorwalk High School
 p1021
 g1021
 tp1022
-(VPalos Verdes High School
+(VSoutheast Academy Military and Law Enforcement High School Norwalk
 p1023
 g1023
 tp1024
-(VParamount High School
+(VPalos Verdes High School
 p1025
 g1025
 tp1026
-(VBlair International Baccalaureate School
+(VParamount High School
 p1027
 g1027
 tp1028
-(VMarshall Fundamental School
+(VBlair International Baccalaureate School
 p1029
 g1029
 tp1030
-(VMuir High School
+(VMarshall Fundamental School
 p1031
 g1031
 tp1032
-(VPasadena High School
+(VMuir High School
 p1033
 g1033
 tp1034
-(VDiamond Ranch High School
+(VPasadena High School
 p1035
 g1035
 tp1036
-(VFranklin High School
+(VDiamond Ranch High School
 p1037
 g1037
 tp1038
-(VGanesha High School
+(VFranklin High School
 p1039
 g1039
 tp1040
-(VGarey High School
+(VGanesha High School
 p1041
 g1041
 tp1042
-(VPomona High School
+(VGarey High School
 p1043
 g1043
 tp1044
-(VPalomares High School
+(VPomona High School
 p1045
 g1045
 tp1046
-(VVillage Academy High School at Indian Hill
+(VPalomares High School
 p1047
 g1047
 tp1048
-(VRedondo Union High School
+(VVillage Academy High School at Indian Hill
 p1049
 g1049
 tp1050
-(VJohn A. Rowland High School
+(VRedondo Union High School
 p1051
 g1051
 tp1052
-(VNogales High School
+(VJohn A. Rowland High School
 p1053
 g1053
 tp1054
-(VSantana High School
+(VNogales High School
 p1055
 g1055
 tp1056
-(VDel Mar High School
+(VSantana High School
 p1057
 g1057
 tp1058
-(VGabrielino High School
+(VDel Mar High School
 p1059
 g1059
 tp1060
-(VSan Marino High School
+(VGabrielino High School
 p1061
 g1061
 tp1062
-(VSanta Monica High School
+(VSan Marino High School
 p1063
 g1063
 tp1064
-(VOlympic High School
+(VSanta Monica High School
 p1065
 g1065
 tp1066
-(VSouth Pasadena High School
+(VOlympic High School
 p1067
 g1067
 tp1068
-(VTemple City High School
+(VSouth Pasadena High School
 p1069
 g1069
 tp1070
-(VTorrance High School
+(VTemple City High School
 p1071
 g1071
 tp1072
-(VNorth High School
+(VTorrance High School
 p1073
 g1073
 tp1074
-(VSouth High School
+(VNorth High School
 p1075
 g1075
 tp1076
-(VWest High School
+(VSouth High School
 p1077
 g1077
 tp1078
-(VKurt T. Shery High School
+(VWest High School
 p1079
 g1079
 tp1080
-(VWalnut High School
+(VKurt T. Shery High School
 p1081
 g1081
 tp1082
-(VDiamond Bar High School
+(VWalnut High School
 p1083
 g1083
 tp1084
-(VRon Hockwalt Academies
+(VDiamond Bar High School
 p1085
 g1085
 tp1086
-(VEdgewood High School
+(VRon Hockwalt Academies
 p1087
 g1087
 tp1088
-(VWest Covina High School
+(VEdgewood High School
 p1089
 g1089
 tp1090
-(VCalifornia High School
+(VWest Covina High School
 p1091
 g1091
 tp1092
-(VLa Serna High School
+(VCalifornia High School
 p1093
 g1093
 tp1094
-(VPioneer High School
+(VLa Serna High School
 p1095
 g1095
 tp1096
-(VSanta Fe High School
+(VPioneer High School
 p1097
 g1097
 tp1098
-(VWhittier High School
+(VSanta Fe High School
 p1099
 g1099
 tp1100
-(VAcademy of the Canyons
+(VWhittier High School
 p1101
 g1101
 tp1102
-(VCanyon High School
+(VAcademy of the Canyons
 p1103
 g1103
 tp1104
-(VGolden Valley High School
+(VCanyon High School
 p1105
 g1105
 tp1106
-(VValencia High School
+(VGolden Valley High School
 p1107
 g1107
 tp1108
-(VWest Ranch High School
+(VValencia High School
 p1109
 g1109
 tp1110
-(VWilliam S. Hart High School
+(VWest Ranch High School
 p1111
 g1111
 tp1112
-(VSaugus High School
+(VWilliam S. Hart High School
 p1113
 g1113
 tp1114
-(VAssurance Learning Academy (charter)
+(VSaugus High School
 p1115
 g1115
 tp1116
@@ -2227,43 +2227,43 @@ tp1116
 p1117
 g1117
 tp1118
-(VAnimo Inglewood Charter High School
+(VAssurance Learning Academy (charter)
 p1119
 g1119
 tp1120
-(VAnimo Leadership Charter High School
+(VAnimo Inglewood Charter High School
 p1121
 g1121
 tp1122
-(VAnimo Locke Technology High School
+(VAnimo Leadership Charter High School
 p1123
 g1123
 tp1124
-(VBooth High School
+(VAnimo Locke Technology High School
 p1125
 g1125
 tp1126
-(VCarter-Walters Preparatory School of the Arts
+(VBooth High School
 p1127
 g1127
 tp1128
-(VJack B. Clarke High School
+(VCarter-Walters Preparatory School of the Arts
 p1129
 g1129
 tp1130
-(VCrittenton High School
+(VJack B. Clarke High School
 p1131
 g1131
 tp1132
-(VDa Vinci Schools
+(VCrittenton High School
 p1133
 g1133
 tp1134
-(VDesert Sands Charter School
+(VDa Vinci Schools
 p1135
 g1135
 tp1136
-(VDesert Sands Charter High School
+(VDesert Sands Charter School
 p1137
 g1137
 tp1138
@@ -2279,51 +2279,51 @@ tp1142
 p1143
 g1143
 tp1144
-(VEnvironmental Charter High School
+(VDesert Sands Charter High School
 p1145
 g1145
 tp1146
-(VInternational Polytechnic High School
+(VEnvironmental Charter High School
 p1147
 g1147
 tp1148
-(VLos Angeles Complex Science Academy
+(VInternational Polytechnic High School
 p1149
 g1149
 tp1150
-(VLos Angeles County High School for the Arts
+(VLos Angeles Complex Science Academy
 p1151
 g1151
 tp1152
-(VMontclair College Preparatory School
+(VLos Angeles County High School for the Arts
 p1153
 g1153
 tp1154
-(VFred C. Nelles High School
+(VMontclair College Preparatory School
 p1155
 g1155
 tp1156
-(VPacific Learning Center Charter
+(VFred C. Nelles High School
 p1157
 g1157
 tp1158
-(VParamount High School Academy
+(VPacific Learning Center Charter
 p1159
 g1159
 tp1160
-(VPathway High School
+(VParamount High School Academy
 p1161
 g1161
 tp1162
-(VPromise Academy
+(VPathway High School
 p1163
 g1163
 tp1164
-(VSoledad Enrichment Action Charter School
+(VPromise Academy
 p1165
 g1165
 tp1166
-(VAssurance Academy
+(VSoledad Enrichment Action Charter School
 p1167
 g1167
 tp1168
@@ -2331,7 +2331,7 @@ tp1168
 p1169
 g1169
 tp1170
-(VAV Academy High School
+(VAssurance Academy
 p1171
 g1171
 tp1172
@@ -2339,11 +2339,11 @@ tp1172
 p1173
 g1173
 tp1174
-(VChowchilla High School
+(VAV Academy High School
 p1175
 g1175
 tp1176
-(VDesert Sands Charter High School
+(VChowchilla High School
 p1177
 g1177
 tp1178
@@ -2359,207 +2359,207 @@ tp1182
 p1183
 g1183
 tp1184
-(VEvergreen High School
+(VDesert Sands Charter High School
 p1185
 g1185
 tp1186
-(VGlacier Charter High School
+(VEvergreen High School
 p1187
 g1187
 tp1188
-(VMadera High School
+(VGlacier Charter High School
 p1189
 g1189
 tp1190
-(VMadera South High School
+(VMadera High School
 p1191
 g1191
 tp1192
-(VMinarets High School
+(VMadera South High School
 p1193
 g1193
 tp1194
-(VMountain Oaks High School
+(VMinarets High School
 p1195
 g1195
 tp1196
-(VPioneer Technical Center
+(VMountain Oaks High School
 p1197
 g1197
 tp1198
-(VYosemite High School
+(VPioneer Technical Center
 p1199
 g1199
 tp1200
-(VThe Branson School
+(VYosemite High School
 p1201
 g1201
 tp1202
-(VMarin Academy
+(VThe Branson School
 p1203
 g1203
 tp1204
-(VMarin Catholic High School
+(VMarin Academy
 p1205
 g1205
 tp1206
-(VMarin Oaks High School
+(VMarin Catholic High School
 p1207
 g1207
 tp1208
-(VNorth Bay Christian Academy
+(VMarin Oaks High School
 p1209
 g1209
 tp1210
-(VNovato High School
+(VNorth Bay Christian Academy
 p1211
 g1211
 tp1212
-(VRedwood High School
+(VNovato High School
 p1213
 g1213
 tp1214
-(VSan Domenico School
+(VRedwood High School
 p1215
 g1215
 tp1216
-(VSan Marin High School
+(VSan Domenico School
 p1217
 g1217
 tp1218
-(VSan Rafael High School
+(VSan Marin High School
 p1219
 g1219
 tp1220
-(VSir Francis Drake High School
+(VSan Rafael High School
 p1221
 g1221
 tp1222
-(VTamalpais High School
+(VSir Francis Drake High School
 p1223
 g1223
 tp1224
-(VTerra Linda High School
+(VTamalpais High School
 p1225
 g1225
 tp1226
-(VTomales High School
+(VTerra Linda High School
 p1227
 g1227
 tp1228
-(VMariposa County High School
+(VTomales High School
 p1229
 g1229
 tp1230
-(VYosemite Park High School
+(VMariposa County High School
 p1231
 g1231
 tp1232
-(VAnderson Valley Junior-Senior High School
+(VYosemite Park High School
 p1233
 g1233
 tp1234
-(VFort Bragg High School
+(VAnderson Valley Junior-Senior High School
 p1235
 g1235
 tp1236
-(VLaytonville High School
+(VFort Bragg High School
 p1237
 g1237
 tp1238
-(VLeggett Valley High School
+(VLaytonville High School
 p1239
 g1239
 tp1240
-(VMendocino High School
+(VLeggett Valley High School
 p1241
 g1241
 tp1242
-(VPacific Community Charter High School
+(VMendocino High School
 p1243
 g1243
 tp1244
-(VPoint Arena High School
+(VPacific Community Charter High School
 p1245
 g1245
 tp1246
-(VPotter Valley High School
+(VPoint Arena High School
 p1247
 g1247
 tp1248
-(VRedwood Academy of Ukiah
+(VPotter Valley High School
 p1249
 g1249
 tp1250
-(VRound Valley High School
+(VRedwood Academy of Ukiah
 p1251
 g1251
 tp1252
-(VSouth Coast High School
+(VRound Valley High School
 p1253
 g1253
 tp1254
-(VUkiah High School
+(VSouth Coast High School
 p1255
 g1255
 tp1256
-(VYokayo Valley Charter High School
+(VUkiah High School
 p1257
 g1257
 tp1258
-(VAtwater High School
+(VYokayo Valley Charter High School
 p1259
 g1259
 tp1260
-(VBuhach Colony High School
+(VAtwater High School
 p1261
 g1261
 tp1262
-(VDelhi High School
+(VBuhach Colony High School
 p1263
 g1263
 tp1264
-(VDos Palos High School
+(VDelhi High School
 p1265
 g1265
 tp1266
-(VGolden Valley High School
+(VDos Palos High School
 p1267
 g1267
 tp1268
-(VGustine High School
+(VGolden Valley High School
 p1269
 g1269
 tp1270
-(VHilmar High School
+(VGustine High School
 p1271
 g1271
 tp1272
-(VLe Grand High School
+(VHilmar High School
 p1273
 g1273
 tp1274
-(VLivingston High School
+(VLe Grand High School
 p1275
 g1275
 tp1276
-(VLos Banos High School
+(VLivingston High School
 p1277
 g1277
 tp1278
-(VMerced High School
+(VLos Banos High School
 p1279
 g1279
 tp1280
-(VPacheco High School
+(VMerced High School
 p1281
 g1281
 tp1282
-(VStone Ridge Christian High School
+(VPacheco High School
 p1283
 g1283
 tp1284
-(VValley High School
+(VStone Ridge Christian High School
 p1285
 g1285
 tp1286
@@ -2571,556 +2571,556 @@ tp1288
 p1289
 g1289
 tp1290
-(VGreat Basin High School
+(VValley High School
 p1291
 g1291
 tp1292
-(VModoc High School
+(VGreat Basin High School
 p1293
 g1293
 tp1294
-(VSurprise Valley High School
+(VModoc High School
 p1295
 g1295
 tp1296
-(VWarner High School
+(VSurprise Valley High School
 p1297
 g1297
 tp1298
-(VColeville High School
+(VWarner High School
 p1299
 g1299
 tp1300
-(VEastern Sierra Academy
+(VColeville High School
 p1301
 g1301
 tp1302
-(VLee Vining High School
+(VEastern Sierra Academy
 p1303
 g1303
 tp1304
-(VMammoth High School
+(VLee Vining High School
 p1305
 g1305
 tp1306
-(VKing City Union School District\u000a\u000aGreenfield High School
+(VMammoth High School
 p1307
+g1307
+tp1308
+(VKing City Union School District\u000a\u000aGreenfield High School
+p1309
 VKing City Union School District\u000a\u000aGreenfield High School
-p1308
-tp1309
-(VGreenfield High School
 p1310
-g1310
 tp1311
-(VKing City High School
+(VGreenfield High School
 p1312
 g1312
 tp1313
-(VMonterey Peninsula Unified School District\u000a\u000aCentral Coast High School (continuation)
+(VKing City High School
 p1314
+g1314
+tp1315
+(VMonterey Peninsula Unified School District\u000a\u000aCentral Coast High School (continuation)
+p1316
 VMonterey Peninsula Unified School District\u000a\u000aCentral Coast High School (continuation)
-p1315
-tp1316
-(VCentral Coast High School (continuation)
 p1317
-g1317
 tp1318
-(VMarina High School
+(VCentral Coast High School (continuation)
 p1319
 g1319
 tp1320
-(VMonterey High School
+(VMarina High School
 p1321
 g1321
 tp1322
-(VSeaside High School
+(VMonterey High School
 p1323
 g1323
 tp1324
-(VNorth Monterey County Unified School District\u000a\u000aNorth Monterey County High School
+(VSeaside High School
 p1325
+g1325
+tp1326
+(VNorth Monterey County Unified School District\u000a\u000aNorth Monterey County High School
+p1327
 VNorth Monterey County Unified School District\u000a\u000aNorth Monterey County High School
-p1326
-tp1327
-(VNorth Monterey County High School
 p1328
-g1328
 tp1329
-(VPacific Grove Unified School District\u000a\u000aPacific Grove High School
+(VNorth Monterey County High School
 p1330
+g1330
+tp1331
+(VPacific Grove Unified School District\u000a\u000aPacific Grove High School
+p1332
 VPacific Grove Unified School District\u000a\u000aPacific Grove High School
-p1331
-tp1332
-(VPacific Grove High School
 p1333
-g1333
 tp1334
-(VSalinas Union High School District\u000a\u000aAlisal High School
+(VPacific Grove High School
 p1335
+g1335
+tp1336
+(VSalinas Union High School District\u000a\u000aAlisal High School
+p1337
 VSalinas Union High School District\u000a\u000aAlisal High School
-p1336
-tp1337
-(VCarmel High School
 p1338
-g1338
 tp1339
-(VCypress Grove Charter High School for Arts and Science
+(VCarmel High School
 p1340
 g1340
 tp1341
-(VGonzales High School
+(VCypress Grove Charter High School for Arts and Science
 p1342
 g1342
 tp1343
-(VSanta Catalina School
+(VGonzales High School
 p1344
 g1344
 tp1345
-(VSoledad High School
+(VSanta Catalina School
 p1346
 g1346
 tp1347
-(VStevenson School
+(VSoledad High School
 p1348
 g1348
 tp1349
-(VTrinity Christian High School
+(VStevenson School
 p1350
 g1350
 tp1351
-(VThe York School
+(VTrinity Christian High School
 p1352
 g1352
 tp1353
-(VAmerican Canyon High School
+(VThe York School
 p1354
 g1354
 tp1355
-(VJustin-Siena High School
+(VAmerican Canyon High School
 p1356
 g1356
 tp1357
-(VNapa High School
+(VJustin-Siena High School
 p1358
 g1358
 tp1359
-(VNew Technology High School
+(VNapa High School
 p1360
 g1360
 tp1361
-(VPacific Union College Prep School
+(VNew Technology High School
 p1362
 g1362
 tp1363
-(VSt. Helena High School
+(VPacific Union College Prep School
 p1364
 g1364
 tp1365
-(VValley Oak High School
+(VSt. Helena High School
 p1366
 g1366
 tp1367
-(VVintage High School
+(VValley Oak High School
 p1368
 g1368
 tp1369
-(VBear River High School
+(VVintage High School
 p1370
 g1370
 tp1371
-(VBitney College Preparatory High School
+(VBear River High School
 p1372
 g1372
 tp1373
-(VGhidotti Early College High School
+(VBitney College Preparatory High School
 p1374
 g1374
 tp1375
-(VNevada Union High School
+(VGhidotti Early College High School
 p1376
 g1376
 tp1377
-(VSierra Mountain High School
+(VNevada Union High School
 p1378
 g1378
 tp1379
-(VTahoe-Truckee High School
+(VSierra Mountain High School
 p1380
 g1380
 tp1381
-(VAnaheim High School
+(VTahoe-Truckee High School
 p1382
 g1382
 tp1383
-(VCypress High School
+(VAnaheim High School
 p1384
 g1384
 tp1385
-(VKatella High School
+(VCypress High School
 p1386
 g1386
 tp1387
-(VJohn F. Kennedy High School
+(VKatella High School
 p1388
 g1388
 tp1389
-(VLoara High School
+(VJohn F. Kennedy High School
 p1390
 g1390
 tp1391
-(VMagnolia High School
+(VLoara High School
 p1392
 g1392
 tp1393
-(VOxford Academy
+(VMagnolia High School
 p1394
 g1394
 tp1395
-(VSavanna High School
+(VOxford Academy
 p1396
 g1396
 tp1397
-(VWestern High School
+(VSavanna High School
 p1398
 g1398
 tp1399
-(VBrea Canyon Alternative High School
+(VWestern High School
 p1400
 g1400
 tp1401
-(VBrea Olinda High School
+(VBrea Canyon Alternative High School
 p1402
 g1402
 tp1403
-(VCapistrano Valley High School
+(VBrea Olinda High School
 p1404
 g1404
 tp1405
-(VDana Hills High School
+(VCapistrano Valley High School
 p1406
 g1406
 tp1407
-(VSan Clemente High School
+(VDana Hills High School
 p1408
 g1408
 tp1409
-(VSan Juan Hills High School
+(VSan Clemente High School
 p1410
 g1410
 tp1411
-(VTesoro High School
+(VSan Juan Hills High School
 p1412
 g1412
 tp1413
-(VBuena Park High School
+(VTesoro High School
 p1414
 g1414
 tp1415
-(VLa Habra High School
+(VBuena Park High School
 p1416
 g1416
 tp1417
-(VSonora High School
+(VLa Habra High School
 p1418
 g1418
 tp1419
-(VBolsa Grande High School
+(VSonora High School
 p1420
 g1420
 tp1421
-(VGarden Grove High School
+(VBolsa Grande High School
 p1422
 g1422
 tp1423
-(VLa Quinta High School
+(VGarden Grove High School
 p1424
 g1424
 tp1425
-(VLos Amigos High School
+(VLa Quinta High School
 p1426
 g1426
 tp1427
-(VPacifica High School
+(VLos Amigos High School
 p1428
 g1428
 tp1429
-(VRancho Alamitos High School
+(VPacifica High School
 p1430
 g1430
 tp1431
-(VSantiago High School
+(VRancho Alamitos High School
 p1432
 g1432
 tp1433
-(VEdison High School
+(VSantiago High School
 p1434
 g1434
 tp1435
-(VFountain Valley High School
+(VEdison High School
 p1436
 g1436
 tp1437
-(VHuntington Beach High School
+(VFountain Valley High School
 p1438
 g1438
 tp1439
-(VMarina High School
+(VHuntington Beach High School
 p1440
 g1440
 tp1441
-(VOcean View High School
+(VMarina High School
 p1442
 g1442
 tp1443
-(VWestminster High School
+(VOcean View High School
 p1444
 g1444
 tp1445
-(VIrvine High School
+(VWestminster High School
 p1446
 g1446
 tp1447
-(VNorthwood High School
+(VIrvine High School
 p1448
 g1448
 tp1449
-(VPortola High School
+(VNorthwood High School
 p1450
 g1450
 tp1451
-(VUniversity High School
+(VPortola High School
 p1452
 g1452
 tp1453
-(VWoodbridge High School
+(VUniversity High School
 p1454
 g1454
 tp1455
-(VLaguna Beach High School
+(VWoodbridge High School
 p1456
 g1456
 tp1457
-(VLos Alamitos High School
+(VLaguna Beach High School
 p1458
 g1458
 tp1459
-(VCorona del Mar High School
+(VLos Alamitos High School
 p1460
 g1460
 tp1461
-(VCosta Mesa High School
+(VCorona del Mar High School
 p1462
 g1462
 tp1463
-(VEstancia High School
+(VCosta Mesa High School
 p1464
 g1464
 tp1465
-(VNewport Harbor High School
+(VEstancia High School
 p1466
 g1466
 tp1467
-(VEarly College High School
+(VNewport Harbor High School
 p1468
 g1468
 tp1469
-(VCanyon High School
+(VEarly College High School
 p1470
 g1470
 tp1471
-(VEl Modena High School
+(VCanyon High School
 p1472
 g1472
 tp1473
-(VOrange High School
+(VEl Modena High School
 p1474
 g1474
 tp1475
-(VVilla Park High School
+(VOrange High School
 p1476
 g1476
 tp1477
-(VEl Camino High School (Continuation)
+(VVilla Park High School
 p1478
 g1478
 tp1479
-(VEl Dorado High School
+(VEl Camino High School (Continuation)
 p1480
 g1480
 tp1481
-(VEsperanza High School
+(VEl Dorado High School
 p1482
 g1482
 tp1483
-(VValencia High School
+(VEsperanza High School
 p1484
 g1484
 tp1485
-(VYorba Linda High School
+(VValencia High School
 p1486
 g1486
 tp1487
-(VEl Toro High School
+(VYorba Linda High School
 p1488
 g1488
 tp1489
-(VLaguna Hills High School
+(VEl Toro High School
 p1490
 g1490
 tp1491
-(VMission Viejo High School
+(VLaguna Hills High School
 p1492
 g1492
 tp1493
-(VSilverado High School
+(VMission Viejo High School
 p1494
 g1494
 tp1495
-(VTrabuco Hills High School
+(VSilverado High School
 p1496
 g1496
 tp1497
-(VAlbor Charter School
+(VTrabuco Hills High School
 p1498
 g1498
 tp1499
-(VCentury High School
+(VAlbor Charter School
 p1500
 g1500
 tp1501
-(VGodinez Fundamental High School
+(VCentury High School
 p1502
 g1502
 tp1503
-(VMiddle College High School
+(VGodinez Fundamental High School
 p1504
 g1504
 tp1505
-(VOrange County High School of the Arts
+(VMiddle College High School
 p1506
 g1506
 tp1507
-(VSaddleback High School
+(VOrange County High School of the Arts
 p1508
 g1508
 tp1509
-(VSanta Ana High School
+(VSaddleback High School
 p1510
 g1510
 tp1511
-(VSegerstrom Fundamental High School
+(VSanta Ana High School
 p1512
 g1512
 tp1513
-(VValley High School
+(VSegerstrom Fundamental High School
 p1514
 g1514
 tp1515
-(VArnold O. Beckman High School
+(VValley High School
 p1516
 g1516
 tp1517
-(VFoothill High School (Tustin)
+(VArnold O. Beckman High School
 p1518
 g1518
 tp1519
-(VHillview High School (Orange County
+(VFoothill High School (Tustin)
 p1520
 g1520
 tp1521
-(VTustin High School
+(VHillview High School (Orange County
 p1522
 g1522
 tp1523
-(VMater Dei High School
+(VTustin High School
 p1524
 g1524
 tp1525
-(VSanta Margarita Catholic High School
+(VMater Dei High School
 p1526
 g1526
 tp1527
-(VCornelia Connelly High School
+(VSanta Margarita Catholic High School
 p1528
 g1528
 tp1529
-(VPadre Pio Academy
+(VCornelia Connelly High School
 p1530
 g1530
 tp1531
-(VJSerra Catholic High School
+(VPadre Pio Academy
 p1532
 g1532
 tp1533
-(VSt. Michael's Preparatory School
+(VJSerra Catholic High School
 p1534
 g1534
 tp1535
-(VServite High School
+(VSt. Michael's Preparatory School
 p1536
 g1536
 tp1537
-(VBrethren Christian Junior/Senior High School
+(VServite High School
 p1538
 g1538
 tp1539
-(VCapistrano Valley Christian Schools
+(VBrethren Christian Junior/Senior High School
 p1540
 g1540
 tp1541
-(VCalvary Chapel High School
+(VCapistrano Valley Christian Schools
 p1542
 g1542
 tp1543
-(VCrystal Cathedral High School
+(VCalvary Chapel High School
 p1544
 g1544
 tp1545
-(VSaddleback Valley Christian School
+(VCrystal Cathedral High School
 p1546
 g1546
 tp1547
-(VSpirit Christian Academy
+(VSaddleback Valley Christian School
 p1548
 g1548
 tp1549
-(VWhittier Christian High School
+(VSpirit Christian Academy
 p1550
 g1550
 tp1551
-(VGrace OC Academy
+(VWhittier Christian High School
 p1552
 g1552
 tp1553
-(VSt. Margaret's Episcopal School
+(VGrace OC Academy
 p1554
 g1554
 tp1555
-(VCrean Lutheran High School
+(VSt. Margaret's Episcopal School
 p1556
 g1556
 tp1557
-(VLutheran High School of Orange County
+(VCrean Lutheran High School
 p1558
 g1558
 tp1559
-(VAcaciawood Preparatory Academy
+(VLutheran High School of Orange County
 p1560
 g1560
 tp1561
-(VAlton School
+(VAcaciawood Preparatory Academy
 p1562
 g1562
 tp1563
-(VEldorado-Emerson
+(VAlton School
 p1564
 g1564
 tp1565
-(VFairmont Preparatory Academy
+(VEldorado-Emerson
 p1566
 g1566
 tp1567
-(VFusion Academy & Learning Center
+(VFairmont Preparatory Academy
 p1568
 g1568
 tp1569
@@ -3128,23 +3128,23 @@ tp1569
 p1570
 g1570
 tp1571
-(VHalstrom High School
+(VFusion Academy & Learning Center
 p1572
 g1572
 tp1573
-(VPrentice School
+(VHalstrom High School
 p1574
 g1574
 tp1575
-(VSage Hill School
+(VPrentice School
 p1576
 g1576
 tp1577
-(VSilverleaf Academy
+(VSage Hill School
 p1578
 g1578
 tp1579
-(VDesert Sands Charter High School
+(VSilverleaf Academy
 p1580
 g1580
 tp1581
@@ -3156,781 +3156,781 @@ tp1583
 p1584
 g1584
 tp1585
-(VColfax High School
+(VDesert Sands Charter High School
 p1586
 g1586
 tp1587
-(VDel Oro High School
+(VColfax High School
 p1588
 g1588
 tp1589
-(VForest Lake Christian High School
+(VDel Oro High School
 p1590
 g1590
 tp1591
-(VForesthill High School
+(VForest Lake Christian High School
 p1592
 g1592
 tp1593
-(VGranite Bay High School
+(VForesthill High School
 p1594
 g1594
 tp1595
-(VHorizon Charter School
+(VGranite Bay High School
 p1596
 g1596
 tp1597
-(VLincoln High School
+(VHorizon Charter School
 p1598
 g1598
 tp1599
-(VNorth Tahoe High School
+(VLincoln High School
 p1600
 g1600
 tp1601
-(VOakmont High School
+(VNorth Tahoe High School
 p1602
 g1602
 tp1603
-(VPine Hills Adventist Academy
+(VOakmont High School
 p1604
 g1604
 tp1605
-(VPlacer High School
+(VPine Hills Adventist Academy
 p1606
 g1606
 tp1607
-(VRoseville High School
+(VPlacer High School
 p1608
 g1608
 tp1609
-(VSquaw Valley Academy
+(VRoseville High School
 p1610
 g1610
 tp1611
-(VWoodcreek High School
+(VSquaw Valley Academy
 p1612
 g1612
 tp1613
-(VChester High School
+(VWoodcreek High School
 p1614
 g1614
 tp1615
-(VGreenville Junior-Senior High School
+(VChester High School
 p1616
 g1616
 tp1617
-(VPine Hills Adventist School
+(VGreenville Junior-Senior High School
 p1618
 g1618
 tp1619
-(VPortola High School
+(VPine Hills Adventist School
 p1620
 g1620
 tp1621
-(VQuincy High School
+(VPortola High School
 p1622
 g1622
 tp1623
-(VAES-Whitewater High School
+(VQuincy High School
 p1624
 g1624
 tp1625
-(VAmistad High School (continuation)
+(VAES-Whitewater High School
 p1626
 g1626
 tp1627
-(VArlington High School
+(VAmistad High School (continuation)
 p1628
 g1628
 tp1629
-(VBanning High School
+(VArlington High School
 p1630
 g1630
 tp1631
-(VBeaumont High School
+(VBanning High School
 p1632
 g1632
 tp1633
-(VCalifornia Lutheran High School
+(VBeaumont High School
 p1634
 g1634
 tp1635
-(VCalvary Chapel Christian School
+(VCalifornia Lutheran High School
 p1636
 g1636
 tp1637
-(VCanyon Springs High School
+(VCalvary Chapel Christian School
 p1638
 g1638
 tp1639
-(VCathedral City High School
+(VCanyon Springs High School
 p1640
 g1640
 tp1641
-(VCentennial High School
+(VCathedral City High School
 p1642
 g1642
 tp1643
-(VChristian School of the Desert
+(VCentennial High School
 p1644
 g1644
 tp1645
-(VCitrus Hill High School
+(VChristian School of the Desert
 p1646
 g1646
 tp1647
-(VCoachella Valley High School
+(VCitrus Hill High School
 p1648
 g1648
 tp1649
-(VCorona High School
+(VCoachella Valley High School
 p1650
 g1650
 tp1651
-(VDesert Hot Springs High School
+(VCorona High School
 p1652
 g1652
 tp1653
-(VDesert Mirage High School
+(VDesert Hot Springs High School
 p1654
 g1654
 tp1655
-(VEagle Mountain (K-12) School
+(VDesert Mirage High School
 p1656
 g1656
 tp1657
-(VEleanor Roosevelt High School
+(VEagle Mountain (K-12) School
 p1658
 g1658
 tp1659
-(VElsinore High School
+(VEleanor Roosevelt High School
 p1660
 g1660
 tp1661
-(VHamilton High School
+(VElsinore High School
 p1662
 g1662
 tp1663
-(VHemet Academy of Applied Academics and Technology
+(VHamilton High School
 p1664
 g1664
 tp1665
-(VHemet High School
+(VHemet Academy of Applied Academics and Technology
 p1666
 g1666
 tp1667
-(VIdyllwild Arts Academy
+(VHemet High School
 p1668
 g1668
 tp1669
-(VIndio High School
+(VIdyllwild Arts Academy
 p1670
 g1670
 tp1671
-(VJohn F. Kennedy Middle College High School
+(VIndio High School
 p1672
 g1672
 tp1673
-(VJohn W. North High School
+(VJohn F. Kennedy Middle College High School
 p1674
 g1674
 tp1675
-(VJurupa Valley High School
+(VJohn W. North High School
 p1676
 g1676
 tp1677
-(VLa Quinta High School
+(VJurupa Valley High School
 p1678
 g1678
 tp1679
-(VLa Sierra Adventist Academy
+(VLa Quinta High School
 p1680
 g1680
 tp1681
-(VLa Sierra High School
+(VLa Sierra Adventist Academy
 p1682
 g1682
 tp1683
-(VLakeside High School
+(VLa Sierra High School
 p1684
 g1684
 tp1685
-(VLee Pollard High School
+(VLakeside High School
 p1686
 g1686
 tp1687
-(VMartin Luther King Jr. High School
+(VLee Pollard High School
 p1688
 g1688
 tp1689
-(VMater Dei High School
+(VMartin Luther King Jr. High School
 p1690
 g1690
 tp1691
-(VMenifee Valley High School
+(VMater Dei High School
 p1692
 g1692
 tp1693
-(VMoreno Valley High School
+(VMenifee Valley High School
 p1694
 g1694
 tp1695
-(VMurrieta Mesa High School
+(VMoreno Valley High School
 p1696
 g1696
 tp1697
-(VMurrieta Valley High School
+(VMurrieta Mesa High School
 p1698
 g1698
 tp1699
-(VNorco High School
+(VMurrieta Valley High School
 p1700
 g1700
 tp1701
-(VNorte Vista High School
+(VNorco High School
 p1702
 g1702
 tp1703
-(VNotre Dame Catholic High School
+(VNorte Vista High School
 p1704
 g1704
 tp1705
-(VNuview Bridge Academy
+(VNotre Dame Catholic High School
 p1706
 g1706
 tp1707
-(VOrange Grove High School
+(VNuview Bridge Academy
 p1708
 g1708
 tp1709
-(VPalm Desert High School
+(VOrange Grove High School
 p1710
 g1710
 tp1711
-(VPalm Springs High School
+(VPalm Desert High School
 p1712
 g1712
 tp1713
-(VPalm Valley High School (private)
+(VPalm Springs High School
 p1714
 g1714
 tp1715
-(VPalo Verde High School
+(VPalm Valley High School (private)
 p1716
 g1716
 tp1717
-(VPaloma Valley High School
+(VPalo Verde High School
 p1718
 g1718
 tp1719
-(VPatriot High School
+(VPaloma Valley High School
 p1720
 g1720
 tp1721
-(VPerris High School
+(VPatriot High School
 p1722
 g1722
 tp1723
-(VPolytechnic High School
+(VPerris High School
 p1724
 g1724
 tp1725
-(VRamona High School
+(VPolytechnic High School
 p1726
 g1726
 tp1727
-(VRancho Mirage High School
+(VRamona High School
 p1728
 g1728
 tp1729
-(VRancho Verde High School
+(VRancho Mirage High School
 p1730
 g1730
 tp1731
-(VRiver Springs Charter School
+(VRancho Verde High School
 p1732
 g1732
 tp1733
-(VRubidoux High School
+(VRiver Springs Charter School
 p1734
 g1734
 tp1735
-(VSan Gorgonio (K-12) School
+(VRubidoux High School
 p1736
 g1736
 tp1737
-(VSan Jacinto Senior High School
+(VSan Gorgonio (K-12) School
 p1738
 g1738
 tp1739
-(VSantiago High School
+(VSan Jacinto Senior High School
 p1740
 g1740
 tp1741
-(VShadow Hills High School
+(VSantiago High School
 p1742
 g1742
 tp1743
-(VSherman Indian High School
+(VShadow Hills High School
 p1744
 g1744
 tp1745
-(VSouthwest Educational Center
+(VSherman Indian High School
 p1746
 g1746
 tp1747
-(VSummit High School (independent studies)
+(VSouthwest Educational Center
 p1748
 g1748
 tp1749
-(VSunnymead High School (continuation)
+(VSummit High School (independent studies)
 p1750
 g1750
 tp1751
-(VTahquitz High School
+(VSunnymead High School (continuation)
 p1752
 g1752
 tp1753
-(VTemecula Preparatory School
+(VTahquitz High School
 p1754
 g1754
 tp1755
-(VTemescal Canyon High School
+(VTemecula Preparatory School
 p1756
 g1756
 tp1757
-(VVal Verde High School
+(VTemescal Canyon High School
 p1758
 g1758
 tp1759
-(VValley View High School
+(VVal Verde High School
 p1760
 g1760
 tp1761
-(VVista del Lago High School
+(VValley View High School
 p1762
 g1762
 tp1763
-(VVista Murrieta High School
+(VVista del Lago High School
 p1764
 g1764
 tp1765
-(VWest Shores High School
+(VVista Murrieta High School
 p1766
 g1766
 tp1767
-(VWest Valley High School
+(VWest Shores High School
 p1768
 g1768
 tp1769
-(VWoodcrest Christian School
+(VWest Valley High School
 p1770
 g1770
 tp1771
-(VAmerican Legion High School
+(VWoodcrest Christian School
 p1772
 g1772
 tp1773
-(VArthur A. Benjamin Health Professions High School
+(VAmerican Legion High School
 p1774
 g1774
 tp1775
-(VBella Vista High School
+(VArthur A. Benjamin Health Professions High School
 p1776
 g1776
 tp1777
-(VC. K. McClatchy High School
+(VBella Vista High School
 p1778
 g1778
 tp1779
-(VCalvine High School
+(VC. K. McClatchy High School
 p1780
 g1780
 tp1781
-(VCasa Roble High School
+(VCalvine High School
 p1782
 g1782
 tp1783
-(VCenter High School
+(VCasa Roble High School
 p1784
 g1784
 tp1785
-(VChristian Brothers High School
+(VCenter High School
 p1786
 g1786
 tp1787
-(VCordova High School
+(VChristian Brothers High School
 p1788
 g1788
 tp1789
-(VCosumnes Oaks High School
+(VCordova High School
 p1790
 g1790
 tp1791
-(VDel Campo High School
+(VCosumnes Oaks High School
 p1792
 g1792
 tp1793
-(VEast Anthwood Angles High School
+(VDel Campo High School
 p1794
 g1794
 tp1795
-(VEast Side High School
+(VEast Anthwood Angles High School
 p1796
 g1796
 tp1797
-(VEl Camino Fundamental High School
+(VEast Side High School
 p1798
 g1798
 tp1799
-(VElk Grove Charter School
+(VEl Camino Fundamental High School
 p1800
 g1800
 tp1801
-(VElk Grove High School
+(VElk Grove Charter School
 p1802
 g1802
 tp1803
-(VEncina High School
+(VElk Grove High School
 p1804
 g1804
 tp1805
-(VFlorin High School
+(VEncina High School
 p1806
 g1806
 tp1807
-(VFolsom High School
+(VFlorin High School
 p1808
 g1808
 tp1809
-(VFoothill High School
+(VFolsom High School
 p1810
 g1810
 tp1811
-(VFranklin High School
+(VFoothill High School
 p1812
 g1812
 tp1813
-(VGalt High School
+(VFranklin High School
 p1814
 g1814
 tp1815
-(VGrant Union High School
+(VGalt High School
 p1816
 g1816
 tp1817
-(VGolden Valley Charter School
+(VGrant Union High School
 p1818
 g1818
 tp1819
-(VHighlands High School
+(VGolden Valley Charter School
 p1820
 g1820
 tp1821
-(VHiram W. Johnson High School
+(VHighlands High School
 p1822
 g1822
 tp1823
-(VInderkum High School
+(VHiram W. Johnson High School
 p1824
 g1824
 tp1825
-(VJane Lathrop School
+(VInderkum High School
 p1826
 g1826
 tp1827
-(VJesuit High School of Sacramento
+(VJane Lathrop School
 p1828
 g1828
 tp1829
-(VJohn F. Kennedy High School
+(VJesuit High School of Sacramento
 p1830
 g1830
 tp1831
-(VK. Robinson Anthwood Continuation High School
+(VJohn F. Kennedy High School
 p1832
 g1832
 tp1833
-(VLaguna Creek High School
+(VK. Robinson Anthwood Continuation High School
 p1834
 g1834
 tp1835
-(VLexington Union High School
+(VLaguna Creek High School
 p1836
 g1836
 tp1837
-(VLoretto High School
+(VLexington Union High School
 p1838
 g1838
 tp1839
-(VLuther Burbank High School
+(VLoretto High School
 p1840
 g1840
 tp1841
-(VLutheran School
+(VLuther Burbank High School
 p1842
 g1842
 tp1843
-(VMesa Verde High School
+(VLutheran School
 p1844
 g1844
 tp1845
-(VMira Loma High School
+(VMesa Verde High School
 p1846
 g1846
 tp1847
-(VMonterey Trail High School
+(VMira Loma High School
 p1848
 g1848
 tp1849
-(VNatomas Charter School
+(VMonterey Trail High School
 p1850
 g1850
 tp1851
-(VNatomas High School
+(VNatomas Charter School
 p1852
 g1852
 tp1853
-(VPleasant Grove High School
+(VNatomas High School
 p1854
 g1854
 tp1855
-(VRio Americano High School
+(VPleasant Grove High School
 p1856
 g1856
 tp1857
-(VRio Linda High School
+(VRio Americano High School
 p1858
 g1858
 tp1859
-(VRiver Valley School
+(VRio Linda High School
 p1860
 g1860
 tp1861
-(VRochester High School
+(VRiver Valley School
 p1862
 g1862
 tp1863
-(VRosemont High School
+(VRochester High School
 p1864
 g1864
 tp1865
-(VSacramento Adventist Academy
+(VRosemont High School
 p1866
 g1866
 tp1867
-(VSacramento Country Day School
+(VSacramento Adventist Academy
 p1868
 g1868
 tp1869
-(VSacramento High School
+(VSacramento Country Day School
 p1870
 g1870
 tp1871
-(VSacramento New Technology High School
+(VSacramento High School
 p1872
 g1872
 tp1873
-(VSacramento Preparatory Academy
+(VSacramento New Technology High School
 p1874
 g1874
 tp1875
-(VSacramento Valley School
+(VSacramento Preparatory Academy
 p1876
 g1876
 tp1877
-(VSacramento Waldorf School
+(VSacramento Valley School
 p1878
 g1878
 tp1879
-(VSt. Francis High School
+(VSacramento Waldorf School
 p1880
 g1880
 tp1881
-(VSan Juan High School
+(VSt. Francis High School
 p1882
 g1882
 tp1883
-(VSheldon High School
+(VSan Juan High School
 p1884
 g1884
 tp1885
-(VTahaloma High School
+(VSheldon High School
 p1886
 g1886
 tp1887
-(VUpper Valley High School
+(VTahaloma High School
 p1888
 g1888
 tp1889
-(VValley High School
+(VUpper Valley High School
 p1890
 g1890
 tp1891
-(VValley Oak Academy - Mariposa
+(VValley High School
 p1892
 g1892
 tp1893
-(VVictory Christian High School
+(VValley Oak Academy - Mariposa
 p1894
 g1894
 tp1895
-(VVista del Lago High School
+(VVictory Christian High School
 p1896
 g1896
 tp1897
-(VVista Nueva Career & Technology High School
+(VVista del Lago High School
 p1898
 g1898
 tp1899
-(VWest Campus High School
+(VVista Nueva Career & Technology High School
 p1900
 g1900
 tp1901
-(VWest Heights High School
+(VWest Campus High School
 p1902
 g1902
 tp1903
-(VWizbin High School
+(VWest Heights High School
 p1904
 g1904
 tp1905
-(VAnzar High School
+(VWizbin High School
 p1906
 g1906
 tp1907
-(VApple Valley Unified School District\u000a\u000aApple Valley High School
+(VAnzar High School
 p1908
+g1908
+tp1909
+(VApple Valley Unified School District\u000a\u000aApple Valley High School
+p1910
 VApple Valley Unified School District\u000a\u000aApple Valley High School
-p1909
-tp1910
-(VApple Valley High School
 p1911
-g1911
 tp1912
-(VGranite Hills High School
+(VApple Valley High School
 p1913
 g1913
 tp1914
-(VBarstow Unified School District\u000a\u000aBarstow High School\u000aCentral High Continuation School\u000a\u000a
+(VGranite Hills High School
 p1915
+g1915
+tp1916
+(VBarstow Unified School District\u000a\u000aBarstow High School\u000aCentral High Continuation School\u000a\u000a
+p1917
 VBarstow Unified School District\u000a\u000aBarstow High School\u000aCentral High Continuation School\u000a\u000a
-p1916
-tp1917
-(VBarstow High School
 p1918
-g1918
 tp1919
-(VCentral High Continuation School
+(VBarstow High School
 p1920
 g1920
 tp1921
-(VBear Valley Unified School District\u000a\u000aBig Bear High School
+(VCentral High Continuation School
 p1922
+g1922
+tp1923
+(VBear Valley Unified School District\u000a\u000aBig Bear High School
+p1924
 VBear Valley Unified School District\u000a\u000aBig Bear High School
-p1923
-tp1924
-(VBig Bear High School
 p1925
-g1925
 tp1926
-(VBloomington Christian School
+(VBig Bear High School
 p1927
 g1927
 tp1928
-(VChataqua High School
+(VBloomington Christian School
 p1929
 g1929
 tp1930
-(VChaffey Joint Union High School District\u000a\u000aAlta Loma High School\u000aCanyon View High School\u000aChaffey Adult School\u000aChaffey High School\u000aColony High School\u000aEtiwanda High School\u000aLos Osos High School\u000aMontclair High School\u000aOntario High School\u000aValley View High School
+(VChataqua High School
 p1931
+g1931
+tp1932
+(VChaffey Joint Union High School District\u000a\u000aAlta Loma High School\u000aCanyon View High School\u000aChaffey Adult School\u000aChaffey High School\u000aColony High School\u000aEtiwanda High School\u000aLos Osos High School\u000aMontclair High School\u000aOntario High School\u000aValley View High School
+p1933
 VChaffey Joint Union High School District\u000a\u000aAlta Loma High School\u000aCanyon View High School\u000aChaffey Adult School\u000aChaffey High School\u000aColony High School\u000aEtiwanda High School\u000aLos Osos High School\u000aMontclair High School\u000aOntario High School\u000aValley View High School
-p1932
-tp1933
-(VAlta Loma High School
 p1934
-g1934
 tp1935
-(VCanyon View High School
+(VAlta Loma High School
 p1936
 g1936
 tp1937
-(VChaffey Adult School
+(VCanyon View High School
 p1938
 g1938
 tp1939
-(VChaffey High School
+(VChaffey Adult School
 p1940
 g1940
 tp1941
-(VColony High School
+(VChaffey High School
 p1942
 g1942
 tp1943
-(VEtiwanda High School
+(VColony High School
 p1944
 g1944
 tp1945
-(VLos Osos High School
+(VEtiwanda High School
 p1946
 g1946
 tp1947
-(VMontclair High School
+(VLos Osos High School
 p1948
 g1948
 tp1949
-(VOntario High School
+(VMontclair High School
 p1950
 g1950
 tp1951
-(VValley View High School
+(VOntario High School
 p1952
 g1952
 tp1953
-(VChino Valley Unified School District\u000a\u000aChino High School
+(VValley View High School
 p1954
+g1954
+tp1955
+(VChino Valley Unified School District\u000a\u000aChino High School
+p1956
 VChino Valley Unified School District\u000a\u000aChino High School
-p1955
-tp1956
-(VChino High School
 p1957
-g1957
 tp1958
-(VChino Hills High School
+(VChino High School
 p1959
 g1959
 tp1960
-(VDon Antonio Lugo High School
+(VChino Hills High School
 p1961
 g1961
 tp1962
-(VRuben S. Ayala High School
+(VDon Antonio Lugo High School
 p1963
 g1963
 tp1964
-(VColton Joint Unified School District\u000a\u000aBloomington High School
+(VRuben S. Ayala High School
 p1965
+g1965
+tp1966
+(VColton Joint Unified School District\u000a\u000aBloomington High School
+p1967
 VColton Joint Unified School District\u000a\u000aBloomington High School
-p1966
-tp1967
-(VBloomington High School
 p1968
-g1968
 tp1969
-(VColton High School
+(VBloomington High School
 p1970
 g1970
 tp1971
-(VSlover Mountain High School
+(VColton High School
 p1972
 g1972
 tp1973
-(VWashington Alternative High School
+(VSlover Mountain High School
 p1974
 g1974
 tp1975
-(VDesert Sands Charter High School
+(VWashington Alternative High School
 p1976
 g1976
 tp1977
@@ -3938,755 +3938,755 @@ tp1977
 p1978
 g1978
 tp1979
-(VFontana Unified School District\u000a\u000aA. B. Miller High School
+(VDesert Sands Charter High School
 p1980
+g1980
+tp1981
+(VFontana Unified School District\u000a\u000aA. B. Miller High School
+p1982
 VFontana Unified School District\u000a\u000aA. B. Miller High School
-p1981
-tp1982
-(VA. B. Miller High School
 p1983
-g1983
 tp1984
-(VFontana High School
+(VA. B. Miller High School
 p1985
 g1985
 tp1986
-(VHenry J. Kaiser High School
+(VFontana High School
 p1987
 g1987
 tp1988
-(VJurupa Hills High School
+(VHenry J. Kaiser High School
 p1989
 g1989
 tp1990
-(VSummit High School
+(VJurupa Hills High School
 p1991
 g1991
 tp1992
-(VHesperia Unified School District\u000a\u000aHesperia High School
+(VSummit High School
 p1993
+g1993
+tp1994
+(VHesperia Unified School District\u000a\u000aHesperia High School
+p1995
 VHesperia Unified School District\u000a\u000aHesperia High School
-p1994
-tp1995
-(VHesperia High School
 p1996
-g1996
 tp1997
-(VSultana High School
+(VHesperia High School
 p1998
 g1998
 tp1999
-(VMorongo Unified School District\u000a\u000aTwentynine Palms High School
+(VSultana High School
 p2000
+g2000
+tp2001
+(VMorongo Unified School District\u000a\u000aTwentynine Palms High School
+p2002
 VMorongo Unified School District\u000a\u000aTwentynine Palms High School
-p2001
-tp2002
-(VTwentynine Palms High School
 p2003
-g2003
 tp2004
-(VYucca Valley High School
+(VTwentynine Palms High School
 p2005
 g2005
 tp2006
-(VNeedles Unified School District\u000a\u000aNeedles High School\u000a\u000a
+(VYucca Valley High School
 p2007
+g2007
+tp2008
+(VNeedles Unified School District\u000a\u000aNeedles High School\u000a\u000a
+p2009
 VNeedles Unified School District\u000a\u000aNeedles High School\u000a\u000a
-p2008
-tp2009
-(VNeedles High School
 p2010
-g2010
 tp2011
-(VRancho Cucamonga High School
+(VNeedles High School
 p2012
 g2012
 tp2013
-(VRedlands Unified School District\u000a\u000aThe Grove School\u000aOrangewood Contintuation High School\u000aRedlands Citrus Valley High School\u000aRedlands East Valley High School\u000aRedlands High School\u000a\u000a
+(VRancho Cucamonga High School
 p2014
+g2014
+tp2015
+(VRedlands Unified School District\u000a\u000aThe Grove School\u000aOrangewood Contintuation High School\u000aRedlands Citrus Valley High School\u000aRedlands East Valley High School\u000aRedlands High School\u000a\u000a
+p2016
 VRedlands Unified School District\u000a\u000aThe Grove School\u000aOrangewood Contintuation High School\u000aRedlands Citrus Valley High School\u000aRedlands East Valley High School\u000aRedlands High School\u000a\u000a
-p2015
-tp2016
-(VThe Grove School
 p2017
-g2017
 tp2018
-(VOrangewood Contintuation High School
+(VThe Grove School
 p2019
 g2019
 tp2020
-(VRedlands Citrus Valley High School
+(VOrangewood Contintuation High School
 p2021
 g2021
 tp2022
-(VRedlands East Valley High School
+(VRedlands Citrus Valley High School
 p2023
 g2023
 tp2024
-(VRedlands High School
+(VRedlands East Valley High School
 p2025
 g2025
 tp2026
-(VRialto Unified School District\u000a\u000aDoctor John H Milor High School
+(VRedlands High School
 p2027
+g2027
+tp2028
+(VRialto Unified School District\u000a\u000aDoctor John H Milor High School
+p2029
 VRialto Unified School District\u000a\u000aDoctor John H Milor High School
-p2028
-tp2029
-(VDoctor John H Milor High School
 p2030
-g2030
 tp2031
-(VDwight D. Eisenhower High School
+(VDoctor John H Milor High School
 p2032
 g2032
 tp2033
-(VRialto High School
+(VDwight D. Eisenhower High School
 p2034
 g2034
 tp2035
-(VWilmer Amina Carter High School
+(VRialto High School
 p2036
 g2036
 tp2037
-(VZupanic High School
+(VWilmer Amina Carter High School
 p2038
 g2038
 tp2039
-(VRim of the World Unified School District\u000a\u000aRim of the World High School
+(VZupanic High School
 p2040
+g2040
+tp2041
+(VRim of the World Unified School District\u000a\u000aRim of the World High School
+p2042
 VRim of the World Unified School District\u000a\u000aRim of the World High School
-p2041
-tp2042
-(VRim of the World High School
 p2043
-g2043
 tp2044
-(VSan Bernardino City Unified School District\u000a\u000aArroyo Valley High School\u000aCajon High School\u000aPacific High School\u000aSan Andreas High School\u000aSan Bernardino High School\u000aSan Gorgonio High School\u000aSierra High School\u000a\u000a
+(VRim of the World High School
 p2045
+g2045
+tp2046
+(VSan Bernardino City Unified School District\u000a\u000aArroyo Valley High School\u000aCajon High School\u000aPacific High School\u000aSan Andreas High School\u000aSan Bernardino High School\u000aSan Gorgonio High School\u000aSierra High School\u000a\u000a
+p2047
 VSan Bernardino City Unified School District\u000a\u000aArroyo Valley High School\u000aCajon High School\u000aPacific High School\u000aSan Andreas High School\u000aSan Bernardino High School\u000aSan Gorgonio High School\u000aSierra High School\u000a\u000a
-p2046
-tp2047
-(VArroyo Valley High School
 p2048
-g2048
 tp2049
-(VCajon High School
+(VArroyo Valley High School
 p2050
 g2050
 tp2051
-(VPacific High School
+(VCajon High School
 p2052
 g2052
 tp2053
-(VSan Andreas High School
+(VPacific High School
 p2054
 g2054
 tp2055
-(VSan Bernardino High School
+(VSan Andreas High School
 p2056
 g2056
 tp2057
-(VSan Gorgonio High School
+(VSan Bernardino High School
 p2058
 g2058
 tp2059
-(VSierra High School
+(VSan Gorgonio High School
 p2060
 g2060
 tp2061
-(VSilver Valley Unified School District\u000a\u000aSilver Valley High School
+(VSierra High School
 p2062
+g2062
+tp2063
+(VSilver Valley Unified School District\u000a\u000aSilver Valley High School
+p2064
 VSilver Valley Unified School District\u000a\u000aSilver Valley High School
-p2063
-tp2064
-(VSilver Valley High School
 p2065
-g2065
 tp2066
-(VSnowline Joint Unified School District\u000a\u000aChaparral High School
+(VSilver Valley High School
 p2067
+g2067
+tp2068
+(VSnowline Joint Unified School District\u000a\u000aChaparral High School
+p2069
 VSnowline Joint Unified School District\u000a\u000aChaparral High School
-p2068
-tp2069
-(VChaparral High School
 p2070
-g2070
 tp2071
-(VSerrano High School
+(VChaparral High School
 p2072
 g2072
 tp2073
-(VUpland Unified School District\u000a\u000aUpland High School\u000a\u000a
+(VSerrano High School
 p2074
+g2074
+tp2075
+(VUpland Unified School District\u000a\u000aUpland High School\u000a\u000a
+p2076
 VUpland Unified School District\u000a\u000aUpland High School\u000a\u000a
-p2075
-tp2076
-(VUpland High School
 p2077
-g2077
 tp2078
-(VVictor Valley Union High School District\u000a\u000aMaverick High School
+(VUpland High School
 p2079
+g2079
+tp2080
+(VVictor Valley Union High School District\u000a\u000aMaverick High School
+p2081
 VVictor Valley Union High School District\u000a\u000aMaverick High School
-p2080
-tp2081
-(VMaverick High School
 p2082
-g2082
 tp2083
-(VSilverado High School
+(VMaverick High School
 p2084
 g2084
 tp2085
-(VVictor Valley High School
+(VSilverado High School
 p2086
 g2086
 tp2087
-(VAquinas Catholic High School
+(VVictor Valley High School
 p2088
 g2088
 tp2089
-(VArrowhead Christian Academy
+(VAquinas Catholic High School
 p2090
 g2090
 tp2091
-(VLoma Linda Academy
+(VArrowhead Christian Academy
 p2092
 g2092
 tp2093
-(VRiverside Prep
+(VLoma Linda Academy
 p2094
 g2094
 tp2095
-(VUpland Christian Academy
+(VRiverside Prep
 p2096
 g2096
 tp2097
-(VXavier College Preparatory High School
+(VUpland Christian Academy
 p2098
 g2098
 tp2099
-(VBorrego Springs High School
+(VXavier College Preparatory High School
 p2100
 g2100
 tp2101
-(VPalm Canyon High School (continuation)
+(VBorrego Springs High School
 p2102
 g2102
 tp2103
-(VCarlsbad High School
+(VPalm Canyon High School (continuation)
 p2104
 g2104
 tp2105
-(VCarlsbad Village Academy 10-12
+(VCarlsbad High School
 p2106
 g2106
 tp2107
-(VSage Creek High School
+(VCarlsbad Village Academy 10-12
 p2108
 g2108
 tp2109
-(VCoronado High School
+(VSage Creek High School
 p2110
 g2110
 tp2111
-(VPalm Academy for Learning
+(VCoronado High School
 p2112
 g2112
 tp2113
-(VDiego Valley Charter High School
+(VPalm Academy for Learning
 p2114
 g2114
 tp2115
-(VCenter City High School
+(VDiego Valley Charter High School
 p2116
 g2116
 tp2117
-(VEscondido Charter High School
+(VCenter City High School
 p2118
 g2118
 tp2119
-(VEscondido High School
+(VEscondido Charter High School
 p2120
 g2120
 tp2121
-(VOrange Glen High School
+(VEscondido High School
 p2122
 g2122
 tp2123
-(VSan Pasqual High School
+(VOrange Glen High School
 p2124
 g2124
 tp2125
-(VValley High School (continuation)
+(VSan Pasqual High School
 p2126
 g2126
 tp2127
-(VClassical Academy High School
+(VValley High School (continuation)
 p2128
 g2128
 tp2129
-(VDel Lago Academy
+(VClassical Academy High School
 p2130
 g2130
 tp2131
-(VFallbrook Union High School
+(VDel Lago Academy
 p2132
 g2132
 tp2133
-(VIvy High School (continuation)
+(VFallbrook Union High School
 p2134
 g2134
 tp2135
-(VOasis High School (alternative)
+(VIvy High School (continuation)
 p2136
 g2136
 tp2137
-(VDiego Valley Charter High School
+(VOasis High School (alternative)
 p2138
 g2138
 tp2139
-(VChaparral High School (continuation)
+(VDiego Valley Charter High School
 p2140
 g2140
 tp2141
-(VEl Cajon Valley High School
+(VChaparral High School (continuation)
 p2142
 g2142
 tp2143
-(VEl Capitan High School
+(VEl Cajon Valley High School
 p2144
 g2144
 tp2145
-(VGranite Hills High School
+(VEl Capitan High School
 p2146
 g2146
 tp2147
-(VGrossmont High School
+(VGranite Hills High School
 p2148
 g2148
 tp2149
-(VGrossmont Middle College High School
+(VGrossmont High School
 p2150
 g2150
 tp2151
-(VHelix High School
+(VGrossmont Middle College High School
 p2152
 g2152
 tp2153
-(VMonte Vista High School
+(VHelix High School
 p2154
 g2154
 tp2155
-(VMount Miguel High School
+(VMonte Vista High School
 p2156
 g2156
 tp2157
-(VSantana High School
+(VMount Miguel High School
 p2158
 g2158
 tp2159
-(VSteele Canyon High School
+(VSantana High School
 p2160
 g2160
 tp2161
-(VValhalla High School
+(VSteele Canyon High School
 p2162
 g2162
 tp2163
-(VWest Hills High School
+(VValhalla High School
 p2164
 g2164
 tp2165
-(VMountain Empire High School
+(VWest Hills High School
 p2166
 g2166
 tp2167
-(VDiego Valley Charter High School
+(VMountain Empire High School
 p2168
 g2168
 tp2169
-(VEl Camino High School
+(VDiego Valley Charter High School
 p2170
 g2170
 tp2171
-(VOceanside High School
+(VEl Camino High School
 p2172
 g2172
 tp2173
-(VOceanside School of Business and Technology
+(VOceanside High School
 p2174
 g2174
 tp2175
-(VPacific View Charter School
+(VOceanside School of Business and Technology
 p2176
 g2176
 tp2177
-(VAbraxas High School
+(VPacific View Charter School
 p2178
 g2178
 tp2179
-(VDel Norte High School
+(VAbraxas High School
 p2180
 g2180
 tp2181
-(VMount Carmel High School
+(VDel Norte High School
 p2182
 g2182
 tp2183
-(VPoway High School
+(VMount Carmel High School
 p2184
 g2184
 tp2185
-(VRancho Bernardo High School
+(VPoway High School
 p2186
 g2186
 tp2187
-(VWestview High School
+(VRancho Bernardo High School
 p2188
 g2188
 tp2189
-(VMontecito High School (alternative)
+(VWestview High School
 p2190
 g2190
 tp2191
-(VMountain Valley Academy High School
+(VMontecito High School (alternative)
 p2192
 g2192
 tp2193
-(VRamona High School
+(VMountain Valley Academy High School
 p2194
 g2194
 tp2195
-(VMonarch School
+(VRamona High School
 p2196
 g2196
 tp2197
-(VArroyo Paseo Charter High School (9-12)
+(VMonarch School
 p2198
 g2198
 tp2199
-(VClairemont High School (9-12)
+(VArroyo Paseo Charter High School (9-12)
 p2200
 g2200
 tp2201
-(VWill C. Crawford High School (9-12)
+(VClairemont High School (9-12)
 p2202
 g2202
 tp2203
-(VHealth Sciences Charter High School (9-12)
+(VWill C. Crawford High School (9-12)
 p2204
 g2204
 tp2205
-(Ve3 Civic High School (9-12)
+(VHealth Sciences Charter High School (9-12)
 p2206
 g2206
 tp2207
-(VPatrick Henry High School (9-12)
+(Ve3 Civic High School (9-12)
 p2208
 g2208
 tp2209
-(VHerbert Hoover High School (9-12)
+(VPatrick Henry High School (9-12)
 p2210
 g2210
 tp2211
-(VGary and Jerri-Ann Jacobs High Tech High Charter School (9-12)
+(VHerbert Hoover High School (9-12)
 p2212
 g2212
 tp2213
-(VHigh Tech High International (9-12)
+(VGary and Jerri-Ann Jacobs High Tech High Charter School (9-12)
 p2214
 g2214
 tp2215
-(VHigh Tech High Media Arts (9-12)
+(VHigh Tech High International (9-12)
 p2216
 g2216
 tp2217
-(VStephen Kearny High School (9-12)
+(VHigh Tech High Media Arts (9-12)
 p2218
 g2218
 tp2219
-(VLa Jolla High School (9-12)
+(VStephen Kearny High School (9-12)
 p2220
 g2220
 tp2221
-(VAbraham Lincoln High School (9-12)
+(VLa Jolla High School (9-12)
 p2222
 g2222
 tp2223
-(VJames Madison High School (9-12)
+(VAbraham Lincoln High School (9-12)
 p2224
 g2224
 tp2225
-(VMira Mesa High School (9-12)
+(VJames Madison High School (9-12)
 p2226
 g2226
 tp2227
-(VMission Bay High School (9-12)
+(VMira Mesa High School (9-12)
 p2228
 g2228
 tp2229
-(VSamuel F. B. Morse High School (9-12)
+(VMission Bay High School (9-12)
 p2230
 g2230
 tp2231
-(VPoint Loma High School (9-12)
+(VSamuel F. B. Morse High School (9-12)
 p2232
 g2232
 tp2233
-(VPreuss Charter School at UCSD (6-12)
+(VPoint Loma High School (9-12)
 p2234
 g2234
 tp2235
-(VSan Diego Early/Middle College (9-12)
+(VPreuss Charter School at UCSD (6-12)
 p2236
 g2236
 tp2237
-(VSan Diego High School (9-12)
+(VSan Diego Early/Middle College (9-12)
 p2238
 g2238
 tp2239
-(VSan Diego School of Creative and Performing Arts (9-12)
+(VSan Diego High School (9-12)
 p2240
 g2240
 tp2241
-(VJunípero Serra High School (9-12)
+(VSan Diego School of Creative and Performing Arts (9-12)
 p2242
 g2242
 tp2243
-(VScripps Ranch High School (9-12)
+(VJunípero Serra High School (9-12)
 p2244
 g2244
 tp2245
-(VSchool of Creative and Performing Arts (6-12)
+(VScripps Ranch High School (9-12)
 p2246
 g2246
 tp2247
-(VScience and Technology Senior High School
+(VSchool of Creative and Performing Arts (6-12)
 p2248
 g2248
 tp2249
-(VScience Connections and Technology Senior High School
+(VScience and Technology Senior High School
 p2250
 g2250
 tp2251
-(VMark Twain High School (9-12)
+(VScience Connections and Technology Senior High School
 p2252
 g2252
 tp2253
-(VUniversity City High School (9-12)
+(VMark Twain High School (9-12)
 p2254
 g2254
 tp2255
-(VHealth Sciences High and Middle College
+(VUniversity City High School (9-12)
 p2256
 g2256
 tp2257
-(VColeman Tech Charter High School (9-12)
+(VHealth Sciences High and Middle College
 p2258
 g2258
 tp2259
-(VCanyon Crest Academy
+(VColeman Tech Charter High School (9-12)
 p2260
 g2260
 tp2261
-(VLa Costa Canyon High School
+(VCanyon Crest Academy
 p2262
 g2262
 tp2263
-(VNorth Coast High School (alternative)
+(VLa Costa Canyon High School
 p2264
 g2264
 tp2265
-(VSan Dieguito Academy
+(VNorth Coast High School (alternative)
 p2266
 g2266
 tp2267
-(VSunset High School (alternative)
+(VSan Dieguito Academy
 p2268
 g2268
 tp2269
-(VTorrey Pines High School
+(VSunset High School (alternative)
 p2270
 g2270
 tp2271
-(VBayshore Prep Charter School
+(VTorrey Pines High School
 p2272
 g2272
 tp2273
-(VFoothills High (alternative)
+(VBayshore Prep Charter School
 p2274
 g2274
 tp2275
-(VMission Hills High School
+(VFoothills High (alternative)
 p2276
 g2276
 tp2277
-(VSan Marcos High School
+(VMission Hills High School
 p2278
 g2278
 tp2279
-(VTwin Oaks High School (continuation)
+(VSan Marcos High School
 p2280
 g2280
 tp2281
-(VMar Vista High School
+(VTwin Oaks High School (continuation)
 p2282
 g2282
 tp2283
-(VMontgomery High School
+(VMar Vista High School
 p2284
 g2284
 tp2285
-(VSan Ysidro High School
+(VMontgomery High School
 p2286
 g2286
 tp2287
-(VSouthwest Senior High School
+(VSan Ysidro High School
 p2288
 g2288
 tp2289
-(VSweetwater High School
+(VSouthwest Senior High School
 p2290
 g2290
 tp2291
-(VHigh School of Roque
+(VSweetwater High School
 p2292
 g2292
 tp2293
-(VValley Center High School
+(VHigh School of Roque
 p2294
 g2294
 tp2295
-(VOak Glen High School (continuation)
+(VValley Center High School
 p2296
 g2296
 tp2297
-(VValley Center Independent Study
+(VOak Glen High School (continuation)
 p2298
 g2298
 tp2299
-(VDiego Valley Charter High School
+(VValley Center Independent Study
 p2300
 g2300
 tp2301
-(VGuajome Park Academy (charter)
+(VDiego Valley Charter High School
 p2302
 g2302
 tp2303
-(VRancho Buena Vista High School
+(VGuajome Park Academy (charter)
 p2304
 g2304
 tp2305
-(VVista High School
+(VRancho Buena Vista High School
 p2306
 g2306
 tp2307
-(VMission Vista High School
+(VVista High School
 p2308
 g2308
 tp2309
-(VNorth County Trade Tech High School (charter)
+(VMission Vista High School
 p2310
 g2310
 tp2311
-(VWarner Middle / High School
+(VNorth County Trade Tech High School (charter)
 p2312
 g2312
 tp2313
-(VSan Jose Valley Continuation High School
+(VWarner Middle / High School
 p2314
 g2314
 tp2315
-(VOcean View Christian Academy
+(VSan Jose Valley Continuation High School
 p2316
 g2316
 tp2317
-(VAcademy of Our Lady of Peace
+(VOcean View Christian Academy
 p2318
 g2318
 tp2319
-(VSaint Augustine High School
+(VAcademy of Our Lady of Peace
 p2320
 g2320
 tp2321
-(VThe Bishop's School
+(VSaint Augustine High School
 p2322
 g2322
 tp2323
-(VSan Diego Jewish Academy
+(VThe Bishop's School
 p2324
 g2324
 tp2325
-(VSouthern California Yeshiva High School
+(VSan Diego Jewish Academy
 p2326
 g2326
 tp2327
-(VTorah High Schools of San Diego
+(VSouthern California Yeshiva High School
 p2328
 g2328
 tp2329
-(VLutheran High School of San Diego
+(VTorah High Schools of San Diego
 p2330
 g2330
 tp2331
-(VEscondido Adventist Academy
+(VLutheran High School of San Diego
 p2332
 g2332
 tp2333
-(VSan Diego Academy
+(VEscondido Adventist Academy
 p2334
 g2334
 tp2335
-(VArmy and Navy Academy
+(VSan Diego Academy
 p2336
 g2336
 tp2337
-(VMaranatha Christian Schools
+(VArmy and Navy Academy
 p2338
 g2338
 tp2339
-(VCalvin Christian School
+(VMaranatha Christian Schools
 p2340
 g2340
 tp2341
-(VSanta Fe Christian Schools
+(VCalvin Christian School
 p2342
 g2342
 tp2343
-(VHorizon Christian Academy
+(VSanta Fe Christian Schools
 p2344
 g2344
 tp2345
-(VHorizon Prep School
+(VHorizon Christian Academy
 p2346
 g2346
 tp2347
-(VThe Child's Primary School
+(VHorizon Prep School
 p2348
 g2348
 tp2349
-(VCarlsbad Seaside Academy
+(VThe Child's Primary School
 p2350
 g2350
 tp2351
-(VCarlsbad Village Academy
+(VCarlsbad Seaside Academy
 p2352
 g2352
 tp2353
-(VFrancis W. Parker School
+(VCarlsbad Village Academy
 p2354
 g2354
 tp2355
-(VFusion Academy
+(VFrancis W. Parker School
 p2356
 g2356
 tp2357
-(VThe Grauer School
+(VFusion Academy
 p2358
 g2358
 tp2359
-(VHalstrom High School
+(VThe Grauer School
 p2360
 g2360
 tp2361
@@ -4694,634 +4694,634 @@ tp2361
 p2362
 g2362
 tp2363
-(VLa Jolla Country Day School
+(VHalstrom High School
 p2364
 g2364
 tp2365
-(VPacific Academy International
+(VLa Jolla Country Day School
 p2366
 g2366
 tp2367
-(VPacific Ridge School
+(VPacific Academy International
 p2368
 g2368
 tp2369
-(VSan Diego French American School
+(VPacific Ridge School
 p2370
 g2370
 tp2371
-(VThe Waldorf School of San Diego High School
+(VSan Diego French American School
 p2372
 g2372
 tp2373
-(VLeeway Sudbury School
+(VThe Waldorf School of San Diego High School
 p2374
 g2374
 tp2375
-(VAbraham Lincoln High School
+(VLeeway Sudbury School
 p2376
 g2376
 tp2377
-(VAcademy of Arts & Sciences
+(VAbraham Lincoln High School
 p2378
 g2378
 tp2379
-(VBalboa High School
+(VAcademy of Arts & Sciences
 p2380
 g2380
 tp2381
-(VDowntown High School
+(VBalboa High School
 p2382
 g2382
 tp2383
-(VGalileo Academy of Science and Technology
+(VDowntown High School
 p2384
 g2384
 tp2385
-(VGeorge Washington High School
+(VGalileo Academy of Science and Technology
 p2386
 g2386
 tp2387
-(VIda B. Wells Continuation High School
+(VGeorge Washington High School
 p2388
 g2388
 tp2389
-(VIndependence High School
+(VIda B. Wells Continuation High School
 p2390
 g2390
 tp2391
-(VInternational Studies Academy
+(VIndependence High School
 p2392
 g2392
 tp2393
-(VJohn A. O'Connell High School
+(VInternational Studies Academy
 p2394
 g2394
 tp2395
-(VJune Jordan School for Equity
+(VJohn A. O'Connell High School
 p2396
 g2396
 tp2397
-(VLowell High School
+(VJune Jordan School for Equity
 p2398
 g2398
 tp2399
-(VMission High School
+(VLowell High School
 p2400
 g2400
 tp2401
-(VPhillip & Sala Burton High School
+(VMission High School
 p2402
 g2402
 tp2403
-(VRaoul Wallenberg Traditional High School
+(VPhillip & Sala Burton High School
 p2404
 g2404
 tp2405
-(VSan Francisco Flex Academy
+(VRaoul Wallenberg Traditional High School
 p2406
 g2406
 tp2407
-(VSan Francisco International High School
+(VSan Francisco Flex Academy
 p2408
 g2408
 tp2409
-(VSchool of the Arts (SOTA)
+(VSan Francisco International High School
 p2410
 g2410
 tp2411
-(VThurgood Marshall Academic High School
+(VSchool of the Arts (SOTA)
 p2412
 g2412
 tp2413
-(VCity Arts & Technology
+(VThurgood Marshall Academic High School
 p2414
 g2414
 tp2415
-(VGateway High School
+(VCity Arts & Technology
 p2416
 g2416
 tp2417
-(VKIPP San Francisco College Preparatory
+(VGateway High School
 p2418
 g2418
 tp2419
-(VLeadership High School
+(VKIPP San Francisco College Preparatory
 p2420
 g2420
 tp2421
-(VThe Bay School of San Francisco
+(VLeadership High School
 p2422
 g2422
 tp2423
-(VCornerstone Academy
+(VThe Bay School of San Francisco
 p2424
 g2424
 tp2425
-(VDrew School
+(VCornerstone Academy
 p2426
 g2426
 tp2427
-(VFusion Academy
+(VDrew School
 p2428
 g2428
 tp2429
-(VHillwood Academic Day School
+(VFusion Academy
 p2430
 g2430
 tp2431
-(VInternational High School of San Francisco
+(VHillwood Academic Day School
 p2432
 g2432
 tp2433
-(VJewish Community High School of the Bay
+(VInternational High School of San Francisco
 p2434
 g2434
 tp2435
-(VLick-Wilmerding High School
+(VJewish Community High School of the Bay
 p2436
 g2436
 tp2437
-(VLycée Français La Pérouse
+(VLick-Wilmerding High School
 p2438
 g2438
 tp2439
-(VSaint John of San Francisco Orthodox Academy
+(VLycée Français La Pérouse
 p2440
 g2440
 tp2441
-(VSan Francisco Christian
+(VSaint John of San Francisco Orthodox Academy
 p2442
 g2442
 tp2443
-(VSan Francisco University High School
+(VSan Francisco Christian
 p2444
 g2444
 tp2445
-(VSan Francisco Waldorf High School
+(VSan Francisco University High School
 p2446
 g2446
 tp2447
-(VThe Urban School of San Francisco
+(VSan Francisco Waldorf High School
 p2448
 g2448
 tp2449
-(VWoodside International School
+(VThe Urban School of San Francisco
 p2450
 g2450
 tp2451
-(VYouth Chance High School
+(VWoodside International School
 p2452
 g2452
 tp2453
-(VArchbishop Riordan High School
+(VYouth Chance High School
 p2454
 g2454
 tp2455
-(VConvent of the Sacred Heart High School
+(VArchbishop Riordan High School
 p2456
 g2456
 tp2457
-(VImmaculate Conception Academy
+(VConvent of the Sacred Heart High School
 p2458
 g2458
 tp2459
-(VMercy High School
+(VImmaculate Conception Academy
 p2460
 g2460
 tp2461
-(VSacred Heart Cathedral Preparatory
+(VMercy High School
 p2462
 g2462
 tp2463
-(VSt. Ignatius College Preparatory
+(VSacred Heart Cathedral Preparatory
 p2464
 g2464
 tp2465
-(VStuart Hall High School
+(VSt. Ignatius College Preparatory
 p2466
 g2466
 tp2467
-(VEscalon Unified School District\u000a\u000aEscalon High School
+(VStuart Hall High School
 p2468
+g2468
+tp2469
+(VEscalon Unified School District\u000a\u000aEscalon High School
+p2470
 VEscalon Unified School District\u000a\u000aEscalon High School
-p2469
-tp2470
-(VEscalon High School
 p2471
-g2471
 tp2472
-(VLincoln Unified School District\u000a\u000aLincoln High School
+(VEscalon High School
 p2473
+g2473
+tp2474
+(VLincoln Unified School District\u000a\u000aLincoln High School
+p2475
 VLincoln Unified School District\u000a\u000aLincoln High School
-p2474
-tp2475
-(VLincoln High School
 p2476
-g2476
 tp2477
-(VLinden Unified School District\u000a\u000aLinden High School
+(VLincoln High School
 p2478
+g2478
+tp2479
+(VLinden Unified School District\u000a\u000aLinden High School
+p2480
 VLinden Unified School District\u000a\u000aLinden High School
-p2479
-tp2480
-(VLinden High School
 p2481
-g2481
 tp2482
-(VLodi Academy
+(VLinden High School
 p2483
 g2483
 tp2484
-(VLodi Unified School District\u000a\u000aBear Creek High School
+(VLodi Academy
 p2485
+g2485
+tp2486
+(VLodi Unified School District\u000a\u000aBear Creek High School
+p2487
 VLodi Unified School District\u000a\u000aBear Creek High School
-p2486
-tp2487
-(VBear Creek High School
 p2488
-g2488
 tp2489
-(VLodi High School
+(VBear Creek High School
 p2490
 g2490
 tp2491
-(VMiddle College High School
+(VLodi High School
 p2492
 g2492
 tp2493
-(VRonald E. McNair High School
+(VMiddle College High School
 p2494
 g2494
 tp2495
-(VTokay High School
+(VRonald E. McNair High School
 p2496
 g2496
 tp2497
-(VManteca Unified School District\u000a\u000aCalla Alternative High School
+(VTokay High School
 p2498
+g2498
+tp2499
+(VManteca Unified School District\u000a\u000aCalla Alternative High School
+p2500
 VManteca Unified School District\u000a\u000aCalla Alternative High School
-p2499
-tp2500
-(VCalla Alternative High School
 p2501
-g2501
 tp2502
-(VEast Union High School
+(VCalla Alternative High School
 p2503
 g2503
 tp2504
-(VLathrop High School
+(VEast Union High School
 p2505
 g2505
 tp2506
-(VManteca Day School
+(VLathrop High School
 p2507
 g2507
 tp2508
-(VManteca High School
+(VManteca Day School
 p2509
 g2509
 tp2510
-(VNew Vision Alternative High School
+(VManteca High School
 p2511
 g2511
 tp2512
-(VSierra High School
+(VNew Vision Alternative High School
 p2513
 g2513
 tp2514
-(VWeston Ranch High School
+(VSierra High School
 p2515
 g2515
 tp2516
-(VRipon Unified School District\u000a\u000aRipon High School
+(VWeston Ranch High School
 p2517
+g2517
+tp2518
+(VRipon Unified School District\u000a\u000aRipon High School
+p2519
 VRipon Unified School District\u000a\u000aRipon High School
-p2518
-tp2519
-(VRipon High School
 p2520
-g2520
 tp2521
-(VSt. Mary's High School
+(VRipon High School
 p2522
 g2522
 tp2523
-(VStockton Unified School District\u000a\u000aAmos Alonzo Stagg High School
+(VSt. Mary's High School
 p2524
+g2524
+tp2525
+(VStockton Unified School District\u000a\u000aAmos Alonzo Stagg High School
+p2526
 VStockton Unified School District\u000a\u000aAmos Alonzo Stagg High School
-p2525
-tp2526
-(VAmos Alonzo Stagg High School
 p2527
-g2527
 tp2528
-(VCesar Chavez High School
+(VAmos Alonzo Stagg High School
 p2529
 g2529
 tp2530
-(VEdison High School
+(VCesar Chavez High School
 p2531
 g2531
 tp2532
-(VFranklin High School
+(VEdison High School
 p2533
 g2533
 tp2534
-(VStockton Collegiate International Schools
+(VFranklin High School
 p2535
 g2535
 tp2536
-(VStockton Early College Academy
+(VStockton Collegiate International Schools
 p2537
 g2537
 tp2538
-(VTracy Unified School District\u000a\u000aJohn Kimball High School
+(VStockton Early College Academy
 p2539
+g2539
+tp2540
+(VTracy Unified School District\u000a\u000aJohn Kimball High School
+p2541
 VTracy Unified School District\u000a\u000aJohn Kimball High School
-p2540
-tp2541
-(VJohn Kimball High School
 p2542
-g2542
 tp2543
-(VTracy High School
+(VJohn Kimball High School
 p2544
 g2544
 tp2545
-(VWest High School
+(VTracy High School
 p2546
 g2546
 tp2547
-(VAtascadero Unified School District\u000a\u000aAtascadero High School
+(VWest High School
 p2548
+g2548
+tp2549
+(VAtascadero Unified School District\u000a\u000aAtascadero High School
+p2550
 VAtascadero Unified School District\u000a\u000aAtascadero High School
-p2549
-tp2550
-(VAtascadero High School
 p2551
-g2551
 tp2552
-(VDel Rio Continuation High School
+(VAtascadero High School
 p2553
 g2553
 tp2554
-(VMarie C. Romero High School
+(VDel Rio Continuation High School
 p2555
 g2555
 tp2556
-(VCoast Unified School District\u000a\u000aCoast Union High School
+(VMarie C. Romero High School
 p2557
+g2557
+tp2558
+(VCoast Unified School District\u000a\u000aCoast Union High School
+p2559
 VCoast Unified School District\u000a\u000aCoast Union High School
-p2558
-tp2559
-(VCoast Union High School
 p2560
-g2560
 tp2561
-(VLeffingwell Continuation High School
+(VCoast Union High School
 p2562
 g2562
 tp2563
-(VLucia Mar Unified School District\u000a\u000aArroyo Grande High School
+(VLeffingwell Continuation High School
 p2564
+g2564
+tp2565
+(VLucia Mar Unified School District\u000a\u000aArroyo Grande High School
+p2566
 VLucia Mar Unified School District\u000a\u000aArroyo Grande High School
-p2565
-tp2566
-(VArroyo Grande High School
 p2567
-g2567
 tp2568
-(VLopez High School
+(VArroyo Grande High School
 p2569
 g2569
 tp2570
-(VNipomo High School
+(VLopez High School
 p2571
 g2571
 tp2572
-(VPaso Robles Joint Unified School District\u000a\u000aLiberty High School
+(VNipomo High School
 p2573
+g2573
+tp2574
+(VPaso Robles Joint Unified School District\u000a\u000aLiberty High School
+p2575
 VPaso Robles Joint Unified School District\u000a\u000aLiberty High School
-p2574
-tp2575
-(VLiberty High School
 p2576
-g2576
 tp2577
-(VPaso Robles High School
+(VLiberty High School
 p2578
 g2578
 tp2579
-(VSan Luis Coastal Unified School District\u000a\u000aMorro Bay High School
+(VPaso Robles High School
 p2580
+g2580
+tp2581
+(VSan Luis Coastal Unified School District\u000a\u000aMorro Bay High School
+p2582
 VSan Luis Coastal Unified School District\u000a\u000aMorro Bay High School
-p2581
-tp2582
-(VMorro Bay High School
 p2583
-g2583
 tp2584
-(VPacific Beach High School
+(VMorro Bay High School
 p2585
 g2585
 tp2586
-(VSan Luis Obispo High School
+(VPacific Beach High School
 p2587
 g2587
 tp2588
-(VShandon Joint Unified School District\u000a\u000aShandon High/Middle School
+(VSan Luis Obispo High School
 p2589
+g2589
+tp2590
+(VShandon Joint Unified School District\u000a\u000aShandon High/Middle School
+p2591
 VShandon Joint Unified School District\u000a\u000aShandon High/Middle School
-p2590
-tp2591
-(VShandon High/Middle School
 p2592
-g2592
 tp2593
-(VTempleton Unified School District\u000a\u000aEagle Canyon High School
+(VShandon High/Middle School
 p2594
+g2594
+tp2595
+(VTempleton Unified School District\u000a\u000aEagle Canyon High School
+p2596
 VTempleton Unified School District\u000a\u000aEagle Canyon High School
-p2595
-tp2596
-(VEagle Canyon High School
 p2597
-g2597
 tp2598
-(VTempleton High School
+(VEagle Canyon High School
 p2599
 g2599
 tp2600
-(VGrizzly Challenge Charter School
+(VTempleton High School
 p2601
 g2601
 tp2602
-(VMission College Preparatory
+(VGrizzly Challenge Charter School
 p2603
 g2603
 tp2604
-(VNorth County Christian High School
+(VMission College Preparatory
 p2605
 g2605
 tp2606
-(VCabrillo Unified School District\u000a\u000aHalf Moon Bay High School
+(VNorth County Christian High School
 p2607
+g2607
+tp2608
+(VCabrillo Unified School District\u000a\u000aHalf Moon Bay High School
+p2609
 VCabrillo Unified School District\u000a\u000aHalf Moon Bay High School
-p2608
-tp2609
-(VHalf Moon Bay High School
 p2610
-g2610
 tp2611
-(VJefferson Union High School District\u000a\u000aJefferson High School
+(VHalf Moon Bay High School
 p2612
+g2612
+tp2613
+(VJefferson Union High School District\u000a\u000aJefferson High School
+p2614
 VJefferson Union High School District\u000a\u000aJefferson High School
-p2613
-tp2614
-(VJefferson High School
 p2615
-g2615
 tp2616
-(VOceana High School
+(VJefferson High School
 p2617
 g2617
 tp2618
-(VTerra Nova High School
+(VOceana High School
 p2619
 g2619
 tp2620
-(VWestmoor High School
+(VTerra Nova High School
 p2621
 g2621
 tp2622
-(VEast Palo Alto City School District\u000a\u000aRavenswood High School
+(VWestmoor High School
 p2623
+g2623
+tp2624
+(VEast Palo Alto City School District\u000a\u000aRavenswood High School
+p2625
 VEast Palo Alto City School District\u000a\u000aRavenswood High School
-p2624
-tp2625
-(VRavenswood High School
 p2626
-g2626
 tp2627
-(VRoman Catholic Archdiocese of San Francisco\u000a\u000aJunípero Serra High School
+(VRavenswood High School
 p2628
+g2628
+tp2629
+(VRoman Catholic Archdiocese of San Francisco\u000a\u000aJunípero Serra High School
+p2630
 VRoman Catholic Archdiocese of San Francisco\u000a\u000aJunípero Serra High School
-p2629
-tp2630
-(VJunípero Serra High School
 p2631
-g2631
 tp2632
-(VNotre Dame High School
+(VJunípero Serra High School
 p2633
 g2633
 tp2634
-(VWoodside Priory School
+(VNotre Dame High School
 p2635
 g2635
 tp2636
-(VSan Francisco Unified School District\u000a\u000aUrban Pioneer Experiential Academy
+(VWoodside Priory School
 p2637
+g2637
+tp2638
+(VSan Francisco Unified School District\u000a\u000aUrban Pioneer Experiential Academy
+p2639
 VSan Francisco Unified School District\u000a\u000aUrban Pioneer Experiential Academy
-p2638
-tp2639
-(VUrban Pioneer Experiential Academy
 p2640
-g2640
 tp2641
-(VSan Mateo Union High School District\u000a\u000aAragon High School
+(VUrban Pioneer Experiential Academy
 p2642
+g2642
+tp2643
+(VSan Mateo Union High School District\u000a\u000aAragon High School
+p2644
 VSan Mateo Union High School District\u000a\u000aAragon High School
-p2643
-tp2644
-(VAragon High School
 p2645
-g2645
 tp2646
-(VCapuchino High School
+(VAragon High School
 p2647
 g2647
 tp2648
-(VHillsdale High School
+(VCapuchino High School
 p2649
 g2649
 tp2650
-(VMills High School
+(VHillsdale High School
 p2651
 g2651
 tp2652
-(VSan Mateo High School
+(VMills High School
 p2653
 g2653
 tp2654
-(VSequoia Union High School District\u000a\u000aCarlmont High School
+(VSan Mateo High School
 p2655
+g2655
+tp2656
+(VSequoia Union High School District\u000a\u000aCarlmont High School
+p2657
 VSequoia Union High School District\u000a\u000aCarlmont High School
-p2656
-tp2657
-(VCarlmont High School
 p2658
-g2658
 tp2659
-(VEverest Public High School
+(VCarlmont High School
 p2660
 g2660
 tp2661
-(VMenlo-Atherton High School
+(VEverest Public High School
 p2662
 g2662
 tp2663
-(VSequoia High School
+(VMenlo-Atherton High School
 p2664
 g2664
 tp2665
-(VSummit Preparatory Charter High School
+(VSequoia High School
 p2666
 g2666
 tp2667
-(VWoodside High School
+(VSummit Preparatory Charter High School
 p2668
 g2668
 tp2669
-(VSouth San Francisco Unified School District\u000a\u000aBaden High School
+(VWoodside High School
 p2670
+g2670
+tp2671
+(VSouth San Francisco Unified School District\u000a\u000aBaden High School
+p2672
 VSouth San Francisco Unified School District\u000a\u000aBaden High School
-p2671
-tp2672
-(VBaden High School
 p2673
-g2673
 tp2674
-(VEl Camino High School
+(VBaden High School
 p2675
 g2675
 tp2676
-(VSouth San Francisco High School
+(VEl Camino High School
 p2677
 g2677
 tp2678
-(VAurora High School
+(VSouth San Francisco High School
 p2679
 g2679
 tp2680
-(VCrystal Springs Uplands School
+(VAurora High School
 p2681
 g2681
 tp2682
-(VEast Palo Alto Phoenix Academy
+(VCrystal Springs Uplands School
 p2683
 g2683
 tp2684
-(VEastside College Preparatory School
+(VEast Palo Alto Phoenix Academy
 p2685
 g2685
 tp2686
-(VGerman-American International School
+(VEastside College Preparatory School
 p2687
 g2687
 tp2688
-(VMenlo School
+(VGerman-American International School
 p2689
 g2689
 tp2690
