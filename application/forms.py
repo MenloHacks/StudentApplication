@@ -63,4 +63,5 @@ class ProfileForm(ModelForm):
             "dietary_restrictions": Select2TagWidget
         }
         
-        labels = {"zip_code":"School ZIP code", "form_url": "form"}
+        labels = {"zip_code":"School ZIP code", "form_url": "form", "name":
+            "Full Name"}

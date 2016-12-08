@@ -5,6 +5,7 @@ urlpatterns = [
     url(r'^$', views.Index.as_view(), name="index"),
     url(r'^$', views.index_waiting, name="index"),
     url(r'^$', views.index_result, name="index"),
+    url(r'^profile/$', views.Index.get_prof, name="profile"),
     url(r'^coming/$', views.coming, name="coming"),
     url(r'^upload/$', views.upload, name="file_upload"),
     url(r'^bring_chaperone/$', views.bring_chaperone, name="bring_chaperone"),

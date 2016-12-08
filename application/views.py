@@ -14,7 +14,7 @@ from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 import json
 import os
-
+from django.contrib.auth.views import login
 
 class LoginRequiredMixin(object):
     @classmethod
@@ -147,7 +147,7 @@ class Index(LoginRequiredMixin, View):
             school = request.user.profile.school
         except:
             school = None
-        if not is_submitted and school not in Index.guaranteed_admittance:
+        if not is_submitted:
             if not app_form:
                 try:
                     app_form = ApplicationForm(instance=request.user.application)
@@ -156,7 +156,8 @@ class Index(LoginRequiredMixin, View):
             return render(
                 request,
                 "application/application.html",
-                {'prof_form':prof_form, 'app_form':app_form}
+                {'prof_form': prof_form, 'app_form': app_form,
+                 "ismenlo": str(school in Index.guaranteed_admittance).lower()}
             )
         else:
             return render(request, "application/applied.html",
@@ -164,15 +165,14 @@ class Index(LoginRequiredMixin, View):
     
     def post(self, request):
         prof_form = ProfileForm(request.POST)
-        app_form = ApplicationForm(request.POST, request.FILES)
-        print(app_form)
+        valid = True
+        app_form = ApplicationForm(request.POST)
         if prof_form.is_valid():
+            existing_profile = True
             try:
                 request.user.profile.delete()
             except Exception:
-                pass
-
-            valid = True
+                existing_profile = False
             try:
                 if prof_form.has_tried:
                     valid = False
@@ -181,7 +181,7 @@ class Index(LoginRequiredMixin, View):
             new_prof = prof_form.save(commit=False)
             new_prof.user = request.user
             new_prof.save()
-            if new_prof.school in Index.guaranteed_admittance:
+            if new_prof.school in Index.guaranteed_admittance and not existing_profile:
                 Index.send_email(request.user, True)
                 return redirect('application:index')
             else:
@@ -206,13 +206,37 @@ class Index(LoginRequiredMixin, View):
                         return self.get(request, prof_form=prof_form,
                                         app_form=app_form)
         else:
+            try:
+                prof_form = request.user.profile
+                if app_form.is_valid():
+                    try:
+                        if request.user.application.submitted == True:
+                            return redirect('application:index')
+                        request.user.application.delete()
+                    except Exception:
+                        pass
+                    new_app = app_form.save(commit=False)
+                    new_app.user = request.user
+                    if request.POST.get("submit") == "true":
+                        Index.send_email(request.user, False)
+                        new_app.submitted = True
+                    new_app.save()
+                    return redirect('application:index')
+                else:
+                    if valid:
+                        return redirect('application:index')
+                    else:
+                        return self.get(request, prof_form=prof_form,
+                                        app_form=app_form)
+            except:
+                pass
             return self.get(request, prof_form=prof_form, app_form=app_form)
 
     @staticmethod
     def send_email(user, is_guaranteed):
         if is_guaranteed:
-            subject = "Thanks for signing up for MenloHacks!"
-            text = "Thanks for signing up for MenloHacks. We'll send you " \
+            subject = "Thanks for registering for MenloHacks!"
+            text = "Thanks for registering for MenloHacks. We'll send you " \
                    "more information in February. See you there!"
         else:
             subject = "Thanks for applying to MenloHacks!"
@@ -223,11 +247,36 @@ class Index(LoginRequiredMixin, View):
                                      [user.email])
         msg.send()
 
+    @staticmethod
+    def get_prof(request, prof_form=None, app_form=None):
+        if request.POST:
+            new_prof_form = ProfileForm(request.POST)
+            if new_prof_form.is_valid():
+                try:
+                    request.user.profile.delete()
+                except Exception:
+                    pass
+                new_prof = new_prof_form.save(commit=False)
+                new_prof.user = request.user
+                new_prof.save()
+                return redirect("application:index")
+        if not prof_form:
+            try:
+                prof_form = ProfileForm(instance=request.user.profile)
+            except Exception:
+                prof_form = ProfileForm()
+        return render(
+            request,
+            "application/profile.html",
+            {'prof_form': prof_form}
+        )
         
         
 def profile_redirect(request):
     return redirect('application:index')
 
+def redirecting_login(request):
+    return login(request, redirect_authenticated_user=True)
 
 import csv, codecs, cStringIO
 class UnicodeWriter:

@@ -31,7 +31,8 @@
             </div>
             <div class="row text-center">
                 <div class="form-group row">
-                    <button type="submit" class="btn btn-primary btn-app">Save</button>
+                    <button id="save" type="submit" class="btn btn-primary
+                    btn-app">Save</button>
                 </div>
                 <p class="help-block">
                     We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.
@@ -44,12 +45,20 @@
 </div>
 <script>
 var form = false;
+if ($('#id_form_url').val()) {
+    $("#fileupload").append("<span style='color:green'>✔</span>");
+    form = true;
+}
 $(".select2").select2({
         tags: true
     });
 $("#id_form_url").hide();
 $("#fileupload").appendTo($("#profile > div:nth-last-child(2)"));
-$("#submit-button").click(function(e) {
+$("#save").click(function(e) {
+    return validate();
+});
+
+function validate() {
     if(!$("#agree").is(":checked")) {
         alert("You must agree to the MLH Code of Conduct");
         return false;
@@ -58,12 +67,13 @@ $("#submit-button").click(function(e) {
         alert("You must upload the required forms.");
         return false;
     }
-    var willSubmit = confirm("Are you sure you want to submit your MenloHacks application?");
-    $("#id_submit").val(willSubmit);
-    return willSubmit;
-});
+    return true;
+}
+
+
 function completed(url) {
     $("#id_form_url").val(url);
+    $("#fileupload").append("<span style='color:green'>✔</span>");
     form = true;
 }
 </script>
