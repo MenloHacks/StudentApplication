@@ -2,6 +2,7 @@ from django.forms import ModelForm, Select
 from django_select2.forms import Select2Mixin
 
 from application.models import Application, Profile
+from django import forms
 
 class ApplicationForm(ModelForm):
     required_css_class = 'label-required'
@@ -9,12 +10,13 @@ class ApplicationForm(ModelForm):
     class Meta:
         model = Application
         fields = ['num_hackathons', 'cool_project', 'last_summer',
-                  'anything_else']
+                  'anything_else', 'form_url']
         labels = {
             "num_hackathons": "How many hackathons have you attended?",
             "cool_project": "Describe a cool project that you've made.",
             "last_summer": "What did you do last summer?",
-            "anything_else": "Do you have anything else to tell us?"
+            "anything_else": "Do you have anything else to tell us?",
+            "form_url": "Form"
         }
 
 """
@@ -55,13 +57,18 @@ class ProfileForm(ModelForm):
         fields = [
             'name', 'school', 'zip_code', 'phone_number', 'gender',
             'dietary_restrictions', 't_shirt_size', 'github_profile',
-            'linkedin_profile', 'devpost_profile', 'personal_website',
-            'form_url'
+            'linkedin_profile', 'devpost_profile', 'personal_website'
         ]
         widgets = {
             "school": Select2TagWidget,
             "dietary_restrictions": Select2TagWidget
         }
         
-        labels = {"zip_code":"School ZIP code", "form_url": "form", "name":
+        labels = {"zip_code":"School ZIP code", "name":
             "Full Name"}
+
+class ResendEmailForm(forms.Form):
+    required_css_class = 'label-required'
+
+    username = forms.CharField(label="Email",
+                               max_length=100)

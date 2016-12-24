@@ -15,6 +15,8 @@ from django.utils.html import strip_tags
 import json
 import os
 from django.contrib.auth.views import login
+from registration.backends.hmac.views import ActivationView
+from forms import ResendEmailForm
 
 class LoginRequiredMixin(object):
     @classmethod
@@ -62,7 +64,8 @@ class CustomRegistrationView(RegistrationView):
         msg.attach_alternative(html_content, "text/html")
         msg.send()
 
-    
+
+
 @login_required
 def index_waiting(request):
     return render(request, "application/waiting.html", {})
@@ -182,7 +185,6 @@ class Index(LoginRequiredMixin, View):
             new_prof.user = request.user
             new_prof.save()
             if new_prof.school in Index.guaranteed_admittance and not existing_profile:
-                Index.send_email(request.user, True)
                 return redirect('application:index')
             else:
                 if app_form.is_valid():
@@ -195,7 +197,7 @@ class Index(LoginRequiredMixin, View):
                     new_app = app_form.save(commit=False)
                     new_app.user = request.user
                     if request.POST.get("submit") == "true":
-                        Index.send_email(request.user, False)
+                        Index.send_email(request.user)
                         new_app.submitted = True
                     new_app.save()
                     return redirect('application:index')
@@ -218,7 +220,7 @@ class Index(LoginRequiredMixin, View):
                     new_app = app_form.save(commit=False)
                     new_app.user = request.user
                     if request.POST.get("submit") == "true":
-                        Index.send_email(request.user, False)
+                        Index.send_email(request.user)
                         new_app.submitted = True
                     new_app.save()
                     return redirect('application:index')
@@ -233,19 +235,39 @@ class Index(LoginRequiredMixin, View):
             return self.get(request, prof_form=prof_form, app_form=app_form)
 
     @staticmethod
-    def send_email(user, is_guaranteed):
-        if is_guaranteed:
-            subject = "Thanks for registering for MenloHacks!"
-            text = "Thanks for registering for MenloHacks. We'll send you " \
-                   "more information in February. See you there!"
+    def send_email(user):
+        first_name = user.profile.name.split(" ")[0]
+        context = {
+            "user": user,
+            "name": first_name
+        }
+        if user.profile.school in Index.guaranteed_admittance:
+            subject = "Thank you for registering for MenloHacks!"
+            html_content = render_to_string(
+                "registration/registered_email.html",
+                context)
+            text_content = strip_tags(html_content)
+
+            # create the email, and attach the HTML version as well.
+            msg = EmailMultiAlternatives(subject, text_content,
+                                         settings.DEFAULT_FROM_EMAIL,
+                                         [user.email])
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
+
         else:
-            subject = "Thanks for applying to MenloHacks!"
-            text = "Thanks for applying to MenloHacks. You will receive our " \
-                   "admission decision by February. Hope to see you there!"
-        msg = EmailMultiAlternatives(subject, text,
-                                     settings.DEFAULT_FROM_EMAIL,
-                                     [user.email])
-        msg.send()
+            subject = "Thank you for applying for MenloHacks!"
+            html_content = render_to_string(
+                "registration/applied_email.html",
+                context)
+            text_content = strip_tags(html_content)
+
+            # create the email, and attach the HTML version as well.
+            msg = EmailMultiAlternatives(subject, text_content,
+                                         settings.DEFAULT_FROM_EMAIL,
+                                         [user.email])
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
 
     @staticmethod
     def get_prof(request, prof_form=None, app_form=None):
@@ -277,6 +299,23 @@ def profile_redirect(request):
 
 def redirecting_login(request):
     return login(request, redirect_authenticated_user=True)
+
+class ResendEmail(CustomRegistrationView, ActivationView):
+
+    def get(self, request, invalid=False):
+        return render(request, "registration/resend_email.html",
+                      {"invalid": invalid, "form": ResendEmailForm()})
+
+    def post(self, request):
+        form = ResendEmailForm(request.POST)
+        user = self.get_user(form.data["username"])
+        if user:
+            self.send_activation_email(user)
+            return render(request, "registration/registration_complete.html")
+        else:
+            return self.get(request, invalid=True)
+
+
 
 import csv, codecs, cStringIO
 class UnicodeWriter:

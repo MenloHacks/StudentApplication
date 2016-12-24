@@ -14,10 +14,6 @@
                 {{ prof_form|bootstrap }}
                 <br/>
             </div>
-            <div id="fileupload">
-                    <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
-                    <input type="filepicker" data-fp-apikey="AvPwlqLN8QAKnPNO8tg38z" onchange="completed(event.fpfile.url)">
-            </div>
             <input type="hidden" id="id_submit" name="submit" value="false">
             <div class="row text-center">
                 <label class="label-required">
@@ -32,7 +28,7 @@
             <div class="row text-center">
                 <div class="form-group row">
                     <button id="save" type="submit" class="btn btn-primary
-                    btn-app">Save</button>
+                    btn-app">Next</button>
                 </div>
                 <p class="help-block">
                     We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.
@@ -44,16 +40,9 @@
 {{ prof_form.media }}
 </div>
 <script>
-var form = false;
-if ($('#id_form_url').val()) {
-    $("#fileupload").append("<span style='color:green'>✔</span>");
-    form = true;
-}
 $(".select2").select2({
         tags: true
     });
-$("#id_form_url").hide();
-$("#fileupload").appendTo($("#profile > div:nth-last-child(2)"));
 $("#save").click(function(e) {
     return validate();
 });
@@ -70,11 +59,5 @@ function validate() {
     return true;
 }
 
-
-function completed(url) {
-    $("#id_form_url").val(url);
-    $("#fileupload").append("<span style='color:green'>✔</span>");
-    form = true;
-}
 </script>
 {% endblock %}

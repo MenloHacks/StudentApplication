@@ -17,6 +17,11 @@
                 {{ app_form|bootstrap }}
             </div>
             <input type="hidden" id="id_submit" name="submit" value="false">
+            <div id="fileupload">
+                    <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+                    <input type="filepicker" data-fp-apikey="AvPwlqLN8QAKnPNO8tg38z" onchange="completed(event.fpfile.url)">
+            </div>
+            <br><br>
             <div class="row text-center">
                 <div class="form-group row">
                     <button id="back" class="btn btn-primary btn-app">Back</button>
@@ -36,13 +41,33 @@
     <div class="col-sm-2 col-lg-3"></div>
 </div>
 <script>
+
 if ({{ ismenlo }})  {
-    var nonmenlofields = $("#application .form-group:nth-child(-n+4)");
+    var nonmenlofields = $("#application .form-group:nth-child(-n+3)");
     nonmenlofields.hide();
     nonmenlofields.find("textarea, select").removeAttr("required");
     nonmenlofields.find("textarea").val("N/A (Menlo Student)");
 }
+
+var form = false;
+$("#id_form_url").hide();
+if ($('#id_form_url').val()) {
+    $("#fileupload").append("<span style='color:green'>✔</span>");
+    form = true;
+}
+$("#fileupload").appendTo($("#profile > div:nth-last-child(2)"));
+
+function completed(url) {
+    $("#id_form_url").val(url);
+    $("#fileupload").append("<span style='color:green'>✔</span>");
+    form = true;
+}
+
 $("#submit-button").click(function(e) {
+    if (!form) {
+        alert("You must upload the required forms.");
+        return false;
+    }
     var willSubmit = confirm("Are you sure you want to submit your MenloHacks application?");
     $("#id_submit").val(willSubmit);
     return willSubmit;

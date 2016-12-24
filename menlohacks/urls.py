@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from application.views import CustomRegistrationView
 from application.views import redirecting_login
+from application.views import ResendEmail
 
 
 urlpatterns = [
@@ -26,4 +27,5 @@ urlpatterns = [
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^accounts/register/$', CustomRegistrationView.as_view()),
     url(r'^accounts/', include('registration.backends.hmac.urls')),
+    url(r'^accounts/resend_email', ResendEmail.as_view())
 ]
