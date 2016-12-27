@@ -13,16 +13,26 @@
 <p class="help-block">Forgot password? <a href="{% url 'password_reset' %}">Reset it</a>!</p>
 <p class="help-block">Not a member? <a href="{% url 'registration_register' %}">Register</a>!</p>
 <script>
-$("#id_username").parent().siblings().html("Email Address");
-var alert = $("div .alert-danger");
-if (alert) {
-    alert.text("");
-    alert.append($.parseHTML("<a class='close' data-dismiss='alert'>×</a>" +
-    "<p>Please enter a correct username and " +
-        "password. " +
-        "If you have not confirmed your email yet, you must do so. " +
-        "You can resend the verification email <a " +
-        "href='/accounts/resend_email'>here</a>.</p>"));
-}
+$( function() {
+    setTimeout(function () {
+        var username = $("#id_username");
+        username.parent().siblings().html("Email Address");
+        var alert = $("div .alert-danger");
+        var formData = {
+            "username": username.val(),
+            "csrfmiddlewaretoken":'{{ csrf_token }}'
+        };
+        $.post("/accounts/is_active", formData, function(is_active) {
+          if (alert && !is_active) {
+            alert.text("");
+            alert.append($.parseHTML("<a class='close' data-dismiss='alert'>×</a>" +
+            "<p>In order to log in, you must verify your email address. " +
+                "You can resend the verification email <a " +
+                "href='/accounts/resend_email'>here</a>.</p>"));
+        }
+        });
+
+    }, 100);
+});
 </script>
 {% endblock %}

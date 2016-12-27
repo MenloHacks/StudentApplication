@@ -65,7 +65,7 @@ class ProfileForm(ModelForm):
         }
         
         labels = {"zip_code":"School ZIP code", "name":
-            "Full Name"}
+            "Full Name", "phone_number": "Cell Phone Number"}
 
 class ResendEmailForm(forms.Form):
     required_css_class = 'label-required'

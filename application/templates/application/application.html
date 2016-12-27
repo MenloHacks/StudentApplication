@@ -1,16 +1,14 @@
 {% extends "base.html" %}
 
 {% load bootstrap %}
+{% load static %}
 
 {% block content %}
 <div class="row">
     <div class="col-sm-2 col-lg-3"></div>
     <div class="col-sm-8 col-lg-6">
-        {% if ismenlo %}
-        <h1 class="text-center">Register for MenloHacks</h1><br/>
-        {% else %}
-        <h1 class="text-center">Apply to MenloHacks</h1><br/>
-        {% endif %}
+        <img src="{% static 'application/MenloHacksIILogo Inverted.svg' %}"
+             class="img-responsive" style="width:30%; margin: 0 auto;">
         <form role="form" method='post' action='.'>
             {% csrf_token %}
             <div id="application">
@@ -30,7 +28,7 @@
                 </div>
                 <p class="help-block">
                     All saved applications will be automatically submitted
-                    at midnight on February 8.
+                    at midnight on February 15.
                 </p>
                 <p class="help-block">
                     We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.
@@ -41,12 +39,12 @@
     <div class="col-sm-2 col-lg-3"></div>
 </div>
 <script>
-
-if ({{ ismenlo }})  {
-    var nonmenlofields = $("#application .form-group:nth-child(-n+3)");
+var nonmenlofields = $("#application .form-group:nth-child(-n+3)");
+if ({{ismenlo}})  {
     nonmenlofields.hide();
-    nonmenlofields.find("textarea, select").removeAttr("required");
     nonmenlofields.find("textarea").val("N/A (Menlo Student)");
+} else {
+    nonmenlofields.find("textarea, select").attr("required");
 }
 
 var form = false;
@@ -63,6 +61,8 @@ function completed(url) {
     form = true;
 }
 
+
+
 $("#submit-button").click(function(e) {
     if (!form) {
         alert("You must upload the required forms.");
@@ -73,11 +73,12 @@ $("#submit-button").click(function(e) {
     return willSubmit;
 });
 $("#back").click(function(e) {
-    var toreturn = confirm("Returning to the profile page will remove any " +
-        "new changes to your application. Are you sure you want to continue?");
-    if (toreturn) {
-        window.location = "/profile"
-    }
+    var formData = $("form").serializeArray();
+    formData.push({name: "submit", value: false});
+
+    $.post(".", formData, function(data) {
+      window.location = "/profile"
+    });
 });
 </script>
 {% endblock %}

@@ -20,10 +20,10 @@ class Application(models.Model):
         max_length=2,
         choices=NUM_HACKATHONS_CHOICES, default="0"
     )
-    cool_project = models.TextField()
-    last_summer = models.TextField()
+    cool_project = models.TextField(blank=True)
+    last_summer = models.TextField(blank=True)
     anything_else = models.TextField(blank=True)
-    form_url = models.CharField(max_length=200, null=True)
+    form_url = models.CharField(max_length=200, null=True, blank=True)
 
     submitted = models.BooleanField(default=False)
     

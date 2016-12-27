@@ -131,6 +131,7 @@ class Index(LoginRequiredMixin, View):
     guaranteed_admittance = ["Menlo School"]
 
     def get(self, request, prof_form=None, app_form=None):
+        is_menlo = str("menloschool.org" in request.user.email).lower()
         is_submitted = False
         try:
             is_submitted = request.user.application.submitted
@@ -144,7 +145,8 @@ class Index(LoginRequiredMixin, View):
                 return render(
                     request,
                     "application/profile.html",
-                    {'prof_form': prof_form}
+                    {'prof_form': prof_form,
+                     "ismenlo": is_menlo}
                 )
         try:
             school = request.user.profile.school
@@ -271,6 +273,7 @@ class Index(LoginRequiredMixin, View):
 
     @staticmethod
     def get_prof(request, prof_form=None, app_form=None):
+        is_menlo = str("menloschool.org" in request.user.email).lower()
         if request.POST:
             new_prof_form = ProfileForm(request.POST)
             if new_prof_form.is_valid():
@@ -290,7 +293,8 @@ class Index(LoginRequiredMixin, View):
         return render(
             request,
             "application/profile.html",
-            {'prof_form': prof_form}
+            {'prof_form': prof_form,
+             "ismenlo": is_menlo}
         )
         
         
@@ -315,7 +319,14 @@ class ResendEmail(CustomRegistrationView, ActivationView):
         else:
             return self.get(request, invalid=True)
 
-
+def is_active(request):
+    username = request.POST.get("username")
+    activation_view = ActivationView()
+    user = activation_view.get_user(username)
+    if user:
+        return HttpResponse("false")
+    else:
+        return HttpResponse("true")
 
 import csv, codecs, cStringIO
 class UnicodeWriter:
