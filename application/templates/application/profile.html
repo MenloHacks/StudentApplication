@@ -42,7 +42,10 @@
 <script>
 $(".select2").select2({
         tags: true
-    });
+});
+if ($("#id_name").val()) {
+    $('#agree').prop('checked', true);
+}
 
 if ({{ ismenlo }}) {
     $("#id_school").val("Menlo School")

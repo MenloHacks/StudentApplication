@@ -23,7 +23,8 @@
             <div class="row text-center">
                 <div class="form-group row">
                     <button id="back" class="btn btn-primary btn-app">Back</button>
-                    <button type="submit" class="btn btn-primary btn-app">Save</button>
+                    <button id="save" class="btn btn-primary
+                    btn-app">Save</button>
                     <button id="submit-button" type="submit" class="btn btn-warning btn-app">Submit</button>
                 </div>
                 <p class="help-block">
@@ -47,6 +48,7 @@ if ({{ismenlo}})  {
     nonmenlofields.find("textarea, select").attr("required", true);
     nonmenlofields.find("label").addClass("label-required")
 }
+$("#application .form-group:last-child label").addClass("label-required");
 
 var form = false;
 $("#id_form_url").hide();
@@ -62,7 +64,11 @@ function completed(url) {
     form = true;
 }
 
-
+$("#save").click(function(e) {
+    var formData = $("form").serializeArray();
+    formData.push({name: "submit", value: false});
+    $.post(".", formData);
+});
 
 $("#submit-button").click(function(e) {
     if (!form) {
@@ -74,11 +80,14 @@ $("#submit-button").click(function(e) {
     return willSubmit;
 });
 $("#back").click(function(e) {
+    e.preventDefault();
     var formData = $("form").serializeArray();
     formData.push({name: "submit", value: false});
 
     $.post(".", formData, function(data) {
-      window.location = "/profile"
+        setTimeout(function() {
+            window.location.href = ("/profile")
+        }, 50);
     });
 });
 </script>

@@ -64,8 +64,11 @@ class ProfileForm(ModelForm):
             "dietary_restrictions": Select2TagWidget
         }
         
-        labels = {"zip_code":"School ZIP code", "name":
-            "Full Name", "phone_number": "Cell Phone Number"}
+        labels = {"zip_code":"School ZIP code",
+                  "name": "Full Name",
+                  "phone_number": "Cell Phone Number",
+                  "linkedin_profile": "LinkedIn Profile"
+                  }
 
 class ResendEmailForm(forms.Form):
     required_css_class = 'label-required'
