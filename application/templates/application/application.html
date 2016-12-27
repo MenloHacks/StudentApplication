@@ -44,7 +44,8 @@ if ({{ismenlo}})  {
     nonmenlofields.hide();
     nonmenlofields.find("textarea").val("N/A (Menlo Student)");
 } else {
-    nonmenlofields.find("textarea, select").attr("required");
+    nonmenlofields.find("textarea, select").attr("required", true);
+    nonmenlofields.find("label").addClass("label-required")
 }
 
 var form = false;
