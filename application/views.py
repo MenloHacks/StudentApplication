@@ -211,26 +211,29 @@ class Index(LoginRequiredMixin, View):
                                         app_form=app_form)
         else:
             prof_form = request.user.profile
-            if app_form.is_valid():
-                try:
-                    if request.user.application.submitted == True:
-                        return redirect('application:index')
-                    request.user.application.delete()
-                except Exception:
-                    pass
-                new_app = app_form.save(commit=False)
-                new_app.user = request.user
-                if request.POST.get("submit") == "true":
-                    Index.send_email(request.user)
-                    new_app.submitted = True
-                new_app.save()
-                return redirect('application:index')
-            else:
-                if valid:
+            try:
+                if app_form.is_valid():
+                    try:
+                        if request.user.application.submitted == True:
+                            return redirect('application:index')
+                        request.user.application.delete()
+                    except Exception:
+                        pass
+                    new_app = app_form.save(commit=False)
+                    new_app.user = request.user
+                    if request.POST.get("submit") == "true":
+                        Index.send_email(request.user)
+                        new_app.submitted = True
+                    new_app.save()
                     return redirect('application:index')
                 else:
-                    return self.get(request, prof_form=prof_form,
-                                    app_form=app_form)
+                    if valid:
+                        return redirect('application:index')
+                    else:
+                        return self.get(request, prof_form=prof_form,
+                                        app_form=app_form)
+            except:
+                pass
             return self.get(request, prof_form=prof_form, app_form=app_form)
 
     @staticmethod
