@@ -23,12 +23,13 @@ $( function() {
             "csrfmiddlewaretoken":'{{ csrf_token }}'
         };
         $.post("/accounts/is_active", formData, function(is_active) {
-          if (alert && !is_active) {
-            alert.text("");
-            alert.append($.parseHTML("<a class='close' data-dismiss='alert'>×</a>" +
-            "<p>In order to log in, you must verify your email address. " +
-                "You can resend the verification email <a " +
-                "href='/accounts/resend_email'>here</a>.</p>"));
+            console.log(is_active);
+            if (alert && !eval(is_active)) {
+                alert.text("");
+                alert.append($.parseHTML("<a class='close' data-dismiss='alert'>×</a>" +
+                "<p>In order to log in, you must verify your email address. " +
+                    "You can resend the verification email <a " +
+                    "href='/accounts/resend_email'>here</a>.</p>"));
         }
         });
 
