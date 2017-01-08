@@ -17,7 +17,8 @@
             <input type="hidden" id="id_submit" name="submit" value="false">
             <div id="fileupload">
                     <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
-                    <input type="filepicker" data-fp-apikey="AvPwlqLN8QAKnPNO8tg38z" onchange="completed(event.fpfile.url)">
+                    <input type="filepicker" data-fp-apikey="{{api_key}}"
+                           onchange="completed(event.fpfile.url)">
             </div>
             <br><br>
             <div class="row text-center">

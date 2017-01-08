@@ -162,7 +162,9 @@ class Index(LoginRequiredMixin, View):
                 request,
                 "application/application.html",
                 {'prof_form': prof_form, 'app_form': app_form,
-                 "ismenlo": str(school in Index.guaranteed_admittance).lower()}
+                 "ismenlo": str(school in
+                                Index.guaranteed_admittance).lower(),
+                 "api_key": settings.FILESTACK_API_KEY}
             )
         else:
             return render(request, "application/applied.html",

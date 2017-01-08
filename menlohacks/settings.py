@@ -28,6 +28,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
+FILESTACK_API_KEY = os.environ["FILESTACK_API_KEY"]
+
 
 # Application definition
 
