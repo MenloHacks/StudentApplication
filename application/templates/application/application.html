@@ -1,8 +1,6 @@
 {% extends "base.html" %}
-
 {% load bootstrap %}
 {% load static %}
-
 {% block content %}
 <div class="row">
     <div class="col-sm-2 col-lg-3"></div>
@@ -19,6 +17,11 @@
                     <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
                     <input type="filepicker" data-fp-apikey="{{api_key}}"
                            onchange="completed(event.fpfile.url)">
+            </div>
+            <div id="photoupload">
+                    <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+                    <input type="filepicker" data-fp-apikey="{{api_key}}"
+                           onchange="completed_photo(event.fpfile.url)">
             </div>
             <br><br>
             <div class="row text-center">
@@ -52,17 +55,33 @@ if ({{ismenlo}})  {
 $("#application .form-group:last-child label").addClass("label-required");
 
 var form = false;
+var photo_form = false;
+
 $("#id_form_url").hide();
+$("#id_photo_form_url").hide();
+
 if ($('#id_form_url').val()) {
     $("#fileupload").append("<span style='color:green'>✔</span>");
     form = true;
 }
+if ($('#id_photo_form_url').val()) {
+    $("#photoupload").append("<span style='color:green'>✔</span>");
+    photo_form = true;
+}
+
 $("#fileupload").appendTo($("#profile > div:nth-last-child(2)"));
+$("#photoupload").appendTo($("#profile > div:nth-last-child(2)"));
 
 function completed(url) {
     $("#id_form_url").val(url);
     $("#fileupload").append("<span style='color:green'>✔</span>");
     form = true;
+}
+
+function completed_photo(url) {
+    $("#id_photo_form_url").val(url);
+    $("#photoupload").append("<span style='color:green'>✔</span>");
+    photo_form = true;
 }
 
 $("#save").click(function(e) {
@@ -72,7 +91,7 @@ $("#save").click(function(e) {
 });
 
 $("#submit-button").click(function(e) {
-    if (!form) {
+    if (!form || !photo_form) {
         alert("You must upload the required forms.");
         return false;
     }

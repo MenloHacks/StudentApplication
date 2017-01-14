@@ -24,6 +24,7 @@ class Application(models.Model):
     last_summer = models.TextField(blank=True)
     anything_else = models.TextField(blank=True)
     form_url = models.CharField(max_length=200, null=True, blank=True)
+    photo_form_url = models.CharField(max_length=200, null=True, blank=True)
 
     submitted = models.BooleanField(default=False)
     
