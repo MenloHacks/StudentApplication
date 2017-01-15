@@ -14,18 +14,37 @@
             </div>
             <input type="hidden" id="id_submit" name="submit" value="false">
             <div id="fileupload">
+                {% if is_menlo_django %}
                 <p>
-                    You can find the form <a href="http://www.example
-                    .com">here</a>.
+                    In order to complete your MenloHacks registration,
+                    please upload a signed copy of <a href="http://www
+                    .example.com" target="_blank">this form</a>. Your registration will not be
+                    processed until the form is signed and uploaded.
                 </p>
+                {% else %}
+                <p>
+                    For liability reasons, MenloHacks requires you to upload
+                    a signed copy of <a href="http://www.example.com" target="_blank">this
+                    waiver</a>. As part of that liability waiver, you will
+                    need to get an administrator at your school to testify
+                    to your character to assure Menlo School of your
+                    presence on its campus. Please do not upload the waiver
+                    until all portions of it are completed. If the waiver is
+                    not uploaded correctly, we cannot consider your for
+                    admission to MenloHacks II.
+                </p>
+                {% endif %}
                 <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
                 <input type="filepicker" data-fp-apikey="{{api_key}}"
                        onchange="completed(event.fpfile.url)">
             </div>
             <div id="photoupload">
                 <p>
-                    You can find the form <a href="http://www.example
-                    .com">here</a>.
+                    At MenloHacks II, we will be taking photos and videos
+                    throughout the event. In order to attend, you will need to
+                    upload a signed copy of this <a href="http://www.example
+                    .com" target="_blank">photo release
+                    form </a>.
                 </p>
                     <input type="filepicker" data-fp-apikey="{{api_key}}"
                            onchange="completed_photo(event.fpfile.url)">
