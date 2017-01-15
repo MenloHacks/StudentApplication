@@ -43,3 +43,8 @@ body {
 .container .text-muted {
   margin: 20px 0;
 }
+
+.waiver {
+    color: lightgray;
+    font-style: italic;
+}

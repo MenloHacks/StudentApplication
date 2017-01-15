@@ -165,7 +165,8 @@ class Index(LoginRequiredMixin, View):
                  "ismenlo": str(school in
                                 Index.guaranteed_admittance).lower(),
                  "api_key": settings.FILESTACK_API_KEY,
-                 "is_menlo_django": "menloschool.org" in request.user.email}
+                 "is_menlo_django": school in
+                                Index.guaranteed_admittance}
             )
         else:
             return render(request, "application/applied.html",
