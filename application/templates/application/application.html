@@ -52,6 +52,7 @@ if ({{ismenlo}})  {
     }
 }
 $("#application .form-group:last-child label").addClass("label-required");
+$("#application .form-group:nth-last-child(2) label").addClass("label-required");
 
 var form = false;
 var photo_form = false;
@@ -69,7 +70,7 @@ if ($('#id_photo_form_url').val()) {
 }
 
 $("#fileupload").appendTo($("#application > div:nth-last-child(2)"));
-$("#photoupload").appendTo($("#application > div:nth-last-child(2)"));
+$("#photoupload").appendTo($("#application > div:last-child"));
 
 function completed(url) {
     $("#id_form_url").val(url);
