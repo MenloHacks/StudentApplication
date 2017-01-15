@@ -16,7 +16,8 @@ class ApplicationForm(ModelForm):
             "cool_project": "Describe a cool project that you've made.",
             "last_summer": "What did you do last summer?",
             "anything_else": "Do you have anything else to tell us?",
-            "form_url": "Form"
+            "form_url": "Hackathon Form",
+            "photo_form_url": "Photo Release Form"
         }
 
 """
