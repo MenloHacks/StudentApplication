@@ -98,7 +98,7 @@ class Profile(models.Model):
         return "%s (%s)" % (self.name, self.user.username)
 
 class ApplicationReview(models.Model):
-    profile = models.OneToOneField(User, related_name="profile")
+    profile = models.OneToOneField(User, related_name="profile_reviewed")
 
     score = models.IntegerField()
     adjusted_score = models.FloatField()
