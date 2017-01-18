@@ -29,9 +29,11 @@ class ApplicationReviewView(LoginRequiredMixin, View):
 
     def get(self, request):
         if request.user.is_staff:
+            pass
             #if the
             #show some view related to login
         else:
+            pass
             #show a permissions denied view.
 
         pass

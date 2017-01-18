@@ -91,6 +91,8 @@ class Profile(models.Model):
     dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
 
+    auto_accept = models.BooleanField(default=False)
+
     application_reviewers = models.ManyToManyField("self", blank=True)
 
 
