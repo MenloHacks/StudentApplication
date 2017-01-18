@@ -25,6 +25,21 @@ class LoginRequiredMixin(object):
         return login_required(view)
 
 
+class ApplicationReviewView(LoginRequiredMixin, View):
+
+    def get(self, request):
+        if request.user.is_staff:
+            #if the
+            #show some view related to login
+        else:
+            #show a permissions denied view.
+
+        pass
+    def post(self, ):
+        #save the review
+        pass
+
+
 
 class CustomRegistrationView(RegistrationView):
     """

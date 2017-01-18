@@ -1,7 +1,7 @@
 from django.forms import ModelForm, Select
 from django_select2.forms import Select2Mixin
 
-from application.models import Application, Profile
+from application.models import Application, Profile, ApplicationReview
 from django import forms
 
 class ApplicationForm(ModelForm):
@@ -18,6 +18,15 @@ class ApplicationForm(ModelForm):
             "anything_else": "Do you have anything else to tell us?",
             "form_url": "Liability Waiver",
             "photo_form_url": "Photo Release Form"
+        }
+
+class ApplicationViewForm(ModelForm):
+
+    class Meta:
+        model = ApplicationReview
+        fields = ['score']
+        labels = {
+            'score' : "Evaluate this applicant by giving them an integer between 1 and 10:"
         }
 
 """

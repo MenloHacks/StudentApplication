@@ -11,4 +11,5 @@ psycopg2
 static3
 tablib
 wheel
+iron_cache
 Django-Select2
