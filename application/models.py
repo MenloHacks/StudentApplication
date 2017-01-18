@@ -91,5 +91,14 @@ class Profile(models.Model):
     dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
 
+    application_reviewers = models.ManyToManyField("self", blank=True)
+
+
     def __str__(self):
         return "%s (%s)" % (self.name, self.user.username)
+
+class ApplicationReview(models.Model):
+    profile = models.OneToOneField(User, related_name="profile")
+
+    score = models.IntegerField()
+    adjusted_score = models.FloatField()
