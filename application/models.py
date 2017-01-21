@@ -58,6 +58,13 @@ class DoNotKillMeForNotValidating(models.CharField):
         pass
     def run_validators(self, value):
         pass
+    def clean(self, value, model_instance):
+        """
+        Convert the value's type and run validation. Validation errors
+        from to_python and validate are propagated. The correct value is
+        returned if no error is raised.
+        """
+        return value
 
 class Profile(models.Model):
     DIETARY_RESTRICTIONS = (
