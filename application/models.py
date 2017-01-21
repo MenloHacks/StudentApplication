@@ -54,6 +54,8 @@ class DoNotKillMeForNotValidating(models.CharField):
     Your friend,
     Thomas
     """
+    def validate(self, value, model_instance):
+        return
 
 class Profile(models.Model):
     DIETARY_RESTRICTIONS = (
