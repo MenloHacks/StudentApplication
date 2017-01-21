@@ -55,8 +55,8 @@ class DoNotKillMeForNotValidating(models.CharField):
     Thomas
     """
 
-    def to_python(self, value):
-        return value
+    def validate(self, value, model_instance):
+        return
 
 
 class Profile(models.Model):
@@ -88,7 +88,8 @@ class Profile(models.Model):
     user = models.OneToOneField(User, related_name="profile")
     
     name = models.CharField(max_length=100)
-    school = DoNotKillMeForNotValidating(choices=SCHOOLS, max_length=150)
+    school = DoNotKillMeForNotValidating(choices=SCHOOLS, max_length=150,
+                                         )
     zip_code = models.IntegerField()
     
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',

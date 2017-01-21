@@ -52,7 +52,7 @@ class Select2TagWidget(Select2TagMixin, Select2Mixin, Select):
 
 class ProfileForm(ModelForm):
     required_css_class = 'label-required'
-    
+    Select2TagWidget()
     class Meta:
         model = Profile
         fields = [
