@@ -54,7 +54,7 @@ class DoNotKillMeForNotValidating(models.CharField):
     Your friend,
     Thomas
     """
-    def validate(self, value, model_instance):
+    def validate(self, value):
         return
 
 class Profile(models.Model):
