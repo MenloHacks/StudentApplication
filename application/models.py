@@ -56,6 +56,8 @@ class DoNotKillMeForNotValidating(models.CharField):
     """
     def validate(self, value, model_instance):
         pass
+    def run_validators(self, value):
+        pass
 
 class Profile(models.Model):
     DIETARY_RESTRICTIONS = (
