@@ -18,8 +18,8 @@ from registration.backends.hmac.views import ActivationView
 from forms import ResendEmailForm
 import json
 
-SCHOOLS = json.load(open("static/school_names.json"))
-DIETARY_RESTRICTIONS = [
+SCHOOLS = json.dumps(json.load(open("static/school_names.json")))
+DIETARY_RESTRICTIONS = json.dumps([
     {"id": "None",
      "text": "None"},
     {"id": "Vegetarian",
@@ -28,7 +28,7 @@ DIETARY_RESTRICTIONS = [
      "text": "Vegan"},
     {"id": "Gluten Free",
      "text": "Gluten Free"},
-    ]
+    ])
 
 
 
