@@ -46,15 +46,21 @@
 {{ prof_form.media }}
 </div>
 <script>
-$(".select2").select2({
-        tags: true
+var school = $("#id_school");
+school.select2({
+        tags: true,
+        data: {{ schools }}
+});
+$("#id_dietary_restrictions").select2({
+        tags: true,
+        data: {{ dietary_restrictions }}
 });
 if ($("#id_name").val()) {
     $('#agree').prop('checked', true);
 }
 
 if ({{ ismenlo }}) {
-    $("#id_school").val("Menlo School")
+    school.val("Menlo School")
 }
 $("#save").click(function(e) {
     return validate();

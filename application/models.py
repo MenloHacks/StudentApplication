@@ -47,25 +47,7 @@ class Application(models.Model):
         )
 
 
-class DoNotKillMeForNotValidating(models.CharField):
-    """
-    Select2 is stupid af and you'll get an error if they enter a new value
-    unless you have this special class. Please do not kill me.
-    Your friend,
-    Thomas
-    """
-
-    def validate(self, value, model_instance):
-        return
-
-
 class Profile(models.Model):
-    DIETARY_RESTRICTIONS = (
-        ("None", "None"),
-        ("Vegetarian", "Vegetarian"),
-        ("Vegan", "Vegan"),
-        ("Gluten Free", "Gluten Free"),
-    )
     
     T_SHIRT_SIZES = (
         ("XS", "XS"),
@@ -82,14 +64,12 @@ class Profile(models.Model):
         ("No answer", "Prefer not to say"),
     )
 
-    SCHOOLS = pickle.load(open("static/school_list.pkl", "rb"))
 
     
     user = models.OneToOneField(User, related_name="profile")
     
     name = models.CharField(max_length=100)
-    school = DoNotKillMeForNotValidating(choices=SCHOOLS, max_length=150,
-                                         )
+    school = models.CharField(max_length=150)
     zip_code = models.IntegerField()
     
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',
@@ -103,8 +83,7 @@ class Profile(models.Model):
     linkedin_profile = models.URLField(blank=True, default="https://www.linkedin.com/in/")
     devpost_profile = models.URLField(blank=True, default="http://devpost.com/")
     personal_website = models.CharField(max_length=200, blank=True, default="http://")
-    dietary_restrictions = DoNotKillMeForNotValidating(max_length=15, choices=DIETARY_RESTRICTIONS,
-                             default="None")
+    dietary_restrictions = models.CharField(max_length=15, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
 
     def __str__(self):

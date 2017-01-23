@@ -12,11 +12,25 @@ from registration.backends.hmac.views import RegistrationView
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
-import json
 import os
 from django.contrib.auth.views import login
 from registration.backends.hmac.views import ActivationView
 from forms import ResendEmailForm
+import json
+
+SCHOOLS = json.load(open("static/school_names.json"))
+DIETARY_RESTRICTIONS = [
+    {"id": "None",
+     "text": "None"},
+    {"id": "Vegetarian",
+     "text": "Vegetarian"},
+    {"id": "Vegan",
+     "text": "Vegan"},
+    {"id": "Gluten Free",
+     "text": "Gluten Free"},
+    ]
+
+
 
 class LoginRequiredMixin(object):
     @classmethod
@@ -146,7 +160,9 @@ class Index(LoginRequiredMixin, View):
                     request,
                     "application/profile.html",
                     {'prof_form': prof_form,
-                     "ismenlo": is_menlo}
+                     "ismenlo": is_menlo,
+                     "schools": SCHOOLS,
+                     "dietary_restrictions": DIETARY_RESTRICTIONS}
                 )
         try:
             school = request.user.profile.school
@@ -298,7 +314,10 @@ class Index(LoginRequiredMixin, View):
             request,
             "application/profile.html",
             {'prof_form': prof_form,
-             "ismenlo": is_menlo}
+             "ismenlo": is_menlo,
+             "schools": SCHOOLS,
+             "dietary_restrictions": DIETARY_RESTRICTIONS
+             }
         )
         
         
