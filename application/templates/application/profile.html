@@ -47,12 +47,14 @@
 </div>
 <script>
 var school = $("#id_school");
+{% autoescape off %}
 var schools = JSON.parse({{schools}});
 school.select2({
         tags: true,
         data: schools
 });
 var dietary_restrictions = JSON.parse({{dietary_restrictions}});
+{% endautoescape %}
 $("#id_dietary_restrictions").select2({
         tags: true,
         data: dietary_restrictions
