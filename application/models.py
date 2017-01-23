@@ -46,6 +46,9 @@ class Application(models.Model):
             "done" if self.submitted else "in-progress"
         )
 
+class DoNotKillMeForNotValidating(models.CharField):
+    pass
+
 
 class Profile(models.Model):
     
