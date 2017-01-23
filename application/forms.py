@@ -52,7 +52,6 @@ class Select2TagWidget(Select2TagMixin, Select2Mixin, Select):
 
 class ProfileForm(ModelForm):
     required_css_class = 'label-required'
-    Select2TagWidget()
     class Meta:
         model = Profile
         fields = [
@@ -60,10 +59,6 @@ class ProfileForm(ModelForm):
             'dietary_restrictions', 't_shirt_size', 'github_profile',
             'linkedin_profile', 'devpost_profile', 'personal_website'
         ]
-        widgets = {
-            "school": Select2TagWidget,
-            "dietary_restrictions": Select2TagWidget
-        }
         
         labels = {"zip_code":"School ZIP code",
                   "name": "Full Name",
