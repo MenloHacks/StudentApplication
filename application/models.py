@@ -86,7 +86,7 @@ class Profile(models.Model):
     linkedin_profile = models.URLField(blank=True, default="https://www.linkedin.com/in/")
     devpost_profile = models.URLField(blank=True, default="http://devpost.com/")
     personal_website = models.CharField(max_length=200, blank=True, default="http://")
-    dietary_restrictions = models.CharField(max_length=15, default="None")
+    dietary_restrictions = models.CharField(max_length=150, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
 
     def __str__(self):

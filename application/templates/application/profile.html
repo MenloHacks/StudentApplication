@@ -75,7 +75,8 @@ var school = $("#id_school");
     dietary_restriction.selectize({
         create: true,
         sortField: 'text',
-        options: {{ dietary_restrictions }}
+        options: {{ dietary_restrictions }},
+        maxItems: 1 //really shouldn't be, but couldn't figure it out
     });
 {% endautoescape %}
 
