@@ -47,13 +47,15 @@
 </div>
 <script>
 var school = $("#id_school");
+var schools = JSON.parse({{schools}});
 school.select2({
         tags: true,
-        data: {{ schools }}
+        data: schools
 });
+var dietary_restrictions = JSON.parse({{dietary_restrictions}});
 $("#id_dietary_restrictions").select2({
         tags: true,
-        data: {{ dietary_restrictions }}
+        data: dietary_restrictions
 });
 if ($("#id_name").val()) {
     $('#agree').prop('checked', true);
