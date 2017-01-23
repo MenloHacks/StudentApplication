@@ -20,13 +20,13 @@ import json
 
 SCHOOLS = json.dumps(json.load(open("static/school_names.json")))
 DIETARY_RESTRICTIONS = json.dumps([
-    {"id": "None",
+    {"value": "None",
      "text": "None"},
-    {"id": "Vegetarian",
+    {"value": "Vegetarian",
      "text": "Vegetarian"},
-    {"id": "Vegan",
+    {"value": "Vegan",
      "text": "Vegan"},
-    {"id": "Gluten Free",
+    {"value": "Gluten Free",
      "text": "Gluten Free"},
     ])
 
