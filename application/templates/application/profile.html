@@ -60,8 +60,8 @@ var school = $("#id_school");
     }
     school.selectize({
         create: true,
-        sortField: 'text',
-        options: school_options
+        options: school_options,
+        maxItems: 1
     });
     var dietary_restriction = $("#id_dietary_restrictions");
     var diet_options = {{ dietary_restrictions }};
