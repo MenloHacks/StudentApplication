@@ -18,10 +18,7 @@ for item in items:
     if school_name == "Wheatland High School, Wheatland": # replace with last
         #  school
         name = school_name.split(",")[0]
-        school_names.append({
-            'id': name,
-            'text': name
-        })
+        school_names.append(name)
         break
     bad = False
     for child in item.children:
@@ -29,14 +26,9 @@ for item in items:
             bad = True
     if not bad:
         name = school_name.split(",")[0]
-        school_names.append({
-            'id': name,
-            'text': name
-        })
+        school_names.append(name)
 
-school_names = [school_names.pop(school_names.index({'id': "Menlo School",
-                                                     'text': 'Menlo '
-                                                             'School'}))]\
+school_names = [school_names.pop(school_names.index("Menlo School"))]\
                + school_names
 print(school_names)
 json.dump(school_names, open("school_names.json", "w"))

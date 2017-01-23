@@ -44,24 +44,25 @@
     </div>
     <div class="col-sm-2 col-lg-3"></div>
 </div>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/selectize.min.js">
+</script>
 <script>
-{{ prof_form.media }}
 var school = $("#id_school");
 var old_value = school.val();
 {% autoescape off %}
-school.select2({
-        tags: true,
-        data: {{schools}}
+school.selectize({
+    create: true,
+    sortField: 'text',
+    options: {{ schools }}
 });
 school.val(old_value);
 
 var dietary_restriction = $("#id_dietary_restrictions");
 old_value = dietary_restriction.val();
-dietary_restriction.select2({
-        tags: true,
-        data: {{dietary_restrictions}}
+dietary_restriction.selectize({
+    create: true,
+    sortField: 'text',
+    options: {{ dietary_restrictions }}
 });
 dietary_restriction.val(old_value);
 {% endautoescape %}
