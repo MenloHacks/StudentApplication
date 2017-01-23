@@ -48,17 +48,15 @@
 <script>
 var school = $("#id_school");
 {% autoescape off %}
-var schools = JSON.parse({{schools}});
 school.select2({
         tags: true,
-        data: schools
+        data: {{schools}}
 });
-var dietary_restrictions = JSON.parse({{dietary_restrictions}});
-{% endautoescape %}
 $("#id_dietary_restrictions").select2({
         tags: true,
-        data: dietary_restrictions
+        data: {{dietary_restrictions}}
 });
+{% endautoescape %}
 if ($("#id_name").val()) {
     $('#agree').prop('checked', true);
 }
