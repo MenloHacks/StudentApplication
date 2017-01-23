@@ -49,15 +49,15 @@
 </script>
 <script>
 var school = $("#id_school");
-var school_options = {{ schools }};
-if (school.val())
-{
-    school_options.push({
-        text: school.val(),
-        value: school.val()
-    });
-}
 {% autoescape off %}
+    var school_options = {{ schools }};
+    if (school.val())
+    {
+        school_options.push({
+            text: school.val(),
+            value: school.val()
+        });
+    }
     school.selectize({
         create: true,
         sortField: 'text',
