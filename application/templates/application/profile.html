@@ -48,6 +48,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.min.js">
 </script>
 <script>
+$("form").submit(function(e) {
+
+    var ref = $(this).find("[required]");
+
+    $(ref).each(function(){
+        if ( $(this).val() == '' )
+        {
+            alert("Required field should not be blank.");
+
+            $(this).focus();
+
+            e.preventDefault();
+            return false;
+        }
+    });  return true;
+});
+
 var school = $("#id_school");
 {% autoescape off %}
     var school_options = {{ schools }};
