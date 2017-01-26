@@ -186,7 +186,10 @@ class Index(LoginRequiredMixin, View):
             )
         else:
             return render(request, "application/applied.html",
-                          {'prof_form':prof_form})
+                          {'prof_form':prof_form,
+                           "schools": SCHOOLS,
+                           "dietary_restrictions": DIETARY_RESTRICTIONS
+                           })
     
     def post(self, request):
         prof_form = ProfileForm(request.POST)
