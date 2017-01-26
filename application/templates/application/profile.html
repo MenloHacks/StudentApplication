@@ -118,7 +118,7 @@ $.validator.addMethod("ZIP", function(value, element) {
     },"Please enter a valid phone number.");
 
     $.validator.addMethod("NAME",function(value,element){
-        return this.optional(element) || /[^\x00-\x7F]/i.test(value);
+        return !/[^\x00-\x7F]/i.test(value);
     },"Please enter a name with English characters.");
 
     $("form").validate({
