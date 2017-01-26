@@ -119,14 +119,10 @@ $.validator.addMethod("ZIP", function(value, element) {
 
     $("form").validate({
         rules: {
-            id_phone_number: "required PHONE",
-            id_zip_code: "required ZIP"
+            phone_number: "required PHONE",
+            zip_code: "required ZIP"
         }
     });
-$("#id_zip_code").rules("add", {regex: "^\\d{5}$"});
-$("#id_phone_number").rules("add", {regex: "^(?:\\([2-9]\\d{2}\\)\\ " +
-"?|[2-9]\\d{2}" +
-"(?:\\-?|\\ ?))[2-9]\\d{2}[- ]?\\d{4}$"});
 
 
 $("#save").click(function(e) {
