@@ -22,25 +22,28 @@ username.keyup(function(e) {
     $("#id_email").val(username.val());});
 
 $("#submit").click(function(e) {
-            var valid = true;
-            if (username.val().includes(".edu"))
-            {
-                valid = false;
-                sweetAlert({
-                  title: "Notice",
-                  text: "We noticed you are using a .edu email. MenloHacks " +
-                  "will only accept high school students. Are you sure you " +
-                  "want to continue?",
-                  type: "warning",
-                  showCancelButton: true,
-                  confirmButtonText: "Yes, I'm a high school student!",
-                  closeOnConfirm: false
-                },
-                function(isConfirm){
-                    valid = isConfirm;
-                });
-            }
-            return valid;
-        })
+    return validate();
+});
+function validate() {
+    valid = true;
+    if (username.val().includes(".edu")) {
+        valid = false;
+        sweetAlert({
+                title: "Notice",
+                text: "We noticed you are using a .edu email. MenloHacks " +
+                "will only accept high school students. Are you sure you " +
+                "want to continue?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Yes, I'm a high school student!",
+                closeOnConfirm: false
+            },
+            function (isConfirm) {
+                valid = isConfirm;
+            });
+        return valid;
+    }
+    return valid;
+}
 </script>
 {% endblock %}
