@@ -117,10 +117,15 @@ $.validator.addMethod("ZIP", function(value, element) {
         return this.optional(element) || /^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$/i.test(value);
     },"Please enter a valid phone number.");
 
+    $.validator.addMethod("NAME",function(value,element){
+        return this.optional(element) || /[^\x00-\x7F]/i.test(value);
+    },"Please enter a name with English characters.");
+
     $("form").validate({
         rules: {
             phone_number: "required PHONE",
-            zip_code: "required ZIP"
+            zip_code: "required ZIP",
+            name: "required NAME"
         }
     });
 
