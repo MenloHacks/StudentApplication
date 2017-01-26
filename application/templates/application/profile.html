@@ -109,14 +109,20 @@ if ({{ ismenlo }}) {
     school.val("Menlo School")
 }
 
-$.validator.addMethod(
-        "regex",
-        function(value, element, regexp) {
-            var re = new RegExp(regexp);
-            return this.optional(element) || re.test(value);
-        },
-        "Please check your input."
-);
+$.validator.addMethod("ZIP", function(value, element) {
+        return this.optional(element) || /\\d{5}$/i.test(value);
+    }, "Please enter a valid zip code.");
+
+    $.validator.addMethod("PHONE",function(value,element){
+        return this.optional(element) || /^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$/i.test(value);
+    },"Please enter a valid phone number.");
+
+    $("form").validate({
+        rules: {
+            id_phone_number: "required PHONE",
+            id_zip_code: "required ZIP"
+        }
+    });
 $("#id_zip_code").rules("add", {regex: "^\\d{5}$"});
 $("#id_phone_number").rules("add", {regex: "^(?:\\([2-9]\\d{2}\\)\\ " +
 "?|[2-9]\\d{2}" +
