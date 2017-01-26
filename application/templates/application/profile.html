@@ -106,6 +106,21 @@ $("#id_school-selectized").attr("maxlength", "150");
 if ({{ ismenlo }}) {
     school.val("Menlo School")
 }
+
+$.validator.addMethod(
+        "regex",
+        function(value, element, regexp) {
+            var re = new RegExp(regexp);
+            return this.optional(element) || re.test(value);
+        },
+        "Please check your input."
+);
+
+$("#id_zip_code").rules("add", {regex: "^\d{5}$"});
+$("#id_phone_number").rules("add", {regex: "^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}" +
+"(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$"});
+
+
 $("#save").click(function(e) {
     return validate();
 });

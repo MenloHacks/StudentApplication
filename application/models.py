@@ -73,7 +73,7 @@ class Profile(models.Model):
     
     name = models.CharField(max_length=100)
     school = models.CharField(max_length=150)
-    zip_regex = RegexValidator(regex="\d{5}",
+    zip_regex = RegexValidator(regex="^\d{5}$",
                                 message="Zip code must be in the format "
                                         "'94027'. Only five numeric digits "
                                         "allowed.")
