@@ -73,7 +73,11 @@ class Profile(models.Model):
     
     name = models.CharField(max_length=100)
     school = models.CharField(max_length=150)
-    zip_code = models.IntegerField()
+    zip_regex = RegexValidator(regex="\d{5}",
+                                message="Zip code must be in the format "
+                                        "'94027'. Only five numeric digits "
+                                        "allowed.")
+    zip_code = models.IntegerField(validators=[zip_regex])
     
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',
                                  message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
