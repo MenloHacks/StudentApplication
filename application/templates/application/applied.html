@@ -105,7 +105,7 @@
 
 
         $.validator.addMethod("ZIP", function(value, element) {
-                return this.optional(element) || /\d{5}$/i.test(value);
+                return this.optional(element) || /^\d{5}$/i.test(value);
             }, "Please enter a valid zip code.");
 
         $.validator.addMethod("PHONE",function(value,element){
