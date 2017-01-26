@@ -45,7 +45,7 @@
                     At MenloHacks II, we will be taking photos and videos
                     throughout the event. In order to attend, you will need to
                     upload a signed copy of this <a href="https://d2b6s0dsvfyqsi.cloudfront.net/photo_release.pdf" target="_blank">photo release
-                    form </a>.
+                    form</a>.
                 </p>
                     <input type="filepicker" data-fp-apikey="{{api_key}}"
                            onchange="completed_photo(event.fpfile.url)">
@@ -58,10 +58,12 @@
                     btn-app">Save</button>
                     <button id="submit-button" type="submit" class="btn btn-warning btn-app">Submit</button>
                 </div>
+                {% if not is_menlo_django %}
                 <p class="help-block">
                     All saved applications will be automatically submitted
                     at midnight on February 19.
                 </p>
+                {% endif %}
             </div>
         </form>
     </div>
