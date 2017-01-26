@@ -78,7 +78,7 @@ if ({{ismenlo}})  {
 } else {
     nonmenlofields.find("textarea, select").attr("required", true);
     nonmenlofields.find("label").addClass("label-required");
-    if ($("#id_last_summer").val == "N/A (Menlo Student)") {
+    if ($("#id_last_summer").val() == "N/A (Menlo Student)") {
         nonmenlofields.find("textarea").val("");
     }
 }
