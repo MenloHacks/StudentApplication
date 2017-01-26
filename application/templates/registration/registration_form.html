@@ -25,7 +25,7 @@ $("#submit").click(function(e) {
     return validate();
 });
 function validate() {
-    valid = true;
+    var valid = true;
     if (username.val().includes(".edu")) {
         valid = false;
         sweetAlert({
@@ -39,7 +39,10 @@ function validate() {
                 closeOnConfirm: false
             },
             function (isConfirm) {
-                valid = isConfirm;
+                if (isConfirm)
+                {
+                    $("form").submit();
+                }
             });
         return valid;
     }
