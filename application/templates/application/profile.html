@@ -117,10 +117,10 @@ $.validator.addMethod(
         },
         "Please check your input."
 );
-
-$("#id_zip_code").rules("add", {regex: "^\d{5}$"});
-$("#id_phone_number").rules("add", {regex: "^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}" +
-"(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$"});
+$("#id_zip_code").rules("add", {regex: "^\\d{5}$"});
+$("#id_phone_number").rules("add", {regex: "^(?:\\([2-9]\\d{2}\\)\\ " +
+"?|[2-9]\\d{2}" +
+"(?:\\-?|\\ ?))[2-9]\\d{2}[- ]?\\d{4}$"});
 
 
 $("#save").click(function(e) {
