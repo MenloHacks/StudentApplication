@@ -21,6 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
+
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -29,7 +30,6 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 FILESTACK_API_KEY = os.environ["FILESTACK_API_KEY"]
-
 
 # Application definition
 
@@ -126,8 +126,10 @@ LOGIN_REDIRECT_URL = "/"
 # Heroku settings below
 #Parse database configuration from $DATABASE_URL
 import dj_database_url
-DATABASES = {}
+DATABASES = {
+}
 DATABASES['default'] =  dj_database_url.config()
+DATABASES['default']['OPTIONS'] = {"charset": "utf8mb4"}
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -147,5 +149,3 @@ try:
     from local_settings import *
 except ImportError:
     pass
-
-
