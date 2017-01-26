@@ -8,13 +8,38 @@
   {% csrf_token %}
   {{ form|bootstrap }}
 
-  <input class="btn btn-success" type="submit" value="Submit" />
+  <input class="btn btn-success" type="submit" value="Submit" id="submit" />
 </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"></script>
 <script>
-$("#id_username").parent().siblings().html("Email Address");
-$("#id_username").attr("type", "email");
+var username = $("#id_username");
+
+username.parent().siblings().html("Email Address");
+username.attr("type", "email");
 $("#id_email").parent().parent().hide();
-$("#id_username").keyup(function(e) {
-    $("#id_email").val($("#id_username").val());});
+username.keyup(function(e) {
+    $("#id_email").val(username.val());});
+
+$("#submit").click(function(e) {
+            var valid = true;
+            if (username.val().includes(".edu"))
+            {
+                valid = false;
+                sweetAlert({
+                  title: "Notice",
+                  text: "We noticed you are using a .edu email. MenloHacks " +
+                  "will only accept high school students. Are you sure you " +
+                  "want to continue?",
+                  type: "warning",
+                  showCancelButton: true,
+                  confirmButtonText: "Yes, I'm a high school student!",
+                  closeOnConfirm: false
+                },
+                function(isConfirm){
+                    valid = isConfirm;
+                });
+            }
+            return valid;
+        })
 </script>
 {% endblock %}
