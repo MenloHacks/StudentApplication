@@ -38,11 +38,8 @@ function validate() {
                 confirmButtonText: "Yes, I'm a high school student!",
                 closeOnConfirm: false
             },
-            function (isConfirm) {
-                if (isConfirm)
-                {
-                    $("form").submit();
-                }
+            function () {
+                valid = true;
             });
         return valid;
     }
