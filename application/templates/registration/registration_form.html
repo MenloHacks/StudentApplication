@@ -40,13 +40,10 @@ function validate() {
             },
             function () {
                 valid = true;
-                console.log(valid);
+                return valid;
             });
-        console.log(valid);
-        return valid;
     }
-    console.log(valid);
-    return valid;
+    return true;
 }
 </script>
 {% endblock %}
