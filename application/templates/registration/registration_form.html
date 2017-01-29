@@ -22,11 +22,12 @@ username.keyup(function(e) {
     $("#id_email").val(username.val());});
 
 $("form").submit(function(e) {
-    setTimeout(function() {
-        return validate;
-    }, 50000);
+    event.preventDefault();
+    validate(this);
+
+
 });
-function validate() {
+function validate(form) {
     if (username.val().includes(".edu")) {
         sweetAlert({
                 title: "Notice",
@@ -39,14 +40,11 @@ function validate() {
                 closeOnConfirm: false
             },
             function () {
-                return true;
-            },
-            function() {
-                return false;
+                return form.submit();
             });
     }
     else {
-        return true;
+        return form.submit();
     }
 }
 </script>
