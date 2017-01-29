@@ -21,7 +21,8 @@ $("#id_email").parent().parent().hide();
 username.keyup(function(e) {
     $("#id_email").val(username.val());});
 
-$("#submit").click(function(e) {
+$("form").submit(function(e) {
+    e.preventDefault();
     return validate();
 });
 function validate() {
