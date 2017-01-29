@@ -27,6 +27,7 @@ $("form").submit(function(e) {
 
 });
 function validate(form) {
+    console.log("test");
     if (username.val().includes(".edu")) {
         sweetAlert({
                 title: "Notice",
@@ -39,11 +40,11 @@ function validate(form) {
                 closeOnConfirm: false
             },
             function () {
-                return form.submit();
+                form.submit();
             });
     }
     else {
-        return form.submit();
+        form.submit();
     }
 }
 </script>
