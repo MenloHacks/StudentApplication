@@ -22,9 +22,8 @@ username.keyup(function(e) {
     $("#id_email").val(username.val());});
 
 $("form").submit(function(e) {
-    event.preventDefault();
+    e.preventDefault();
     validate(this);
-
 
 });
 function validate(form) {
