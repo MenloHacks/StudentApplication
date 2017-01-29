@@ -25,9 +25,7 @@ $("form").submit(function(e) {
     return validate();
 });
 function validate() {
-    var valid = true;
     if (username.val().includes(".edu")) {
-        valid = false;
         sweetAlert({
                 title: "Notice",
                 text: "We noticed you are using a .edu email. MenloHacks " +
@@ -39,11 +37,15 @@ function validate() {
                 closeOnConfirm: false
             },
             function () {
-                valid = true;
-                return valid;
+                return true;
+            },
+            function() {
+                return false;
             });
     }
-    return true;
+    else {
+        return true;
+    }
 }
 </script>
 {% endblock %}
