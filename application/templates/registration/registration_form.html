@@ -22,8 +22,9 @@ username.keyup(function(e) {
     $("#id_email").val(username.val());});
 
 $("form").submit(function(e) {
-    e.preventDefault();
-    return validate();
+    setTimeout(function() {
+        return validate;
+    }, 50000);
 });
 function validate() {
     if (username.val().includes(".edu")) {
