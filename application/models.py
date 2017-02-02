@@ -93,6 +93,7 @@ class Profile(models.Model):
     personal_website = models.CharField(max_length=200, blank=True, default="http://")
     dietary_restrictions = models.CharField(max_length=150, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
+    is_campus_rep = models.BooleanField(default=False)
 
     def __str__(self):
         return "%s (%s)" % (self.name, self.user.username)
