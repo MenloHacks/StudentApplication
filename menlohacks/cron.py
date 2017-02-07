@@ -15,7 +15,7 @@ def send_reminder_emails():
     except:
         past_emails = {}
     last_week = date.today() - timedelta(weeks=1)
-    conn = psycopg2.connect("<database_url>")
+    conn = psycopg2.connect("<database_url_>")
     cur = conn.cursor()
     cur.execute("""
     SELECT email,name,school from auth_user
