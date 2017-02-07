@@ -24,15 +24,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="https://d2b6s0dsvfyqsi.cloudfront.net/menlohacks_icon.svg"
-                                                      style="height:80%;
+                <a class="navbar-brand" href="#" style="position:relative"><img
+                        src="https://d2b6s0dsvfyqsi.cloudfront.net/menlohacks_icon.svg"
+                                                      style="height:40px;
                                                       position: absolute;top: 50%;transform: translateY(-50%);"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
                     <li>
-                        <p class="navbar-text">Welcome, {{ user.username }}!</p>
+                        <p class="navbar-text" style="padding-right:
+                        15px; padding-left: 15px">Welcome,
+                            {{ user.username }}!</p>
                     </li>
                     <li>
                         <a href="{% url 'auth_password_change' %}">Change Password</a>

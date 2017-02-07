@@ -46,8 +46,11 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'bootstrapform',
     'import_export',
-    'django_select2'
+    'django_crontab'
 )
+CRONJOBS = [
+    ('0 18 * * *', 'menlohacks.cron.send_reminder_emails')
+]
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -113,8 +116,9 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'noreply@menlohacks.com'
 EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
 # print(EMAIL_HOST_PASSWORD)
-# print("password: " + EMAIL_HOST_PASSWORD)
+# print("password: " EMAIL_HOST_PASSWORD)
 EMAIL_PORT = 465
+#change to 465
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = 'noreply@menlohacks.com'
 
@@ -126,8 +130,7 @@ LOGIN_REDIRECT_URL = "/"
 # Heroku settings below
 #Parse database configuration from $DATABASE_URL
 import dj_database_url
-DATABASES = {
-}
+DATABASES = {}
 DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()

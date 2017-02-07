@@ -17,8 +17,11 @@ from django.contrib.auth.views import login
 from registration.backends.hmac.views import ActivationView
 from forms import ResendEmailForm
 import json
-
-SCHOOLS = json.dumps(json.load(open("static/school_names.json")))
+import csv
+try:
+    SCHOOLS = json.dumps(json.load(open("static/school_names.json")))
+except:
+    SCHOOLS = json.dumps(json.load(open("PycharmProjects/StudentApplication/static/school_names.json")))
 DIETARY_RESTRICTIONS = json.dumps([
     {"value": "None",
      "text": "None"},
@@ -29,8 +32,18 @@ DIETARY_RESTRICTIONS = json.dumps([
     {"value": "Gluten Free",
      "text": "Gluten Free"},
     ])
-
-
+emails = set()
+try:
+    with open("static/output2.csv") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            emails.add(row[1])
+except:
+    with open("/Users/thomaswoodside/PycharmProjects/StudentApplication/static"
+              "/output2.csv") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            emails.add(row[1])
 
 class LoginRequiredMixin(object):
     @classmethod
@@ -53,30 +66,38 @@ class CustomRegistrationView(RegistrationView):
     email_body_template_html = 'registration/activation_email.html'
     email_subject_template = 'registration/activation_email_subject.txt'
 
+    def get_success_url(self, user):
+        if user.email in emails:
+            return ('login', (), {})
+        return ('registration_complete', (), {})
+
     def send_activation_email(self, user):
         """
         Send the activation email. The activation key is simply the
         username, signed using TimestampSigner.
-
         """
         activation_key = self.get_activation_key(user)
-        context = self.get_email_context(activation_key)
-        context.update({
-            'user': user
-        })
-        subject = render_to_string(self.email_subject_template,
-                                   context)
-        # Force subject to a single line to avoid header-injection
-        # issues.
-        html_content = render_to_string(CustomRegistrationView.email_body_template_html,
-                                        context)
-        text_content = strip_tags(html_content)
+        if user.email in emails:
+            activation = ActivationView()
+            activation.activate(activation_key=activation_key)
+        else:
+            context = self.get_email_context(activation_key)
+            context.update({
+                'user': user
+            })
+            subject = render_to_string(self.email_subject_template,
+                                       context)
+            # Force subject to a single line to avoid header-injection
+            # issues.
+            html_content = render_to_string(CustomRegistrationView.email_body_template_html,
+                                            context)
+            text_content = strip_tags(html_content)
 
-        # create the email, and attach the HTML version as well.
-        msg = EmailMultiAlternatives(subject, text_content,
-                                     settings.DEFAULT_FROM_EMAIL, [user.email])
-        msg.attach_alternative(html_content, "text/html")
-        msg.send()
+            # create the email, and attach the HTML version as well.
+            msg = EmailMultiAlternatives(subject, text_content,
+                                         settings.DEFAULT_FROM_EMAIL, [user.email])
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
 
 
 

@@ -12,3 +12,4 @@ static3
 tablib
 wheel
 Django-Select2
+django_crontab

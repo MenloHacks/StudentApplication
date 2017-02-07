@@ -66,8 +66,12 @@ $("form").submit(function(e) {
         }
     });  return true;
 });
-
 var school = $("#id_school");
+if ({{ ismenlo }} && !school.val()) {
+    console.log("test");
+    $("#id_school").val("Menlo School");
+}
+
 {% autoescape off %}
     var school_options = {{ schools }};
     if (school.val())
@@ -80,6 +84,7 @@ var school = $("#id_school");
     school.selectize({
         create: true,
         options: school_options,
+        items: [school.val()],
         maxItems: 1
     });
     var dietary_restriction = $("#id_dietary_restrictions");
@@ -94,6 +99,7 @@ var school = $("#id_school");
     dietary_restriction.selectize({
         create: true,
         options: diet_options,
+        items: [dietary_restriction.val()],
         maxItems: 1 //really shouldn't be, but couldn't figure it out
     });
 {% endautoescape %}
@@ -105,9 +111,6 @@ if ($("#id_name").val()) {
 $("#id_dietary_restrictions-selectized").attr("maxlength", "150");
 $("#id_school-selectized").attr("maxlength", "150");
 
-if ({{ ismenlo }}) {
-    school.val("Menlo School")
-}
 
 $.validator.addMethod("ZIP", function(value, element) {
         return this.optional(element) || /^\d{5}$/i.test(value);

@@ -22,7 +22,7 @@ from application.views import CustomRegistrationView, redirecting_login, \
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('application.urls', namespace="application")),
-    url(r'^accounts/login/', redirecting_login),
+    url(r'^accounts/login/', redirecting_login, name="login"),
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^accounts/register/$', CustomRegistrationView.as_view()),
     url(r'^accounts/', include('registration.backends.hmac.urls')),
