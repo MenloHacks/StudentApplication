@@ -6,6 +6,7 @@ import pickle
 # Create your models here.
 
 
+
 class Application(models.Model):
     NUM_HACKATHONS_CHOICES = (
         ("0", "0"),
@@ -44,14 +45,12 @@ class Application(models.Model):
             self.user.username, 
             "done" if self.submitted else "in-progress"
         )
-    
+
+class DoNotKillMeForNotValidating(models.CharField):
+    pass
+
+
 class Profile(models.Model):
-    DIETARY_RESTRICTIONS = (
-        ("None", "None"),
-        ("Vegetarian", "Vegetarian"),
-        ("Vegan", "Vegan"),
-        ("Gluten Free", "Gluten Free"),
-    )
     
     T_SHIRT_SIZES = (
         ("XS", "XS"),
@@ -68,17 +67,21 @@ class Profile(models.Model):
         ("No answer", "Prefer not to say"),
     )
 
-    SCHOOLS = pickle.load(open("static/school_list.pkl", "rb"))
 
     
     user = models.OneToOneField(User, related_name="profile")
     
     name = models.CharField(max_length=100)
-    school = models.CharField(choices=SCHOOLS, max_length=150)
-    zip_code = models.IntegerField()
+    school = models.CharField(max_length=150)
+    zip_regex = RegexValidator(regex="^\d{5}$",
+                                message="Zip code must be in the format "
+                                        "'94027'. Only five numeric digits "
+                                        "allowed.")
+    zip_code = models.IntegerField(validators=[zip_regex])
     
-    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',
-                                 message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
+    phone_regex = RegexValidator(regex=r'^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$',
+                                 message="You must enter a valid US phone "
+                                         "number.")
     phone_number = models.CharField(max_length=15, validators=[phone_regex])
     
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default="Male")
@@ -88,8 +91,9 @@ class Profile(models.Model):
     linkedin_profile = models.URLField(blank=True, default="https://www.linkedin.com/in/")
     devpost_profile = models.URLField(blank=True, default="http://devpost.com/")
     personal_website = models.CharField(max_length=200, blank=True, default="http://")
-    dietary_restrictions = models.CharField(max_length=15, choices=DIETARY_RESTRICTIONS, default="None")
+    dietary_restrictions = models.CharField(max_length=150, default="None")
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
+    is_campus_rep = models.BooleanField(default=False)
 
     auto_accept = models.BooleanField(default=False)
 

@@ -21,13 +21,55 @@
                 </tr>
                 <tr>
                     <td valign="top" style="line-height:1.2em;color:#222;border-collapse:collapse;background-color:transparent;padding:16px;width:100%!important;height:100%!important">
-                        Hello {{name}},
+                        Hello{{name}},
                         <br>
-                        <br>Thank you for registering for MenloHacks! We
-                        will send out more information in February. See you
-                        there!
                         <br>
-                        <br>MenloHacks Team</td>
+                        {% if menlo %}
+                        We see you have not finished registering for
+                        MenloHacks II. Registration closes on the 21st, so
+                            register now before it's too late.
+                        <br>
+                        <br>
+                        <div style="text-align: center; margin: auto;">
+                            <a style="
+    					background-color:#7D5BA6;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	border:1px solid #7D5BA6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:13px 25px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;" href="http://apply.menlohacks.com">Finish registering</a>
+                        </div>
+                        {% else %}
+                        We see you have not finished applying to
+                        MenloHacks II. The application period closes on the
+                            21st, so apply now before it's too late.
+                        <br>
+                        <br>
+                        <div style="text-align: center; margin: auto;">
+                            <a style="
+    					background-color:#7D5BA6;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	border:1px solid #7D5BA6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:13px 25px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;" href="http://apply.menlohacks.com">Finish your application</a>
+                        </div>
+                        {% endif %}
+                        <br>The MenloHacks Team</td>
                 </tr>
                 </tbody>
             </table>

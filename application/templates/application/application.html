@@ -6,8 +6,8 @@
 <div class="row">
     <div class="col-sm-2 col-lg-3"></div>
     <div class="col-sm-8 col-lg-6">
-        <img src="{% static 'application/MenloHacksIILogo Inverted.svg' %}"
-             class="img-responsive" style="width:30%; margin: 0 auto;">
+        <img src="https://d2b6s0dsvfyqsi.cloudfront.net/menlohacks.svg"
+             class="img-responsive" style="width:30%; margin: 3em auto;">
         <form role="form" method='post' action='.'>
             {% csrf_token %}
             <div id="application">
@@ -18,15 +18,14 @@
                 {% if is_menlo_django %}
                 <p style="color: darkgray; font-style: italic;">
                     In order to complete your MenloHacks registration,
-                    please upload a signed copy of <a href="http://www
-                    .example.com" target="_blank">this form</a>. Your registration will not be
+                    please upload a signed copy of <a href="https://d2b6s0dsvfyqsi.cloudfront.net/menlo_liability.pdf" target="_blank">this form</a>. Your registration will not be
                     processed until the form is signed and uploaded.
                 </p>
                 {% else %}
                 <p class="waiver" style="color: darkgray; font-style:
                 italic;">
                     For liability reasons, MenloHacks requires you to upload
-                    a signed copy of <a href="http://www.example.com" target="_blank">this
+                    a signed copy of <a href="https://d2b6s0dsvfyqsi.cloudfront.net/liability_non_menlo.pdf" target="_blank">this
                     waiver</a>. As part of that liability waiver, you will
                     need to get an administrator at your school to testify
                     to your character to assure Menlo School of your
@@ -45,9 +44,8 @@
                 italic;">
                     At MenloHacks II, we will be taking photos and videos
                     throughout the event. In order to attend, you will need to
-                    upload a signed copy of this <a href="http://www.example
-                    .com" target="_blank">photo release
-                    form </a>.
+                    upload a signed copy of this <a href="https://d2b6s0dsvfyqsi.cloudfront.net/photo_release.pdf" target="_blank">photo release
+                    form</a>.
                 </p>
                     <input type="filepicker" data-fp-apikey="{{api_key}}"
                            onchange="completed_photo(event.fpfile.url)">
@@ -60,16 +58,19 @@
                     btn-app">Save</button>
                     <button id="submit-button" type="submit" class="btn btn-warning btn-app">Submit</button>
                 </div>
+                {% if not is_menlo_django %}
                 <p class="help-block">
                     All saved applications will be automatically submitted
-                    at midnight on February 15.
+                    at midnight on February 21.
                 </p>
+                {% endif %}
             </div>
         </form>
     </div>
     <div class="col-sm-2 col-lg-3"></div>
 </div>
 <script>
+
 var nonmenlofields = $("#application .form-group:nth-child(-n+3)");
 if ({{ismenlo}})  {
     nonmenlofields.hide();
@@ -77,12 +78,27 @@ if ({{ismenlo}})  {
 } else {
     nonmenlofields.find("textarea, select").attr("required", true);
     nonmenlofields.find("label").addClass("label-required");
-    if ($("#id_last_summer").val == "N/A (Menlo Student)") {
+    if ($("#id_last_summer").val() == "N/A (Menlo Student)") {
         nonmenlofields.find("textarea").val("");
     }
 }
 $("#application .form-group:last-child label").addClass("label-required");
 $("#application .form-group:nth-last-child(2) label").addClass("label-required");
+
+$("form").submit(function(e) {
+
+    var ref = $(this).find("[required]");
+
+    $(ref).each(function(){
+        if ( $(this).val() == '' )
+        {
+            alert("Required field should not be blank.");
+            $(this).focus();
+            e.preventDefault();
+            return false;
+        }
+    });  return true;
+});
 
 var form = false;
 var photo_form = false;

@@ -21,6 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
+
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -29,7 +30,6 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 FILESTACK_API_KEY = os.environ["FILESTACK_API_KEY"]
-
 
 # Application definition
 
@@ -46,8 +46,11 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'bootstrapform',
     'import_export',
-    'django_select2'
+    'django_crontab'
 )
+CRONJOBS = [
+    ('0 18 * * *', 'menlohacks.cron.send_reminder_emails')
+]
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -113,8 +116,9 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'noreply@menlohacks.com'
 EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
 # print(EMAIL_HOST_PASSWORD)
-# print("password: " + EMAIL_HOST_PASSWORD)
+# print("password: " EMAIL_HOST_PASSWORD)
 EMAIL_PORT = 465
+#change to 465
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = 'noreply@menlohacks.com'
 
@@ -147,5 +151,3 @@ try:
     from local_settings import *
 except ImportError:
     pass
-
-

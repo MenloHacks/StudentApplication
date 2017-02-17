@@ -7,7 +7,7 @@
 <form role="form" method='post' action='.'>
   {% csrf_token %}
   {{ form|bootstrap }}
-  <input class="btn btn-primary" type="submit" value="Log in" />
+  <input class="btn btn-primary" type="submit" value="Log in" id="submit"/>
   <input type="hidden" name="next" value="{{ next }}" />
 </form>
 <p class="help-block">Forgot password? <a href="{% url 'password_reset' %}">Reset it</a>!</p>

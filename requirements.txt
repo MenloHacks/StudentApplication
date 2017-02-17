@@ -13,3 +13,4 @@ tablib
 wheel
 iron_cache
 Django-Select2
+django_crontab

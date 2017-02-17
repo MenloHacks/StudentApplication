@@ -9,7 +9,7 @@
     {% if user.profile.school != "Menlo School" %}
         <h1 class="text-center">Thanks for Applying to MenloHacks!</h1><br/>
         <p class="lead text-center">You can still edit your profile until
-            the February 15 deadline.</p>
+            the February 21 deadline.</p>
     {% else %}
     <h1 class="text-center">Thanks for Registering for MenloHacks!</h1><br/>
     {% endif %}
@@ -41,12 +41,88 @@
         {% endif %}
     </div>
     <div class="col-sm-2 col-lg-3"></div>
+<link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.bootstrap3.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
 </div>
   {{ prof_form.media }}
     <script>
-    $(".select2").select2({
-        tags: true
-    });
-    $("#profile > div:nth-last-child(2)").hide();
+        $("form").submit(function(e) {
+
+            var ref = $(this).find("[required]");
+
+            $(ref).each(function(){
+                if ( $(this).val() == '' )
+                {
+                    alert("Required field should not be blank.");
+
+                    $(this).focus();
+
+                    e.preventDefault();
+                    return false;
+                }
+            });  return true;
+        });
+
+        var school = $("#id_school");
+        {% autoescape off %}
+            var school_options = {{ schools }};
+            if (school.val())
+            {
+                school_options.push({
+                    text: school.val(),
+                    value: school.val()
+                });
+            }
+            school.selectize({
+                create: true,
+                options: school_options,
+                maxItems: 1
+            });
+            var dietary_restriction = $("#id_dietary_restrictions");
+            var diet_options = {{ dietary_restrictions }};
+            if (dietary_restriction.val())
+            {
+                diet_options.push({
+                text: dietary_restriction.val(),
+                value: dietary_restriction.val()
+            });
+            }
+            dietary_restriction.selectize({
+                create: true,
+                options: diet_options,
+                maxItems: 1 //really shouldn't be, but couldn't figure it out
+            });
+        {% endautoescape %}
+
+        if ($("#id_name").val()) {
+            $('#agree').prop('checked', true);
+        }
+
+        $("#id_dietary_restrictions-selectized").attr("maxlength", "150");
+        $("#id_school-selectized").attr("maxlength", "150");
+
+
+        $.validator.addMethod("ZIP", function(value, element) {
+                return this.optional(element) || /^\d{5}$/i.test(value);
+            }, "Please enter a valid zip code.");
+
+        $.validator.addMethod("PHONE",function(value,element){
+            return this.optional(element) || /^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$/i.test(value);
+        },"Please enter a valid phone number.");
+
+        $.validator.addMethod("NAME",function(value,element){
+            return !/[^\x00-\x7F]/i.test(value);
+        },"Please enter a name with English characters.");
+
+        $("form").validate({
+            rules: {
+                phone_number: "required PHONE",
+                zip_code: "required ZIP",
+                name: "required NAME"
+            }
+        });
+
     </script>
 {% endblock %}
