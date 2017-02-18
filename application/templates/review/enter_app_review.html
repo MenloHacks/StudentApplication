@@ -1,10 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block content %}
+
+<div class="row text-center">
+{% if review_enabled %}
+<h1>Application review is currently enabled.</h1>
+    {%  else %}
+    <h1>Application review is currently disabled.</h1>
+
+{%  endif %}
+
+
+    <br>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            {% if review_enabled %}
+    <form action="{% url 'application:toggle_review' %}" method="get">
+        <input type="hidden" name="bring" value="no">
+        <button type="submit" class="btn btn-danger">End Application Review</button>
+    </form>
+            {% else %}
+
+
+                                <form action="{% url 'application:toggle_review' %}" method="get">
+        <input type="hidden" name="enabled" value="yes">
+        <button type="submit" class="btn btn-success">Begin Application Review</button>
+    </form>
+            {% endif %}
+
+
+
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+
+{% endblock %}
+
+

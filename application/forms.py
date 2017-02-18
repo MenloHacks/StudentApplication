@@ -20,14 +20,14 @@ class ApplicationForm(ModelForm):
             "photo_form_url": "Photo Release Form"
         }
 
-class ApplicationViewForm(ModelForm):
-
-    class Meta:
-        model = ApplicationReview
-        fields = ['score']
-        labels = {
-            'score' : "Evaluate this applicant by giving them an integer between 1 and 10:"
-        }
+# class ApplicationViewForm(ModelForm):
+#
+#     class Meta:
+#         model = ApplicationReview
+#         fields = ['score']
+#         labels = {
+#             'score' : "Evaluate this applicant by giving them an integer between 1 and 10:"
+#         }
 
 """
 Overwritten classes that don't cut off at spaces and only

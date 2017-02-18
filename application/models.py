@@ -15,7 +15,7 @@ class Application(models.Model):
         ("3", "3"),
         ("4+", "4+"),
     )
-    
+
     user = models.OneToOneField(User, related_name="application")
     num_hackathons = models.CharField(
         max_length=2,
@@ -28,21 +28,23 @@ class Application(models.Model):
     photo_form_url = models.CharField(max_length=200, null=True, blank=True)
 
     submitted = models.BooleanField(default=False)
-    
+
     admitted = models.BooleanField(default=False)
     waitlisted = models.BooleanField(default=False)
-    
+
     sanitized_school = models.CharField(max_length=100, default="Other")
-    
+
     can_come = models.BooleanField(default=False)
     cannot_come = models.BooleanField(default=False)
-    
+
     can_bring_chaperone = models.NullBooleanField(default=None)
 
-    
+    cumulative_score = models.FloatField(default=0)
+
+
     def __str__(self):
         return "App for %s (%s)" % (
-            self.user.username, 
+            self.user.username,
             "done" if self.submitted else "in-progress"
         )
 
@@ -51,7 +53,7 @@ class DoNotKillMeForNotValidating(models.CharField):
 
 
 class Profile(models.Model):
-    
+
     T_SHIRT_SIZES = (
         ("XS", "XS"),
         ("S", "S"),
@@ -59,7 +61,7 @@ class Profile(models.Model):
         ("L", "L"),
         ("XL", "XL"),
     )
-    
+
     GENDER_CHOICES = (
         ("Male", "Male"),
         ("Female", "Female"),
@@ -68,9 +70,9 @@ class Profile(models.Model):
     )
 
 
-    
+
     user = models.OneToOneField(User, related_name="profile")
-    
+
     name = models.CharField(max_length=100)
     school = models.CharField(max_length=150)
     zip_regex = RegexValidator(regex="^\d{5}$",
@@ -78,15 +80,15 @@ class Profile(models.Model):
                                         "'94027'. Only five numeric digits "
                                         "allowed.")
     zip_code = models.IntegerField(validators=[zip_regex])
-    
+
     phone_regex = RegexValidator(regex=r'^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$',
                                  message="You must enter a valid US phone "
                                          "number.")
     phone_number = models.CharField(max_length=15, validators=[phone_regex])
-    
+
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default="Male")
 
-    
+
     github_profile = models.URLField(blank=True, default="https://github.com/")
     linkedin_profile = models.URLField(blank=True, default="https://www.linkedin.com/in/")
     devpost_profile = models.URLField(blank=True, default="http://devpost.com/")
@@ -95,16 +97,24 @@ class Profile(models.Model):
     t_shirt_size = models.CharField(max_length=2, choices=T_SHIRT_SIZES, default="XS")
     is_campus_rep = models.BooleanField(default=False)
 
-    auto_accept = models.BooleanField(default=False)
 
+    auto_accept = models.BooleanField(default=False)
     application_reviewers = models.ManyToManyField("self", blank=True)
 
 
     def __str__(self):
         return "%s (%s)" % (self.name, self.user.username)
 
+
+
 class ApplicationReview(models.Model):
     profile = models.OneToOneField(User, related_name="profile_reviewed")
 
-    score = models.IntegerField()
-    adjusted_score = models.FloatField()
+    passion_score = models.IntegerField(default=0)
+    experience_score = models.IntegerField(default=0)
+
+    adjusted_passion_score = models.FloatField(default=0)
+    adjusted_experience_score = models.FloatField(default=0)
+
+    photo_form_ok = models.BooleanField(default=False)
+    form_ok = models.BooleanField(default=False)

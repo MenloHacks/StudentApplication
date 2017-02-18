@@ -7,7 +7,7 @@ from django.conf import settings
 from django.contrib.auth.decorators import login_required
 
 from .forms import ApplicationForm, ProfileForm
-from .models import Application
+from .models import Application, ApplicationReview
 from registration.backends.hmac.views import RegistrationView
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
@@ -33,14 +33,17 @@ DIETARY_RESTRICTIONS = json.dumps([
      "text": "Gluten Free"},
     ])
 emails = set()
+
+dirpath = os.path.dirname(__file__)
+filepath = os.path.join(dirpath, 'static/output2.csv')
+
 try:
     with open("static/output2.csv") as f:
         reader = csv.reader(f)
         for row in reader:
             emails.add(row[1])
 except:
-    with open("/Users/thomaswoodside/PycharmProjects/StudentApplication/static"
-              "/output2.csv") as f:
+    with open(filepath) as f:
         reader = csv.reader(f)
         for row in reader:
             emails.add(row[1])
@@ -52,21 +55,6 @@ class LoginRequiredMixin(object):
         return login_required(view)
 
 
-class ApplicationReviewView(LoginRequiredMixin, View):
-
-    def get(self, request):
-        if request.user.is_staff:
-            pass
-            #if the
-            #show some view related to login
-        else:
-            pass
-            #show a permissions denied view.
-
-        pass
-    def post(self, ):
-        #save the review
-        pass
 
 
 
@@ -447,3 +435,50 @@ def csv_export(request):
         return response
     else:
         return HttpResponse("no")
+
+#application view
+
+#consider application review to have started if we've already reviewed some. Otherwise
+#this will be false (this is reset on boot)
+APPLICATION_REVIEW_ENABLED = ApplicationReview.objects.count() > 0
+
+
+@login_required
+def toggle_review(request):
+    # if request.GET.get("bring") == "yes":
+    #     request.user.application.can_bring_chaperone = True
+    # elif request.GET.get("bring") == "no":
+    #     request.user.application.can_bring_chaperone = False
+    # request.user.application.save()
+    return HttpResponse('test')
+    #return redirect("application:index")
+
+
+class ApplicationReviewManagerView(LoginRequiredMixin, View):
+    def get(self, request):
+        if request.user.is_staff:
+            return render(request, "review/enter_app_review.html", {'review_enabled' : APPLICATION_REVIEW_ENABLED})
+        else:
+            return render(request, "review/permissions_denied.html", {})
+
+
+
+class ApplicationReviewView(LoginRequiredMixin, View):
+
+    def get(self, request):
+        if request.user.is_staff:
+            if APPLICATION_REVIEW_ENABLED:
+                #get review
+                pass
+            else:
+                return render(request, "review/review_disabled.html", {})
+
+        else:
+            return render(request, "review/permissions_denied.html", {})
+            #show a permissions denied view.
+
+        pass
+
+    def post(self, ):
+        #save the review
+        pass
