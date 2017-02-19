@@ -17,7 +17,7 @@
         <div class="col-sm-6">
             {% if review_enabled %}
     <form action="{% url 'application:toggle_review' %}" method="get">
-        <input type="hidden" name="bring" value="no">
+        <input type="hidden" name="enabled" value="no">
         <button type="submit" class="btn btn-danger">End Application Review</button>
     </form>
             {% else %}

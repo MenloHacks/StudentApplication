@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from django.core import serializers
@@ -7,7 +7,7 @@ from django.conf import settings
 from django.contrib.auth.decorators import login_required
 
 from .forms import ApplicationForm, ProfileForm
-from .models import Application, ApplicationReview
+from .models import User, Profile, Application, ApplicationReview
 from registration.backends.hmac.views import RegistrationView
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
@@ -18,6 +18,8 @@ from registration.backends.hmac.views import ActivationView
 from forms import ResendEmailForm
 import json
 import csv
+
+
 try:
     SCHOOLS = json.dumps(json.load(open("static/school_names.json")))
 except:
@@ -445,13 +447,43 @@ APPLICATION_REVIEW_ENABLED = ApplicationReview.objects.count() > 0
 
 @login_required
 def toggle_review(request):
-    # if request.GET.get("bring") == "yes":
-    #     request.user.application.can_bring_chaperone = True
-    # elif request.GET.get("bring") == "no":
-    #     request.user.application.can_bring_chaperone = False
-    # request.user.application.save()
-    return HttpResponse('test')
-    #return redirect("application:index")
+    global APPLICATION_REVIEW_ENABLED
+    if(request.user.is_staff):
+        if request.GET.get('enabled') == 'yes' and APPLICATION_REVIEW_ENABLED == False:
+            APPLICATION_REVIEW_ENABLED = True
+            assign_reviewers()
+        elif request.GET.get('enabled') == 'no' and APPLICATION_REVIEW_ENABLED == True:
+            APPLICATION_REVIEW_ENABLED = False
+        else:
+            return JsonResponse({'error' : 'invalid parameter values'}, status=500)
+    else:
+        return HttpResponse(status=403)
+
+from random import shuffle
+def assign_reviewers():
+    NUM_REVIEWERS_PER_APPLICATION = 3
+
+    reviewers = User.objects.all().filter(is_staff=True)
+    profiles = Profile.objects.all().exclude(school='Menlo School')
+
+    reviewer_list = []
+    for reviewer in reviewers:
+        reviewer_list.append(reviewer)
+
+    for profile in profiles:
+        shuffle(reviewer_list)
+        for i in xrange(0, NUM_REVIEWERS_PER_APPLICATION):
+            profile.application_reviewers.add(reviewer_list[i])
+
+        profile.save()
+
+        if profile.user.application is None:
+            profile.user.application = Application()
+            profile.user.save()
+
+
+def score_apps():
+    pass
 
 
 class ApplicationReviewManagerView(LoginRequiredMixin, View):
