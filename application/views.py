@@ -8,7 +8,7 @@ from django.conf import settings
 
 from django.contrib.auth.decorators import login_required
 
-from .forms import ApplicationForm, ProfileForm
+from .forms import ApplicationForm, ProfileForm, ApplicationReviewForm
 from .models import User, Profile, Application, ApplicationReview
 from registration.backends.hmac.views import RegistrationView
 from django.core.mail import EmailMultiAlternatives
@@ -444,7 +444,8 @@ def csv_export(request):
 
 #consider application review to have started if we've already reviewed some. Otherwise
 #this will be false (this is reset on boot)
-APPLICATION_REVIEW_ENABLED = ApplicationReview.objects.count() > 0
+# APPLICATION_REVIEW_ENABLED = ApplicationReview.objects.count() > 0
+APPLICATION_REVIEW_ENABLED = True
 
 
 @login_required
@@ -481,8 +482,9 @@ def assign_reviewers():
         profile.save()
 
         if hasattr(profile.user, 'application') == False:
-            profile.user.application = Application()
-            profile.user.save()
+            app = Application()
+            app.user = profile.user
+            app.save()
 
 
 def score_apps():
@@ -503,8 +505,18 @@ class ApplicationReviewView(LoginRequiredMixin, View):
     def get(self, request):
         if request.user.is_staff:
             if APPLICATION_REVIEW_ENABLED:
-                #get review
-                pass
+                profile = Profile.objects.get(application_reviewers__contains=request.user.profile)
+                application = profile.user.application
+
+                review_object = ApplicationReview()
+                review_object.reviewer = request.user
+                review_object.profile = profile
+
+                score_form = ApplicationReviewForm(instance=review_object)
+
+                return render(request, "review/enter_app_review.html", {'application': application,
+                                                                        'profile' : profile,
+                                                                        'score_form' : score_form})
             else:
                 return render(request, "review/review_disabled.html", {})
 

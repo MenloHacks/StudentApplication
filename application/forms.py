@@ -80,3 +80,15 @@ class ResendEmailForm(forms.Form):
 
     username = forms.CharField(label="Email",
                                max_length=100)
+
+
+
+class ApplicationReviewForm(ModelForm):
+
+    class Meta:
+        model = ApplicationReview
+        fields = ['passion_score', 'experience_score']
+        labels = {
+            "passion_score": "Passion",
+            "experience_score": "Experience"
+        }

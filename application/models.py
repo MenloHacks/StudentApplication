@@ -108,7 +108,9 @@ class Profile(models.Model):
 
 
 class ApplicationReview(models.Model):
-    profile = models.OneToOneField(User, related_name="profile_reviewed")
+    profile = models.OneToOneField(Profile, related_name="profile_reviewed", blank=True)
+
+    reviewer = models.OneToOneField(User, related_name="reviewer", null=True)
 
     passion_score = models.IntegerField(default=0)
     experience_score = models.IntegerField(default=0)
@@ -116,5 +118,3 @@ class ApplicationReview(models.Model):
     adjusted_passion_score = models.FloatField(default=0)
     adjusted_experience_score = models.FloatField(default=0)
 
-    photo_form_ok = models.BooleanField(default=False)
-    form_ok = models.BooleanField(default=False)

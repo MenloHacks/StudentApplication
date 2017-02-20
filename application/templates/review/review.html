@@ -10,9 +10,49 @@
              class="img-responsive" style="width:30%; margin: 0 auto;">
         <form role="form" method='post' action='.'>
             {% csrf_token %}
-            <div id="application">
-                {{ profile_review | bootstrap }}
-                {{ app_review | bootstrap }}
+            <div id="profile">
+                <h3>Profile Information</h3>
+                {% if profile.linkedin_profile != 'https://www.linkedin.com/in/' %}
+                 <h5>LinkedIn</h5>
+                    <br>
+                 <a href='{{ profile.linkedin_profile }}'>{{ profile.linkedin_profile }}</a>
+                {% endif %}
+
+                {% if profile.github_profile != 'https://github.com/' %}
+                    <h5>Github</h5>
+                    <br>
+                <a href='{{ profile.github_profile }}'>{{ profile.github_profile }}</a>
+                {% endif %}
+
+                {% if profile.devpost_profile != 'http://devpost.com/' %}
+                    <h5>Devpost</h5>
+                    <br>
+                <a href='{{ profile.devpost_profile }}'>{{ profile.devpost_profile }}</a>
+                {% endif %}
+
+                {% if profile.personal_website != 'http://' %}
+                    <h5>Devpost</h5>
+                    <br>
+                <a href='{{ profile.personal_website }}'>{{ profile.personal_website }}</a>
+                {% endif %}
+                <h3>Application</h3>
+                <p><b>Number of Hackathons:</b> {{ application.num_hackathons }}</p>
+                {% if application.cool_project != '' %}
+                 <h5>Cool Project</h5>
+                    <br>
+                <p>{{ application.cool_project }}</p>
+                {% endif %}
+                                {% if application.last_summer != '' %}
+                 <h5>Last Summer</h5>
+                    <br>
+                <p></p>
+                {% endif %}
+                {% if application.anything_else != '' %}
+                 <h5>Anything Else</h5>
+                    <br>
+                <p></p>
+                {% endif %}
+
                 <h3>Score</h3>
                 {{score_form | bootstrap}}
             </div>
