@@ -5,7 +5,7 @@ import string
 def random_word(length):
    return ''.join(random.choice(string.lowercase) for i in range(length))
 
-for in in xrange(0,100):
+for i in xrange(0,100):
     username = random_word(10)
 
     user = User.objects.create_user(username=username, email=username, password='123')
