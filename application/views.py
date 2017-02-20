@@ -476,11 +476,11 @@ def assign_reviewers():
     for profile in profiles:
         shuffle(reviewer_list)
         for i in xrange(0, NUM_REVIEWERS_PER_APPLICATION):
-            profile.application_reviewers.add(reviewer_list[i])
+            profile.application_reviewers.add(reviewer_list[i].profile)
 
         profile.save()
 
-        if profile.user.application is None:
+        if hasattr(profile.user, 'application') == False:
             profile.user.application = Application()
             profile.user.save()
 
