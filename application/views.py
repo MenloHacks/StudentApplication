@@ -505,18 +505,22 @@ class ApplicationReviewView(LoginRequiredMixin, View):
     def get(self, request):
         if request.user.is_staff:
             if APPLICATION_REVIEW_ENABLED:
-                profile = Profile.objects.get(application_reviewers__contains=request.user.profile)
-                application = profile.user.application
+                profiles_to_review = request.user.apps_to_review.all()
+                if profiles_to_review.count() > 0:
+                    profile = Profile.objects.get(application_reviewers__contains=request.user)
+                    application = profile.user.application
 
-                review_object = ApplicationReview()
-                review_object.reviewer = request.user
-                review_object.profile = profile
+                    review_object = ApplicationReview()
+                    review_object.reviewer = request.user
+                    review_object.profile = profile
 
-                score_form = ApplicationReviewForm(instance=review_object)
+                    score_form = ApplicationReviewForm(instance=review_object)
 
-                return render(request, "review/enter_app_review.html", {'application': application,
+                    return render(request, "review/enter_app_review.html", {'application': application,
                                                                         'profile' : profile,
                                                                         'score_form' : score_form})
+                else:
+                    return render(request, "review/no_apps_left.html", {})
             else:
                 return render(request, "review/review_disabled.html", {})
 

@@ -99,7 +99,8 @@ class Profile(models.Model):
 
 
     auto_accept = models.BooleanField(default=False)
-    application_reviewers = models.ManyToManyField("self", blank=True)
+
+    application_reviewers = models.ManyToManyField(User, blank=True, related_name='apps_to_review')
 
 
     def __str__(self):
