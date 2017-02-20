@@ -1,4 +1,6 @@
 from django.http import HttpResponse, JsonResponse
+from django.core.urlresolvers import reverse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from django.core import serializers
@@ -452,6 +454,7 @@ def toggle_review(request):
         if request.GET.get('enabled') == 'yes' and APPLICATION_REVIEW_ENABLED == False:
             APPLICATION_REVIEW_ENABLED = True
             assign_reviewers()
+            return HttpResponseRedirect(reverse('review'))
         elif request.GET.get('enabled') == 'no' and APPLICATION_REVIEW_ENABLED == True:
             APPLICATION_REVIEW_ENABLED = False
         else:

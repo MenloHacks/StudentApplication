@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'^accounts/profile/$', views.profile_redirect, name="profile_redirect"),
     url(r'^review/$', views.ApplicationReviewView.as_view(), name="ApplicationReviewView"),
     url(r'^review/manage/$', views.ApplicationReviewManagerView.as_view(), name="ApplicationReviewManagerView"),
-    url(r'^review/manage/toggle_review/$', views.bring_chaperone, name="toggle_review"),
+    url(r'^review/manage/toggle_review/$', views.toggle_review, name="toggle_review"),
     url(r'^csv/$', views.csv_export, name="csv_export"),
     url(r'^select2/', include('django_select2.urls')),
 
