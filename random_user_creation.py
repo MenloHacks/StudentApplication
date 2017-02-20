@@ -1,4 +1,4 @@
-from .models import *
+from application.models import *
 import random
 import string
 
